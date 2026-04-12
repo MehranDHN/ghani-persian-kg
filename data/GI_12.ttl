@@ -1,0 +1,145 @@
+@prefix mdhn: <https://github.com/mehrandhn/ghani-persian-kg/vocab#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/mehrandhn/ghani-persian-kg/document/GI_12> a mdhn:Document ;
+    mdhn:category "GI Various Correspondences" ;
+    mdhn:chronology [ a time:ProperInterval ;
+            time:hasBeginning "1250"^^xsd:gYear ;
+            time:hasEnd "1848"^^xsd:gYear ] ;
+    mdhn:description "Haji Mirza Aqasi to Mohammad Shah (Shah of Iran).Complaining about the brothers and the uncles of the Shah who are involved in intrigues and treason."@en ;
+    mdhn:documentId "GI 12" ;
+    mdhn:hasTechnicalTerm <https://github.com/mehrandhn/ghani-persian-kg/term/brother>,
+        <https://github.com/mehrandhn/ghani-persian-kg/term/governor>,
+        <https://github.com/mehrandhn/ghani-persian-kg/term/sartip>,
+        <https://github.com/mehrandhn/ghani-persian-kg/term/uncle> ;
+    mdhn:iiifManifest <https://archive.org/details/ghani_GI_12/manifest.json> ;
+    mdhn:mentionsPersonality <https://github.com/mehrandhn/ghani-persian-kg/person/brother>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/iravani>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/mirza_aqasi>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/mohammad_hasan>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/mohammad_hasan_sardar>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/mohammad_hasan_sartip>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/mohammad_shah>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/reza_qoli>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/reza_qoli_sartip>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/sartip>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/seyf_allah_mirza>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/uncle>,
+        <https://github.com/mehrandhn/ghani-persian-kg/person/zolfaqar> ;
+    mdhn:mentionsPlace <https://github.com/mehrandhn/ghani-persian-kg/place/damghan>,
+        <https://github.com/mehrandhn/ghani-persian-kg/place/semnan>,
+        <https://github.com/mehrandhn/ghani-persian-kg/place/yazd> ;
+    mdhn:originalYaleURL <https://ghani.macmillan.yale.edu/gi-12> ;
+    mdhn:pdfSha256 "67d58f8f405ee23e865914a3b3e758164ed8d09947231722eb10a697434049be" ;
+    mdhn:pdfURL <https://ghani.macmillan.yale.edu/sites/default/files/ms_0235_s01_b001_f0001_d0012.pdf> ;
+    mdhn:transcription """Yale University
+Search form
+The Ghani Collection at Yale
+Main Menu
+Sub Menu
+Home
+Transcribed Documents
+How to Use the Collection
+Additional Resources
+You are here
+Home
+»
+Transcribed Documents
+»
+G I
+»
+GI 12
+GI 12
+It appears your Web browser is not configured to display PDF files.
+Download adobe Acrobat
+or
+click here to download the PDF file.
+Ghani Location:
+Box 1
+Haji Mirza Aqasi to Mohammad Shah (Shah of Iran).
+Complaining about the brothers and the uncles of the Shah who are involved in intrigues and treason.
+GI 12
+درآمد: میرزا آقاسی به محمد شاه: عموها و برادرهای مدعی شاه، پیشنهاد دادن حکومت شهرهای کوچک به ایشان و گرفتن حکومت سمنان، دامغان و یزد از آنها. پاسخ شاه برای تایید این تصمیم.
+متن خط حاجی میرزا آقاسی و حاشیه خط محمد شاه است
+هو
+قربان خاکپای آسمان سای همیونت گردم  اوایل دولت ابد مدت کمترین بنده خواست که برادران سرکار اقدس و عموهای بی رتبه هر یک در سرکاری باشند و متوحش نشده به اطراف نروند و میان سلاطین مذکور نشود که شاهنشاه دین پناه روحنا فداه از نگاهداری اینها عجز دارند امثال سیف الله میرزا که هیچ کاره بود حاکم بلده های کوچک نمود. حال می بینم که اینها مصروع و خائن هستند باز در دامغان فسادی کرده اولاد حرامزاده ذوالفقار قالی و غیره را میان کار آورده شورش اتفاق افتاده کیفیت به نظر اعلیحضرت شهریاری می​رسد حکومت سمنان را به کسی و حکومت دامغان را به کسی دیگر بلکه حکومت یزد را باید از دست اینها گرفت. البته معلوم برای پادشاهی است که مادر اینها کجائی است.
+زیاده جسارت ندارم  امر الاشرف مطاع.
+دستخط محمد شاه در حاشیه: جناب حاجی بلی سمنان و دامغان را باید به آدم درستی سپرد انشاءالله تعالی سمنان را خوب است به یکی از برادران محمد حسن خان سرتیپ دامغان را به رضا قلی خان سرتیپ یا آدم دیگر.  به هر رو رای آنچه تو اندیشی حکم آنچه تو فرمائی.
+یادداشت:‌
+میرزا سیف الله:‌ پسر چهل و دوم فتحعلی شاه، حاکم سمنان در سال ۱۲۵۲، حاکم قزوین در سال ۱۲۷۱، و بعدها حاکم ملایر.
+محمد حسن خان سردار ایروانی (قاجار): (درگذشت ۱۲۷۱)‌ از مقربان دربار محمد شاه ومورد توجه حاجی میرزا آقاسی بود. حکمران یزد و کرمان در دوران ناصرالدین شاه بود. مرمت سرای گنجعلی خان که رو به ویرانی بود، از جمله اقدامات عمرانی اوست. وی همچنین بانی باغ بهارستان تهران است.
+PDF Transcription:
+gi_12.pdf
+gi_12.pdf
+Yale University
+Copyright © 2026 Yale University · All rights reserved ·
+Privacy policy
+Facebook
+Twitter
+Flickr
+iTunes
+YouTube"""@fa .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/brother> a mdhn:Personality ;
+    rdfs:label "brother" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/iravani> a mdhn:Personality ;
+    rdfs:label "Iravani" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/mirza_aqasi> a mdhn:Personality ;
+    rdfs:label "Mirza Aqasi" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/mohammad_hasan> a mdhn:Personality ;
+    rdfs:label "Mohammad Hasan" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/mohammad_hasan_sardar> a mdhn:Personality ;
+    rdfs:label "Mohammad Hasan Sardar" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/mohammad_hasan_sartip> a mdhn:Personality ;
+    rdfs:label "Mohammad Hasan Sartip" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/mohammad_shah> a mdhn:Personality ;
+    rdfs:label "Mohammad Shah" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/reza_qoli> a mdhn:Personality ;
+    rdfs:label "Reza Qoli" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/reza_qoli_sartip> a mdhn:Personality ;
+    rdfs:label "Reza Qoli Sartip" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/sartip> a mdhn:Personality ;
+    rdfs:label "Sartip" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/seyf_allah_mirza> a mdhn:Personality ;
+    rdfs:label "Seyf Allah Mirza" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/uncle> a mdhn:Personality ;
+    rdfs:label "uncle" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/person/zolfaqar> a mdhn:Personality ;
+    rdfs:label "Zolfaqar" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/place/damghan> a mdhn:Place ;
+    rdfs:label "Damghan" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/place/semnan> a mdhn:Place ;
+    rdfs:label "Semnan" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/place/yazd> a mdhn:Place ;
+    rdfs:label "Yazd" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/term/brother> a mdhn:TechnicalTerm ;
+    skos:prefLabel "brother" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/term/governor> a mdhn:TechnicalTerm ;
+    skos:prefLabel "governor" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/term/sartip> a mdhn:TechnicalTerm ;
+    skos:prefLabel "sartip" .
+
+<https://github.com/mehrandhn/ghani-persian-kg/term/uncle> a mdhn:TechnicalTerm ;
+    skos:prefLabel "uncle" .
+
