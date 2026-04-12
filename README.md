@@ -27,7 +27,7 @@ This repository serves as a **standalone public mirror** and the foundation for 
 flowchart TD
     A[1. Discover Categories<br/>GI • GII • GIII • GIIIA • GIV • ...] 
     --> B[2. Scrape All Pages with Pagination<br/>?page=0, ?page=1, ...]
-    --> C[3. Extract Table Metadata<br/>Description, Personalities(FHKB/WikiData Support), Places(TGN),<br/>Technical Terms, Chronology<br/>Phisicall Structures(Boxes/Files/...)<br/>Document types based on AAT]
+    --> C[3. Extract Table Metadata<br/>Description, Personalities @ Nobles Title-FHKB/WikiData Support, Places-TGN,<br/>Technical Terms, Chronology<br/>Phisicall Structures-Boxes/Files/...<br/>Document types based on AAT]
     --> D[4. Enrich Detail Pages<br/>Full Persian Transcription]
     --> E[5. Download Transcription PDFs<br/>+ Compute SHA-256 Hash]
     --> F[6. Build Central Manifest JSON<br/>Single Source of Truth]
