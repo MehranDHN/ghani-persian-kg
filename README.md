@@ -2,7 +2,7 @@
 
 **An Open Linked Data Edition of the Ghassem Ghani Collection (MS 235) at Yale University**
 
-![Project Banner](https://pbs.twimg.com/profile_banners/222009940/1770956354/1080x360)  
+![Project Banner](/images/ghani_ig.jpg)  
 
 
 ### Preface
@@ -39,6 +39,31 @@ flowchart TD
     style G fill:#f3e5f5,stroke:#7b1fa2
     style I fill:#e8f5e9,stroke:#388e3c
 ```
+
+### Analyzing the current status at Original repository
+
+- Data Extraction Pipeline (802 documents scraped)
+  - 7 category series (GI, GII, GIII, GIIIA, GV, GVII, GIX)
+  - Full metadata extraction: descriptions, personalities, places, technical terms, chronology
+  - PDF downloads with SHA-256 hashing for integrity
+  - Persian transcriptions fully captured
+
+- RDF Knowledge Graph (ghani-full.ttl)
+  - 801 documents converted to RDF triples
+  - 681 unique personalities (controlled vocabulary)
+  - 287 unique places
+  - 944 technical terms
+  - Time intervals using W3C Time Ontology
+  - IIIF manifest placeholders
+
+
+- Custom Ontology (ghani_collection_ontology.ttl)
+  - Built on CIDOC-CRM compatible foundation
+  - Uses Schema.org, FOAF, SKOS, W3C Time
+  - FHKB integration hooks for genealogy
+  - Reconciliation properties for Wikidata, Getty TGN/AAT
+  - Classes: mdhn:Document, mdhn:Personality, mdhn:Place, mdhn:TechnicalTerm, mdhn:Stamp
+  - Integrating with [IIIFDexir](https://github.com/MehranDHN/IIIFCollection) 
 
 ### Repository Structure   
 
