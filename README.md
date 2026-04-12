@@ -9,7 +9,7 @@
 
 The **Ghassem Ghani Collection** is one of the richest archives of Qajar-era Persian documents, containing over 1,000 handwritten and typed materials spanning political, social, economic, and cultural life in 19th- and early 20th-century Iran. Held at Yale University’s Manuscripts and Archives (Sterling Memorial Library), the collection includes royal correspondence, official reports, private letters, petitions from ordinary citizens, and important historical documents related to the Constitutional Revolution, reformist movements, and key personalities of the period.
 
-[The original online repository at Yale](https://ghani.macmillan.yale.edu/) suffers from a dramatically poor digital design: no API, no bulk export, rudimentary search, and metadata locked in static HTML tables. This project transforms that inaccessible resource into a clean, open, machine-readable, and fully linked knowledge graph — preserving every relation between documents, people, places, technical terms, chronology, transcriptions, and PDFs.
+[The original online repository at Yale](https://ghani.macmillan.yale.edu/) suffers from a dramatically poor digital design: no API, no bulk export, rudimentary search, and metadata locked in static HTML tables. This project transforms that inaccessible resource into a clean, open, machine-readable, and fully linked knowledge graph preserving every relation between documents, people, places, technical terms, chronology, transcriptions, and PDFs.
   
 This repository serves as a **standalone public mirror** and the foundation for an iteratively extensible Persian Digital Cultural Heritage Knowledge Graph.
 
@@ -27,12 +27,12 @@ This repository serves as a **standalone public mirror** and the foundation for 
 flowchart TD
     A[1. Discover Categories<br/>GI • GII • GIII • GIIIA • GIV • ...] 
     --> B[2. Scrape All Pages with Pagination<br/>?page=0, ?page=1, ...]
-    --> C[3. Extract Table Metadata<br/>Description, Personalities, Places,<br/>Technical Terms, Chronology]
+    --> C[3. Extract Table Metadata<br/>Description, Personalities(FHKB/WikiData Support), Places(TGN),<br/>Technical Terms, Chronology<br/>Phisicall Structures(Boxes/Files/...)<br/>Document types based on AAT]
     --> D[4. Enrich Detail Pages<br/>Full Persian Transcription]
     --> E[5. Download Transcription PDFs<br/>+ Compute SHA-256 Hash]
     --> F[6. Build Central Manifest JSON<br/>Single Source of Truth]
     --> G[7. Generate RDF Turtle Files<br/>Using Minimal Ontology]
-    --> H[8. Upload PDFs + Metadata<br/>to Internet Archive]
+    --> H[8. Upload PDFs + Metadata<br/>to Internet Archive(IIIF Support)]
     --> I[9. Publish Full Repository<br/>on GitHub]
 
     style A fill:#e3f2fd,stroke:#1976d2
