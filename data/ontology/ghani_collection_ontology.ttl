@@ -1,133 +1,159 @@
-@prefix mdhn:   <https://github.com/mehrandhn/ghani-persian-kg/vocab#> .
-@prefix dc:     <http://purl.org/dc/terms/> .
-@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix cvoc: <https://github.com/mehrandhn/ghani-persian-kg/term/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix fhkb: <http://example.org/fhkb#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mdhn: <https://github.com/mehrandhn/ghani-persian-kg/vocab#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix person: <https://github.com/mehrandhn/ghani-persian-kg/person/> .
+@prefix place: <https://github.com/mehrandhn/ghani-persian-kg/place/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix time:   <http://www.w3.org/2006/time#> .
-@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix fhkb:   <http://example.org/fhkb#> .   # Placeholder — you will replace with real FHKB URI later
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix so: <https://schema.org/> .
+@prefix stardog: <tag:stardog:api:> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://api.stardog.com/> .
+@prefix doc: <https://github.com/mehrandhn/ghani-persian-kg/document/> .
 
-# ==============================================
-# Ontology Metadata
-# ==============================================
-mdhn: a owl:Ontology ;
-    rdfs:label "MDHN Ghani Persian Cultural Heritage Ontology"@en ;
-    rdfs:comment "Minimal, extensible ontology for the Ghassem Ghani Collection (MS 235) at Yale. Personalities, places and terms are local controlled vocabularies."@en ;
-    dc:creator "Mehran DHN" ;
+<https://github.com/mehrandhn/ghani-persian-kg/vocab#> a owl:Ontology ;
     dc:created "2026-04-12"^^xsd:date ;
-    dc:license <https://creativecommons.org/licenses/by/4.0/> .
+    dc:creator "Mehran DHN" ;
+    dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Minimal, extensible ontology for the Ghassem Ghani Collection (MS 235) at Yale. Personalities, places and terms are local controlled vocabularies."@en ;
+    rdfs:label "MDHN Ghani Persian Cultural Heritage Ontology"@en .
 
-# ==============================================
-# Core Classes
-# ==============================================
 mdhn:Document a rdfs:Class ;
-    rdfs:label "Ghani Document"@en ;
     rdfs:comment "A transcribed document from the Ghassem Ghani Collection"@en ;
+    rdfs:label "Ghani Document"@en ;
     rdfs:subClassOf schema:CreativeWork .
 
 mdhn:Personality a rdfs:Class ;
-    rdfs:subClassOf fhkb:Person ;          # Will link to your FHKB ontology
+    rdfs:comment "Local scoped controlled vocabulary for persons mentioned in Ghani documents. Can be reconciled with Wikidata later."@en ;
     rdfs:label "Personality (local controlled vocabulary)"@en ;
-    rdfs:comment "Local scoped controlled vocabulary for persons mentioned in Ghani documents. Can be reconciled with Wikidata later."@en .
+    rdfs:subClassOf fhkb:Person .
 
 mdhn:Stamp a rdfs:Class ;
-    rdfs:subClassOf schema:CreativeWork ;
+    rdfs:comment "Stamp in documents"@en ;
     rdfs:label "Stamp "@en ;
-    rdfs:comment "Stamp in documents"@en .
+    rdfs:subClassOf schema:CreativeWork .
 
 mdhn:Place a rdfs:Class ;
-    rdfs:subClassOf schema:Place ;
+    rdfs:comment "Local scoped controlled vocabulary for places. Can be reconciled with TGN later."@en ;
     rdfs:label "Place (local controlled vocabulary)"@en ;
-    rdfs:comment "Local scoped controlled vocabulary for places. Can be reconciled with TGN later."@en .
+    rdfs:subClassOf schema:Place .
 
 mdhn:TechnicalTerm a rdfs:Class ;
-    rdfs:subClassOf skos:Concept ;
+    rdfs:comment "Local scoped controlled vocabulary for technical/juridical terms. Can be reconciled with AAT later."@en ;
     rdfs:label "Technical Term (local controlled vocabulary)"@en ;
-    rdfs:comment "Local scoped controlled vocabulary for technical/juridical terms. Can be reconciled with AAT later."@en .
+    rdfs:subClassOf skos:Concept .
 
-# ==============================================
-# Properties for Documents
-# ==============================================
 mdhn:documentId a owl:DatatypeProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range xsd:string ;
-    rdfs:label "Ghani ID (e.g. GI 49, G III A 45)"@en .
+    rdfs:label "Ghani ID (e.g. GI 49, G III A 45)"@en ;
+    rdfs:range xsd:string .
 
 mdhn:category a owl:DatatypeProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range xsd:string ;
-    rdfs:label "G-series category (GI, GII, GIX, etc.)"@en .
+    rdfs:label "G-series category (GI, GII, GIX, etc.)"@en ;
+    rdfs:range xsd:string .
 
 mdhn:description a owl:DatatypeProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range xsd:string ;
-    rdfs:label "English description from Yale table"@en .
+    rdfs:label "English description from Yale table"@en ;
+    rdfs:range xsd:string .
 
 mdhn:transcription a owl:DatatypeProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range xsd:string ;
-    rdfs:label "Full Persian transcription"@fa .
+    rdfs:label "Full Persian transcription"@fa ;
+    rdfs:range xsd:string .
 
 mdhn:mentionsPersonality a owl:ObjectProperty ;
+    rdfs:label "mentionsPersonality"@en;                         
     rdfs:domain mdhn:Document ;
-    rdfs:range mdhn:Personality ;
-    rdfs:label "Mentions personality"@en .
+    rdfs:label "Mentions personality"@en ;
+    rdfs:range mdhn:Personality .
+
+mdhn:PersonMentionedIn a owl:ObjectProperty;
+                 rdfs:label "PersonMentionedIn"@en;
+                 rdfs:domain mdhn:Personality;
+                 rdfs:range mdhn:Document;
+                 owl:inverseOf mdhn:mentionsPersonality.
 
 mdhn:mentionsPlace a owl:ObjectProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range mdhn:Place ;
-    rdfs:label "Mentions place"@en .
+    rdfs:label "Mentions place"@en ;
+    rdfs:range mdhn:Place .
+
+mdhn:PlaceMentionedIn a owl:ObjectProperty;
+                 rdfs:label "PlaceMentionedIn"@en;
+                 rdfs:domain mdhn:Place;
+                 rdfs:range mdhn:Document;
+                 owl:inverseOf mdhn:mentionsPlace.
 
 mdhn:hasTechnicalTerm a owl:ObjectProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range mdhn:TechnicalTerm ;
-    rdfs:label "Has technical term"@en .
+    rdfs:label "Has technical term"@en ;
+    rdfs:range mdhn:TechnicalTerm .
+
+mdhn:termUsedIn a owl:ObjectProperty;
+                 rdfs:label "termUsedIn"@en;
+                 rdfs:domain mdhn:TechnicalTerm;
+                 rdfs:range mdhn:Document;
+                 owl:inverseOf mdhn:hasTechnicalTerm.
 
 mdhn:hasStamp a owl:ObjectProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range mdhn:Stamp ;
-    rdfs:label "Has stamp"@en .
+    rdfs:label "Has stamp"@en ;
+    rdfs:range mdhn:Stamp .
+
+mdhn:appearInDocument a owl:ObjectProperty;
+                 rdfs:label "appearInDocument"@en;
+                 rdfs:domain mdhn:Stamp;
+                 rdfs:range mdhn:Document;
+                 owl:inverseOf mdhn:hasStamp.
 
 mdhn:hasRepresents a owl:ObjectProperty ;
     rdfs:domain mdhn:Stamp ;
-    rdfs:range mdhn:Personality ;
-    rdfs:label "hasRepresents"@en .    
+    rdfs:label "hasRepresents"@en ;
+    rdfs:range mdhn:Personality .
+mdhn:ownerOf a owl:ObjectProperty;
+                 rdfs:label "ownerOf"@en;
+                 rdfs:domain mdhn:Personality;
+                 rdfs:range mdhn:Stamp;
+                 owl:inverseOf mdhn:hasRepresents.
 
 mdhn:chronology a owl:ObjectProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range time:ProperInterval ;
-    rdfs:label "Temporal interval (often AH/AD range)"@en .
+    rdfs:label "Temporal interval (often AH/AD range)"@en ;
+    rdfs:range time:ProperInterval .
 
 mdhn:originalYaleURL a owl:ObjectProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range rdfs:Resource ;
-    rdfs:label "Original Yale detail page URL"@en .
+    rdfs:label "Original Yale detail page URL"@en ;
+    rdfs:range rdfs:Resource .
 
 mdhn:pdfURL a owl:ObjectProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range rdfs:Resource ;
-    rdfs:label "Local or Internet Archive PDF URL"@en .
+    rdfs:label "Local or Internet Archive PDF URL"@en ;
+    rdfs:range rdfs:Resource .
 
 mdhn:pdfSha256 a owl:DatatypeProperty ;
     rdfs:domain mdhn:Document ;
-    rdfs:range xsd:string ;
-    rdfs:label "SHA-256 hash of the transcription PDF"@en .
+    rdfs:label "SHA-256 hash of the transcription PDF"@en ;
+    rdfs:range xsd:string .
 
 mdhn:iiifManifest a owl:ObjectProperty ;
+    rdfs:comment "Placeholder for the IIIF manifest that will be uploaded to Internet Archive later. Use the same item ID as the IA record."@en ;
     rdfs:domain mdhn:Document ;
-    rdfs:range rdfs:Resource ;
     rdfs:label "IIIF Manifest URL"@en ;
-    rdfs:comment "Placeholder for the IIIF manifest that will be uploaded to Internet Archive later. Use the same item ID as the IA record."@en .
+    rdfs:range rdfs:Resource .
 
-# ==============================================
-# Reconciliation hooks for local controlled vocabularies
-# ==============================================
 mdhn:reconciledWikidata a owl:ObjectProperty ;
-    rdfs:domain mdhn:Personality, mdhn:Place, mdhn:TechnicalTerm ;
-    rdfs:range owl:Thing ;
-    rdfs:label "Reconciled with Wikidata (optional)"@en .
+    rdfs:domain mdhn:Personality , mdhn:Place , mdhn:TechnicalTerm ;
+    rdfs:label "Reconciled with Wikidata (optional)"@en ;
+    rdfs:range owl:Thing .
 
 mdhn:reconciledTGN a owl:ObjectProperty ;
     rdfs:domain mdhn:Place ;
@@ -137,18 +163,18 @@ mdhn:reconciledAAT a owl:ObjectProperty ;
     rdfs:domain mdhn:TechnicalTerm ;
     rdfs:label "Reconciled with Getty AAT (optional)"@en .
 
-# ==============================================
-# Example instance
-# ==============================================
-<https://github.com/mehrandhn/ghani-persian-kg/document/GI_049> a mdhn:Document ;
-    mdhn:documentId "GI 49" ;
+doc:GI_049 a mdhn:Document ;
     mdhn:category "GI" ;
+    mdhn:chronology [
+        a time:ProperInterval ;
+        time:hasBeginning "1830"^^xsd:gYear
+    ] ;
     mdhn:description "Sample English summary from Yale table"@en ;
-    mdhn:transcription "فدایت شوم جمعی از دوستان ..."@fa ;
-    mdhn:mentionsPersonality <https://github.com/mehrandhn/ghani-persian-kg/person/mirza_aqasi> ;
-    mdhn:mentionsPlace <https://github.com/mehrandhn/ghani-persian-kg/place/shams_abad> ;
-    mdhn:hasTechnicalTerm <https://github.com/mehrandhn/ghani-persian-kg/term/juridical_case> ;
-    mdhn:chronology [ a time:ProperInterval ; time:hasBeginning "1830"^^xsd:gYear ] ;
+    mdhn:documentId "GI 49" ;
+    mdhn:hasTechnicalTerm cvoc:juridical_case ;
+    mdhn:iiifManifest <https://archive.org/details/ghani_GI_049/manifest.json> ;
+    mdhn:mentionsPersonality person:mirza_aqasi ;
+    mdhn:mentionsPlace place:shams_abad ;
     mdhn:originalYaleURL <https://ghani.macmillan.yale.edu/gi-49> ;
     mdhn:pdfSha256 "a1b2c3d4e5f6..." ;
-    mdhn:iiifManifest <https://archive.org/details/ghani_GI_049/manifest.json> .
+    mdhn:transcription "فدایت شوم جمعی از دوستان ..."@fa .
