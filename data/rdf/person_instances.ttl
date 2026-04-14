@@ -1,0 +1,1508 @@
+@prefix : <https://github.com/mehrandhn/ghani-persian-kg/> .
+@prefix mdhn: <https://github.com/mehrandhn/ghani-persian-kg/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix fhkb: <https://github.com/mehrandhn/genealogy.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2008/05/skos#> .
+@prefix so: <https://schema.org/> .
+@prefix tgm: <http://id.loc.gov/vocabulary/graphicMaterials/> .
+@prefix tgn: <http://vocab.getty.edu/tgn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mdhn:Naser_al_Din_Shah_Qajar a fhkb:Man ;
+   fhkb:hasSon mdhn:Masoud_Mirza_Zel_Ol_Soltan, 
+               mdhn:Mozaffar_ad_Din_Shah_Qajar, 
+               mdhn:Kamran_Mirza_Nayeb_Ol_Saltaneh;
+   fhkb:hasDaughter mdhn:Esmat_Ol_Dowle, mdhn:Taj_Ol_Saltaneh, mdhn:Forogh_Ol_Dowleh, mdhn:Akhtar_Ol_Dowleh, mdhn:Fakhr_Ol_Dowleh;
+   rdfs:label "Naser al-Din Shah Qajar"@en, "ناصرالدين شاه قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q159416" .
+
+mdhn:Mirza_Ali_Asghar_Khan_Amin_Ol_Soltan a fhkb:Man ;
+   rdfs:label "Mirza Ali Asghar Khan Amin Ol Soltan"@en, "ميرزا علی اصغر خان امين السلطان"@fa;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q957636" .
+
+mdhn:Ali_Akbar_Khan_Nayeb_Nazer a fhkb:Man ;
+   rdfs:label "Ali Akbar Khan Nayeb Nazer"@en, "علی اکبر خان نايب ناظر"@fa;   
+   mdhn:agentialWikiData "" .  
+
+mdhn:Teymour_Mirza_Qajar a fhkb:Man ;
+   rdfs:label "Teymour Mirza Qajar"@en, "تيمور ميرزا قاجار"@fa;   
+   mdhn:agentialWikiData "" . 
+
+mdhn:Shaykh_Haydar a fhkb:Man ;
+   rdfs:label "Shaykh Haydar"@en, "شيخ حيدر"@fa; 
+   fhkb:hasSon  mdhn:Ismail_Safavid_I;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3119243" . 
+mdhn:Ismail_Safavid_I a fhkb:Man ;
+   rdfs:label "Tahmasp Safavid I"@en, "شاه اسماعيل اول"@fa; 
+   fhkb:hasSon  mdhn:Tahmasp_Safavid_I;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q214559" . 
+mdhn:Tahmasp_Safavid_I a fhkb:Man ;
+   rdfs:label "Tahmasp Safavid I"@en, "شاه طهماسب"@fa; 
+   fhkb:hasSon  mdhn:Ismail_Safavid_II;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q298410" . 
+mdhn:Ismail_Safavid_II a fhkb:Man ;
+   rdfs:label "Ismail Safavid II"@en, "شاه اسماعيل ثانی"@fa;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q123088" .        
+   
+mdhn:Asadollah_Khan_Sarkarde a fhkb:Man ;
+   rdfs:label "Asadollah Khan Sarkarde Savare Delikanloo"@en, "اسداله خان سرکرده سواره دلیکانلو"@fa;   
+   mdhn:agentialWikiData "" .  
+ 
+mdhn:Nasrodolle_Amir_Tooman a fhkb:Man ;
+   rdfs:label "Nasrodolle Amir Tooman"@en, "نصرالدوله امير تومان"@fa;   
+   mdhn:agentialWikiData "" .  
+
+mdhn:Najaf_Quli_Khan_Mirpanj a fhkb:Man ;
+   rdfs:label "Najaf Quli Khan Mirpanj"@en, "نجفقلی خان ميرپنج"@fa;   
+   mdhn:agentialWikiData "" .  
+
+mdhn:Ezzatollah_Khan_Mirpanj a fhkb:Man ;
+   rdfs:label "Ezzatollah Khan Mirpanj"@en, "عزت الله خان ميرپنج"@fa;   
+   mdhn:agentialWikiData "" .
+
+mdhn:Ghader_Agha_Mirpanj a fhkb:Man ;
+   rdfs:label "Ghader Agha Mirpanj"@en, "قادر آقا ميرپنج"@fa;   
+   mdhn:agentialWikiData "" .   
+
+mdhn:Maroof_Agha_Mangor a fhkb:Man ;
+   rdfs:label "Maroof Agha Mangor"@en, "معروف آقا منگور"@fa;   
+   mdhn:agentialWikiData "" .
+mdhn:Abdolrahman_Agha_Mangor a fhkb:Man ;
+   rdfs:label "Abdolrahman Agha Mangor"@en, "عبدالرحمن آقا منگور"@fa;   
+   mdhn:agentialWikiData "" . 
+
+mdhn:Hamze_Agha_Mangor a fhkb:Man ;
+   rdfs:label "Hamze Agha Mangor"@en, "حمزه آقا منگور"@fa;   
+   mdhn:agentialWikiData "" . 
+mdhn:Hassan_Agha_Mangor a fhkb:Man ;
+   rdfs:label "Hassan Agha Mangor"@en, "حسن آقا منگور"@fa;   
+   mdhn:agentialWikiData "" .  
+
+mdhn:Abdollah_Beik_Pishkar a fhkb:Man ;
+   rdfs:label "Abdollah Beik Pishkar"@en, "عبدالله بيک پيشکار"@fa;   
+   mdhn:agentialWikiData "" .                       
+mdhn:Ahmad_Beik a fhkb:Man ;
+   rdfs:label "Ahmad Beik"@en, "احمد بیک"@fa;   
+   mdhn:agentialWikiData "" . 
+mdhn:Darvish_Beik a fhkb:Man ;
+   rdfs:label "Darvish Beik"@en, "درویش بیک"@fa;   
+   mdhn:agentialWikiData "" . 
+mdhn:Mirza_Yoosef_Moshir_Divan a fhkb:Man ;
+   rdfs:label "Mirza Yoosef Moshir Divan"@en, "میرزا یوسف مشیر دیوان"@fa;   
+   mdhn:agentialWikiData "" .          
+
+mdhn:Hossein_Quli_Khan_Sartip a fhkb:Man ;
+   rdfs:label "Hossein Quli Khan Sartip"@en, "حسینقلی خان سرتیپ"@fa;   
+   mdhn:agentialWikiData "" . 
+
+mdhn:Ghader_Agha a fhkb:Man ;
+   rdfs:label "Ghader Agha"@en, "قادر آقا"@fa;   
+   fhkb:isFatherOf mdhn:Ali_Agha;
+   mdhn:agentialWikiData "" . 
+
+mdhn:Hassan_Agha a fhkb:Man ;
+   rdfs:label "Hassan Agha"@en, "حسن آقا"@fa; 
+   fhkb:isBrotherOf  mdhn:Ghader_Agha; 
+   mdhn:agentialWikiData "" .  
+
+mdhn:Ali_Agha a fhkb:Man ;
+   rdfs:label "Hassan Agha"@en, "علی آقا"@fa;  
+   mdhn:agentialWikiData "" .           
+
+mdhn:Behjatolmolk_Amir_Tooman a fhkb:Man ;
+   rdfs:label "Behjatolmolk Amir Tooman"@en, "بهجت الملک اميرتومان"@fa; 
+   mdhn:agentialWikiData "" .
+
+mdhn:Mirza_Mahmood_Egbal a fhkb:Man ;
+   rdfs:label "Mirza Mahmood Eghbal"@en, "ميرزا محمود اقبال"@fa; 
+   mdhn:agentialWikiData "" . 
+
+mdhn:Mirza_Mahmood_Ghaffari a fhkb:Man ;
+   rdfs:label "Mirza Mahmood Ghaffari"@en, "ميرزا محمود غفاری"@fa; 
+   fhkb:hasSon mdhn:Mirza_Abolhassan_Khan_Ghaffari;
+   fhkb:isBrotherOf mdhn:Mirza_Bozorg_Ghaffari;
+   mdhn:agentialWikiData "" .    
+
+mdhn:Mirza_Bozorg_Ghaffari a fhkb:Man ;
+   rdfs:label "Mirza Bozorg Ghaffari"@en, "میرزا بزرگ غفاری"@fa;    
+   fhkb:hasSon mdhn:Mohammad_Ghaffari_Kamal_Ol_Molk, mdhn:Abu_Torab_Ghaffari;
+   mdhn:agentialWikiData "" . 
+
+mdhn:Hajie_Maryam_beygom a fhkb:Woman ;
+   rdfs:label "Hajie Maryam beygom"@en, "حاجی مريم بیگم"@fa;    
+   fhkb:isSpouseOf mdhn:Mirza_Bozorg_Ghaffari;
+   fhkb:isMotherOf mdhn:Mohammad_Ghaffari_Kamal_Ol_Molk, mdhn:Abu_Torab_Ghaffari;
+   mdhn:agentialWikiData "" . 
+
+mdhn:Mohammad_Ghaffari_Kamal_Ol_Molk a fhkb:Man ;
+   rdfs:label "Mohammad Ghaffari Kamal Ol Molk"@en, "محمد غفاری کمال الملک"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1659496" . 
+
+mdhn:Abu_Torab_Ghaffari a fhkb:Man ;
+   rdfs:label "Abu Torab Ghaffari"@en, "ابوتراب غفاری"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q17991176" .  
+
+mdhn:Mirza_Mohammad_Reza_Kalhor a fhkb:Man ;
+   rdfs:label "Mirza Mohammad Reza Kalhor"@en, "میرزا محمد رضا کلهر"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3606489" .            
+
+mdhn:AbdolHossein_Mirza_Farmanfarma  a fhkb:Man ;
+   rdfs:label "AbdolHossein Mirza Farmanfarma"@en, "عبدالحسين ميرزا فرمانفرما"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q308243" .   
+
+mdhn:Amir_Nezam  a fhkb:Man ;
+   rdfs:label "Amir Nezam"@en, "امير نظام"@fa;    
+   mdhn:agentialWikiData "" .     
+
+mdhn:Amir_Tooman  a fhkb:Man ;
+   rdfs:label "Amir Tooman"@en, "امير تومان"@fa;    
+   mdhn:agentialWikiData "" . 
+
+mdhn:Qhasem_Khan_Sartip  a fhkb:Man ;
+   rdfs:label "Qhasem Khan Sartip"@en, "قاسم خان سرتيپ"@fa;    
+   mdhn:agentialWikiData "" .       
+
+mdhn:Abdol_Hossein_Khan  a fhkb:Man ;
+   rdfs:label "Abdol Hossein Khan"@en, "عبدالحسين خان"@fa;    
+   mdhn:agentialWikiData "" .      
+
+mdhn:Amin_Aghdas  a fhkb:Woman ;
+   rdfs:label "Amin Aghdas"@en, "امين اقدس"@fa;    
+   mdhn:agentialWikiData "" .   
+
+mdhn:Mehdi_Khan_Vazir_Homayoon  a fhkb:Man ;
+   rdfs:label "Mehdi Khan Vazir Homayoon"@en, "مهديخان وزير همايون"@fa; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5712723" .      
+
+mdhn:Kamran_Mirza_Nayeb_Ol_Saltaneh  a fhkb:Man ;
+   rdfs:label "Kamran Mirza Nayeb Ol Saltaneh"@en, "کامران ميرزا نايب السلطنه"@fa ;   
+   fhkb:hasDaughter mdhn:Malekeh_Jahan, mdhn:Maasoomeh_Khanoom; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q698708" . 
+
+mdhn:Maasoomeh_Khanoom a fhkb:Woman ;
+   rdfs:label "Maasoomeh_Khanoom"@en, "معصومه خانم"@fa ;  
+   fhkb:isSpouseOf mdhn:Mehdi_Gholi_Khan_Majd_Ol_Dawleh;        
+   mdhn:agentialWikiData "" .      
+
+mdhn:Masoud_Mirza_Zel_Ol_Soltan a fhkb:Man ;
+   rdfs:label "Masoud Mirza Zel Ol Soltan"@en, "مسعود ميرزا ظل السلطان"@fa ;     
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2135219" .   
+
+    
+mdhn:Mirza_Ibrahim_Ghaffari a fhkb:Man ;
+   rdfs:label "Mirza Ibrahim Ghaffari"@en, "ميرزا ابراهيم غفاری"@fa ;     
+   mdhn:agentialWikiData "" . 
+
+mdhn:Mozaffar_ad_Din_Shah_Qajar a fhkb:Man ;
+   rdfs:label "Mozaffar ad-Din Shah Qajar"@en, "مظفرالدين شاه قاجار"@fa ; 
+   fhkb:hasSon mdhn:Mohammad_Ali_Shah_Qajar;  
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q467021" .
+
+mdhn:Mohammad_Ali_Shah_Qajar a fhkb:Man ;
+   rdfs:label "Mohammad Ali Shah Qajar"@en, "محمد علی شاه قاجار"@fa ; 
+   fhkb:hasSon mdhn:Abolfath_Mirza_Salar_Ol_Dowle, mdhn:Ahmad_Shah_Qajar, mdhn:Mahmoud_Mirza, mdhn:Mohammad_Hassan_Mirza;       
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q355603" . 
+
+mdhn:Ahmad_Shah_Qajar a fhkb:Man ;
+   rdfs:label "Ahmad Shah Qajar"@en, "احمد شاه قاجار"@fa ;     
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q317799" .       
+
+mdhn:Abolfath_Mirza_Salar_Ol_Dowle a fhkb:Man ;
+   rdfs:label "Abolfath Mirza Salar Ol Dowle"@en, "ابوالفتح میرزا سالارالدوله"@fa ;     
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3827351" . 
+
+mdhn:Mahmoud_Mirza a fhkb:Man ;
+   rdfs:label "Mahmoud Mirza"@en, "محمود ميرزا"@fa ;     
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6734382" .   
+
+mdhn:Mohammad_Hassan_Mirza a fhkb:Man ;
+   rdfs:label "Mohammad Hassan  Mirza"@en, "محمد حسن ميرزا"@fa ;     
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2629460" .    
+
+mdhn:Malekeh_Jahan a fhkb:Woman ;
+   rdfs:label "Malekeh Jahan"@en, "ملکه جهان"@fa ; 
+   fhkb:isMotherOf mdhn:Abolfath_Mirza_Salar_Ol_Dowle, mdhn:Ahmad_Shah_Qajar, mdhn:Mahmoud_Mirza, mdhn:Mohammad_Hassan_Mirza;   
+   fhkb:isSpouseOf mdhn:Mohammad_Ali_Shah_Qajar;        
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6743057" .  
+         
+
+mdhn:Esmat_Ol_Dowle a fhkb:Woman ;
+   rdfs:label "Esmat Ol Dowle"@en, "عصمت الدوله"@fa ;     
+   mdhn:agentialWikiData "" .   
+
+mdhn:Taj_Ol_Saltaneh a fhkb:Woman ;
+   rdfs:label "Taj Ol Saltaneh"@en, "تاج السلطنه"@fa ;     
+   mdhn:agentialWikiData "" .  
+
+mdhn:Forogh_Ol_Molk a fhkb:Woman ;
+   rdfs:label "Forogh_Ol_Molk"@en, "فروغ الملک"@fa ;     
+   mdhn:agentialWikiData "" .     
+
+
+mdhn:Forogh_Ol_Dowleh a fhkb:Woman ;
+   rdfs:label "Monir al-Saltaneh"@en, "فروغ الدوله"@fa ;  
+   fhkb:isMotherOf mdhn:Forogh_Ol_Molk;  
+   fhkb:isSpouseOf mdhn:Ali_Khan_Zahir_Ol_Dawleh;   
+   mdhn:agentialWikiData "" . 
+
+mdhn:Taj_Ol_Saltaneh a fhkb:Woman ;
+   rdfs:label "Taj Ol Saltaneh"@en, "تاج السلطنه"@fa ;     
+   mdhn:agentialWikiData "" . 
+
+mdhn:Fakhr_Ol_Dowleh a fhkb:Woman ;
+   rdfs:label "Fakhr Ol Dowleh"@en, "فخر الدوله"@fa ; 
+   fhkb:isSpouseOf mdhn:Mehdi_Gholi_Khan_Majd_Ol_Dawleh;   
+   mdhn:agentialWikiData "" .         
+
+mdhn:Akhtar_Ol_Dowleh a fhkb:Woman ;
+   rdfs:label "Akhtar Ol Dowleh"@en, "اختر الدوله"@fa ;   
+   fhkb:isSpouseOf mdhn:Gholam_Ali_Khan_Aziz_Ol_Soltan;        
+   mdhn:agentialWikiData "" . 
+
+
+mdhn:Ezzat_ed_Dowleh a fhkb:Woman ;
+   rdfs:label "Ezzat ed-Dowleh"@en, "عزت الدوله"@fa ;  
+   fhkb:isSisterOf mdhn:Naser_al_Din_Shah_Qajar;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5944064" .   
+
+mdhn:Golin_Khanum a fhkb:Woman ;
+   rdfs:label "Golin Khanum"@en, "گلين خانم"@fa ;  
+   fhkb:isSpouseOf mdhn:Naser_al_Din_Shah_Qajar;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q16046652" .   
+
+mdhn:Anis_al_Dowleh a fhkb:Woman ;
+   rdfs:label "Anis-al-Dowleh"@en, "انيس الدوله"@fa ;  
+   fhkb:isSpouseOf mdhn:Naser_al_Din_Shah_Qajar;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5959859" .
+
+   mdhn:Taj_al_Dawleh a fhkb:Woman ;
+   rdfs:label "Taj al-Dawleh"@en, "تاج الدوله"@fa ;  
+   fhkb:isSpouseOf mdhn:Naser_al_Din_Shah_Qajar;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q112166730" .  
+
+mdhn:Malek_Jahan_Khanom a fhkb:Woman ;
+   rdfs:label "Malek Jahan Khanom"@en, "ملک جهان خانم مهد عليا"@fa ;
+   fhkb:isSpouseOf mdhn:Mohammad_Shah_Qajar;  
+   fhkb:isMotherOf mdhn:Naser_al_Din_Shah_Qajar,mdhn:Ezzat_ed_Dowleh;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1115569" . 
+mdhn:Jeiran a fhkb:Woman ;
+   rdfs:label "Jeiran"@en, "جيران"@fa ;  
+   fhkb:isSpouseOf mdhn:Naser_al_Din_Shah_Qajar;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q11257081" .  
+
+mdhn:Shokooh_al_Saltanah a fhkb:Woman ;
+   rdfs:label "Shokooh al-Saltanah"@en, "شکوه السلطنه"@fa ;  
+   fhkb:isMotherOf mdhn:Mozaffar_ad_Din_Shah_Qajar;   
+   fhkb:isSpouseOf mdhn:Naser_al_Din_Shah_Qajar;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q11257081" .               
+
+mdhn:Navvab_Jahansooz_Mirza  a fhkb:Man ;
+   rdfs:label "Navvab Jahansooz Mirza"@en, "نواب جهانسوز ميرزا"@fa;    
+   mdhn:agentialWikiData "" .    
+
+mdhn:Asad_Roodbari  a fhkb:Man ;
+   rdfs:label "Asad Roodbari"@en, "اسد رودباری"@fa;    
+   mdhn:agentialWikiData "" .   
+
+mdhn:Asef_Divan  a fhkb:Man ;
+   rdfs:label "Asef Divan"@en, "آصف ديوان"@fa;    
+   mdhn:agentialWikiData "" . 
+
+mdhn:Haj_Fazlali_Khan_Sartip  a fhkb:Man ;
+   rdfs:label "Haj Fazlali Khan Sartip"@en, "حاج فضلعلی خان سرتيپ"@fa;    
+   mdhn:agentialWikiData "" .   
+mdhn:Faramarz_Khan_Sarhang  a fhkb:Man ;
+   rdfs:label "Faramarz Khan Sarhang"@en, "فرامرز خان سرهنگ"@fa;    
+   mdhn:agentialWikiData "" . 
+
+mdhn:Javad_Khan_Sartip  a fhkb:Man ;
+   rdfs:label "Javad Khan Sartip"@en, "جواد خان سرتيپ"@fa;    
+   mdhn:agentialWikiData "" . 
+
+mdhn:Soleiman_Khan_Sartip  a fhkb:Man ;
+   rdfs:label "Soleiman Khan Sartip"@en, "سليمان خان سرتيپ"@fa;    
+   mdhn:agentialWikiData "" .  
+
+mdhn:Soleiman_Mirza_Sartip  a fhkb:Man ;
+   rdfs:label "Soleiman Mirza Sartip"@en, "سليمان ميرزا سرتيپ"@fa;    
+   mdhn:agentialWikiData "" .    
+
+mdhn:Mofti_Of_Savejbolagh  a fhkb:Man ;
+   rdfs:label "Mofti Of Savejbolagh"@en, "مفتی ساوجبلاغ"@fa;    
+   mdhn:agentialWikiData "" .    
+
+mdhn:Gholam_Ali_Khan_Aziz_Ol_Soltan  a fhkb:Man ;
+   rdfs:label "Gholam Ali Khan Aziz Ol Soltan"@en, "غلامعلی خان عزيز السلطان مليجک ثانی"@fa; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q106328654" .     
+
+mdhn:Mirza_Abdolvahhab_Khan_Nezam_Ol_Molk  a fhkb:Man ;
+   rdfs:label "Mirza_Abdolvahhab_Khan_Nezam_Ol_Molk"@en, "ميرزا عبدالوهاب خان نظام الملک"@fa; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q106328654" .  
+
+mdhn:Aghabala_Khan_Moein_Nezam_Sardar_Afkham a fhkb:Man ;
+   rdfs:label "Aghabala Khan Moein Nezam Sardar Afkham"@en, "آقابالا خان معين نظام سردار افخم"@fa;    
+   mdhn:agentialWikiData "" .  
+
+mdhn:Mohammad_Hassan_Khan_Etemad_Ol_Saltaneh  a fhkb:Man ;
+   rdfs:label "Mohammad Hassan Khan Etemad Ol Saltaneh"@en, "محمد حسن خان اعتماد السلطنه"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6402232" . 
+
+mdhn:Ali_Khan_Zahir_Ol_Dawleh  a fhkb:Man ;
+   rdfs:label "Ali Khan Zahir Ol Dawleh"@en, "علی خان ظهير الدوله"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6406106" . 
+
+mdhn:Haj_Esmaeeil_Yazdi  a fhkb:Man ;
+   rdfs:label "Haj Esmaeeil Yazdi"@en, "حاج اسماعيل يزدی"@fa;    
+   mdhn:agentialWikiData "" .   
+
+mdhn:King_Of_Bukhara  a fhkb:Man ;
+   rdfs:label "King Of The Bukhara"@en, "پادشاه بخارا"@fa;    
+   mdhn:agentialWikiData "" . 
+
+mdhn:Mohammad_Hussayn_Mirza a fhkb:Man ;
+   rdfs:label "Mohammad_Hussayn_Mirza"@en, "محمد حسين ميرزا ميرآخور"@fa;    
+   mdhn:agentialWikiData "" .    
+
+   
+
+mdhn:Mirza_Nasrullah_Khan_Naeeni  a fhkb:Man ;
+   rdfs:label "Mirza Nasrullah Khan Naeeni"@en, "ميرزا نصرالله خان نائينی"@fa;    
+   mdhn:agentialWikiData "" .   
+
+
+mdhn:Isa_Khan_Etemad_Ol_Dawleh a fhkb:Man;
+   rdfs:label "Isa Khan Etemad Ol Dawleh"@en, "عيسی خان اعتماد الدوله"@fa ;
+   fhkb:hasSon mdhn:Mehdi_Gholi_Khan_Majd_Ol_Dawleh;
+   fhkb:isBrotherOf mdhn:Malek_Jahan_Khanom;   
+   mdhn:agentialWikidata "" .
+   
+mdhn:Mehdi_Gholi_Khan_Majd_Ol_Dawleh a fhkb:Man;
+   rdfs:label "Mehdi Gholi Khan Majd Ol Dawleh"@en, "مهدی قليخان مجدالدوله"@fa ;
+   fhkb:hasDaughter mdhn:Soroor_Aghdas;
+   mdhn:agentialWikidata "" .
+
+mdhn:Soroor_Aghdas  a fhkb:Woman ;
+   rdfs:label "Soroor Aghdas"@en, "سرور اقدس"@fa;    
+   mdhn:agentialWikiData "" .  
+
+
+mdhn:Mohammad_Hossein_Mirza_Mir_Akhor  a fhkb:Man ;
+   rdfs:label "Mohammad Hossein Mirza Mir Akhor"@en, "محمد حسين ميرزا ميرآخور"@fa;    
+   mdhn:agentialWikiData "" . 
+
+mdhn:Abbas_Mirza_Malek_Ara  a fhkb:Man ;
+   rdfs:label "Abbas Mirza Malek Ara"@en, "عباس ميرزا ملک آرا"@fa;  
+   fhkb:isBrotherOf mdhn:Naser_al_Din_Shah_Qajar;  
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5868493" .   
+
+mdhn:Khadije_Khanoom_Jahrighi  a fhkb:Woman ;
+   rdfs:label "Khadije Khanoom Jahrighi"@en, "خديجه خانم جهريقی"@fa;    
+   fhkb:isMotherOf mdhn:Abbas_Mirza_Malek_Ara;
+   mdhn:agentialWikiData "" .  
+
+mdhn:Khosro_Khan_Sardar_Zafar_Bakhtiari  a fhkb:Man ;
+   rdfs:label "Khosro Khan Sardar Zafar Bakhtiari"@en, "خسرو خان سردار ظفر بختياری"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5960254" .           
+
+mdhn:Boris_Zakharovic_Shumyatsky  a fhkb:Man ;
+   rdfs:label "Boris Zakharovich Shumyatsky"@en, "بوريس زاخوويچ شومياتسکی"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q742774" .  
+
+mdhn:Reza_Shah_Pahlavi a fhkb:Man ;
+   rdfs:label "Reza Shah Pahlavi"@en, "رضا شاه پهلوی"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q182921" . 
+
+mdhn:Hassan_Ali_Khan_Garusi_Amir_Lashgar a fhkb:Man ;
+   rdfs:label "Hassan Ali Khan Garusi Amir Lashgar"@en, "حسن علی خان گروسی امير لشگر"@fa;    
+   mdhn:agentialWikiData "" . 
+
+mdhn:Mohammad_Ali_Foroughi a fhkb:Man ;
+   rdfs:label "Mohammad Ali Foroughi"@en, "محمد علی فروغی ذکاءالملک"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q181451" .  
+
+mdhn:Antoin_Sevruguin a fhkb:Man ;
+   rdfs:label "Antoin Sevruguin"@en, "آنتوان سوريوگين"@fa;   
+   fhkb:hasSon  mdhn:Andre_Sevruguin;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q382319" .  
+
+mdhn:Louise_Gourgenian a fhkb:Man ;
+   rdfs:label "Louise Gourgenian"@en, "لوئيس گورگنيان"@fa;  
+   fhkb:isMotherOf mdhn:Antoin_Sevruguin;         
+   mdhn:agentialWikiData "" .  
+
+mdhn:Andre_Sevruguin a fhkb:Man ;
+   rdfs:label "Andre Sevruguin"@en, "آندره سوريوگين درويش خان"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5953621" . 
+
+mdhn:Sheikh_Khazaal a fhkb:Man ;
+   rdfs:label "Seikh Khazaal"@en, "شيخ خزعل"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3771698" .   
+
+mdhn:Mirza_Yusuf_Ashtiyani_Mustawfi_al_Mamalik   a fhkb:Man ;
+   rdfs:label "Mirza Yusuf Ashtiyani Mustawfi al-Mamalik "@en, "ميرزا يوسف آشتيانی موستوفی الممالک"@fa;    
+   mdhn:agentialWikiData "" .
+
+
+   mdhn:Ernst_Hoeltzer a fhkb:Man ;
+   fhkb:hasDaughter mdhn:Karolina_Hoeltzer, mdhn:Martha_Hoeltzer, mdhn:Elise_Hoeltzer;
+   rdfs:label "Ernst Hoeltzer"@en, "ارنست هولتزر"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q122748" . 
+
+   mdhn:Maryam_Haghnazar  a fhkb:Woman ;
+   rdfs:label "Maryam Haghnazar"@en, "مريم حق نظر"@fa ;  
+   fhkb:isMotherOf mdhn:Karolina_Hoeltzer, mdhn:Martha_Hoeltzer, mdhn:Elise_Hoeltzer; 
+   fhkb:isSpouseOf mdhn:Ernst_Hoeltzer;   
+   mdhn:agentialWikiData "" . 
+
+   mdhn:Karolina_Hoeltzer  a fhkb:Woman ;
+   rdfs:label "Karolina Hoeltzer"@en, "کارولينا هولتزر"@fa ;  
+   fhkb:isMotherOf mdhn:Ricolletta_Davidkhanian, mdhn:Hildegard_Davidkhanian;  
+   fhkb:isSpouseOf mdhn:Eskandar_Khan_Davidkhanian;   
+   mdhn:agentialWikiData "" . 
+
+   mdhn:Martha_Hoeltzer  a fhkb:Woman ;
+   rdfs:label "Martha Hoeltzer"@en, "مارتا هولتزر"@fa ;  
+   mdhn:agentialWikiData "" . 
+
+mdhn:Elise_Hoeltzer  a fhkb:Woman ;
+   rdfs:label "Elise Hoeltzer"@en, "اليزه هولتزر"@fa ;    
+   mdhn:agentialWikiData "" . 
+
+mdhn:Eskandar_Khan_Davidkhanian a fhkb:Man ;
+   fhkb:hasDaughter mdhn:Ricolletta_Davidkhanian, mdhn:Hildegard_Davidkhanian;
+   rdfs:label "Eskandar Khan Davidkhanian"@en, "اسکندرخان داويدخانيان"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q108391948" . 
+
+mdhn:Ricolletta_Davidkhanian  a fhkb:Woman ;
+   rdfs:label "Ricolletta_Davidkhanian"@en, "ريکولتا داويدخانيان"@fa ;    
+   mdhn:agentialWikiData "" . 
+
+ mdhn:Hildegard_Davidkhanian  a fhkb:Woman ;
+   rdfs:label "Hildegard_Davidkhanian"@en, "هيلدگارد داويدخانيان"@fa ;    
+   mdhn:agentialWikiData "" .   
+
+
+mdhn:Moritz_Sobernheim a fhkb:Man ;
+   rdfs:label "Moritz Sobernheim"@en, "موريس سوبرنهايم"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1948058" .     
+
+mdhn:Ernst_Herzfeld a fhkb:Man ;
+   rdfs:label "Ernst_Herzfeld"@en, "ارنست هرزفلد"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q62933" .   
+
+mdhn:Fath_Ali_Khan_Qajar a fhkb:Man ;
+   owl:differentFrom mdhn:Fath_Ali_Shah_Qajar;
+   fhkb:hasSon mdhn:Mohammad_Hasan_Khan_Qajar;
+   rdfs:label "Fath Ali Khan Qajar"@en, "فتحعلی خان قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3827333" .   
+mdhn:Mohammad_Hasan_Khan_Qajar a fhkb:Man ;
+   rdfs:label "Mohammad Hasan Khan Qajar"@en, "محمد حسن خان قاجار"@fa ;  
+   fhkb:hasSon mdhn:Agha_Mohammad_Khan_Qajar, 
+               mdhn:Hossein_Qoli_Khan, 
+               mdhn:Morteza_Qoli_Khan_Qajar,
+               mdhn:Ali_Qoli_Khan_Qajar,
+               mdhn:Jafar_Qoli_Qajar;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q631658" .
+
+mdhn:Jeeran_Khanum a fhkb:Woman ;
+   fhkb:isMotherOf mdhn:Agha_Mohammad_Khan_Qajar;
+   fhkb:isSpouseOf mdhn:Mohammad_Hasan_Khan_Qajar;                            
+   rdfs:label "Jeeran Khanum"@en, "جيران خانم"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q29602729" .   
+mdhn:Ali_Qoli_Khan_Qajar a fhkb:Man ;
+   fhkb:isSiblingOf mdhn:Agha_Mohammad_Khan_Qajar,mdhn:Morteza_Qoli_Khan_Qajar;
+   rdfs:label "Ali-Qoli Khan Qajar"@en, "علی قلی خان قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q29886384" .   
+
+mdhn:Agha_Mohammad_Khan_Qajar a fhkb:Man ;
+   fhkb:isSiblingOf mdhn:Hossein_Qoli_Khan,mdhn:Morteza_Qoli_Khan_Qajar;
+   rdfs:label "Agha Mohammad Khan Qajar"@en, "آقا محمد خان قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q324974" .  
+
+mdhn:Morteza_Qoli_Khan_Qajar a fhkb:Man ;
+   fhkb:isSiblingOf mdhn:Agha_Mohammad_Khan_Qajar,mdhn:Hossein_Qoli_Khan;
+   rdfs:label "Morteza Qoli Khan Qajar"@en, "مرتضی قلی خان قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4308240" .      
+
+mdhn:Hossein_Qoli_Khan a fhkb:Man ;
+   fhkb:isSiblingOf mdhn:Agha_Mohammad_Khan_Qajar,mdhn:Morteza_Qoli_Khan_Qajar;
+   rdfs:label "Hossein Qoli Khan"@en, "حسين قلی خان"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3141002" .
+mdhn:Jafar_Qoli_Qajar a fhkb:Man ;
+   fhkb:isSiblingOf mdhn:Agha_Mohammad_Khan_Qajar,mdhn:Morteza_Qoli_Khan_Qajar;
+   rdfs:label "Jafar-Qoli Qajar"@en, "جعفر قلی خان"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6414742" .
+mdhn:Fath_Ali_Shah_Qajar a fhkb:Man ;
+   fhkb:hasSon mdhn:Abbas_Mirza, 
+               mdhn:Soltan_Ahmad_Mirza_Azod_od_Dowleh,
+               mdhn:Mohammad_Ali_Dowlatshah,
+               mdhn:Aliqoli_Mirza_Etezado_ol_Saltaneh,
+               mdhn:Mohammad_Taqi_Mirza,
+               mdhn:Hasan_Ali_Mirza,
+               mdhn:Qahraman_Mirza,
+               mdhn:Bahram_Mirza,
+               mdhn:Husayn_Ali_Mirza,
+               mdhn:Mohammad_Vali_Mirza,
+               mdhn:Soleyman_Mirza_Qajar,
+               mdhn:Parviz_Mirza,
+               mdhn:Saifullah_Mirza,
+               mdhn:Bahman_Mirza_Baha_al_Dowlah,
+               mdhn:Keykavous_Mirza,
+               mdhn:Fathollah_Mirza_Shoa_al_Saltaneh,
+               mdhn:Ali_Naqi_Mirza,
+               mdhn:Mahmud_Mirza_Qajar;
+   fhkb:hasDaughter mdhn:Omm_Salmeh,mdhn:Morassa_Khanom, mdhn:Fakhr_i_Jahan_Khanum, mdhn:Mah_Taban_Khanum ;
+   rdfs:label "Fath-Ali Shah Qajar"@en, "فتحعلی‌شاه قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q175299" .
+
+
+mdhn:Agha_Baji_Javanshir a fhkb:Woman ;
+   fhkb:isSpouseOf mdhn:Fath_Ali_Shah_Qajar;                            
+   rdfs:label "Agha Baji Javanshir"@en, "آغابیگم جوانشیر"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4056513" .  
+mdhn:Zibachehr_Khanom a fhkb:Woman ;
+   fhkb:isSpouseOf mdhn:Fath_Ali_Shah_Qajar;   
+   fhkb:hasDaughter mdhn:Omm_Salmeh;                            
+   rdfs:label "Zibachehr Khanom"@en, "زيباچهر خانم"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q109796452" .  
+
+mdhn:Maryam_Khanom a fhkb:Woman ;
+   fhkb:isSpouseOf mdhn:Fath_Ali_Shah_Qajar;   
+   fhkb:isMotherOf mdhn:Mahmud_Mirza_Qajar;                         
+   rdfs:label "Maryam Khanom"@en, "مريم خانم"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q97453517" .           
+
+mdhn:Abbas_Mirza a fhkb:Man ;
+   fhkb:hasSon mdhn:Mohammad_Shah_Qajar, 
+               mdhn:Bahram_Mirza, 
+               mdhn:Qahraman_Mirza,
+               mdhn:Khosrow_Mirza;             
+   rdfs:label "Abbas Mirza"@en, "عباس ميرزا قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q80226" .
+
+mdhn:Asiya_Khanom_Devellu a fhkb:Woman ;
+   fhkb:isMotherOf mdhn:Abbas_Mirza;
+   fhkb:isSpouseOf mdhn:Fath_Ali_Shah_Qajar;                            
+   rdfs:label "Asiya Khanom Devellu"@en, "آسيه خانم دوللو"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q61064553" .
+
+mdhn:Asiye_Khanum_Ezzeddin_Qajar a fhkb:Woman ;
+   fhkb:isMotherOf mdhn:Fath_Ali_Shah_Qajar;
+   fhkb:isSpouseOf mdhn:Hossein_Qoli_Khan, mdhn:Agha_Mohammad_Khan_Qajar;                            
+   rdfs:label "Asiye Khanum Ezzeddin Qajar"@en, "آسيه خانم عزالدين قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q85966795" .   
+
+mdhn:Galin_Khanum a fhkb:Woman ;
+   fhkb:isMotherOf mdhn:Mohammad_Shah_Qajar, mdhn:Bahram_Mirza_Qajar, mdhn:Qahraman_Mirza;
+   fhkb:isSpouseOf mdhn:Abbas_Mirza;                            
+   rdfs:label "Galin Khanum"@en, "گلين خانم"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q85978025" .
+
+mdhn:Mohammad_Shah_Qajar a fhkb:Man ;
+   fhkb:hasSon mdhn:Naser_al_Din_Shah_Qajar, 
+               mdhn:Abbas_Mirza_Malek_Ara,
+               mdhn:Abdol_samad_Mirza_Ezz_ed_Dowleh_Saloor;
+   fhkb:isBrotherOf mdhn:Bahram_Mirza_Qajar, mdhn:Bahram_Mirza, mdhn:Khosrow_Mirza;
+   fhkb:isSiblingOf mdhn:Khosrow_Mirza,mdhn:Bahram_Mirza, mdhn:Qahraman_Mirza;
+   rdfs:label "Mohammad Shah Qajar"@en, "محمد شاه قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q558231" .
+
+mdhn:Bahram_Mirza a fhkb:Man ;
+   rdfs:label "Bahram Mirza"@en, "بهرام ميرزا"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4842853" .
+
+mdhn:Khosrow_Mirza a fhkb:Man ;
+   rdfs:label "Khosrow Mirza"@en, "خسرو ميرزا"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2583094" .
+
+mdhn:Bahram_Mirza_Qajar a fhkb:Man ;
+   rdfs:label "Bahram Mirza Qajar"@en, "بهرام ميرزا قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2061781" .
+
+mdhn:Abdol_samad_Mirza_Ezz_ed_Dowleh_Saloor a fhkb:Man ;
+   rdfs:label "Abdol samad Mirza Ezz ed Dowleh Saloor"@en, "عبدالصمد میرزا عزالدوله"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4665029" .
+
+mdhn:Soltan_Ahmad_Mirza_Azod_od_Dowleh a fhkb:Man ;
+   rdfs:label "Soltan Ahmad Mirza Azod od Dowleh"@en, "سلطان احمد میرزا عضدالدوله"@fa ;   
+   mdhn:isBrotherOf mdhn:Morassa_Khanom ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5926067" .
+
+mdhn:Qahraman_Mirza a fhkb:Man ;
+   rdfs:label "Qahraman Mirza"@en, "قهرمان ميرزا"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5691615" .
+
+mdhn:Omm_Salmeh a fhkb:Woman ;
+   rdfs:label "Omm Salmeh"@en, "ام سلمه"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q17173271" .    
+
+mdhn:Mahmud_Mirza_Qajar a fhkb:Man ;
+   rdfs:label "Mahmud Mirza Qajar"@en, "محمود ميرزا قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5946297" .   
+
+mdhn:Mohammad_Ali_Dowlatshah a fhkb:Man ;
+   fhkb:isSiblingOf  mdhn:Abbas_Mirza, mdhn:Aliqoli_Mirza_Etezado_ol_Saltaneh, mdhn:Abbas_Mirza;
+   rdfs:label "Mohammad-Ali Dowlatshah"@en, "محمد علی دولتشاه"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4115138" .  
+
+mdhn:Aliqoli_Mirza_Etezado_ol_Saltaneh a fhkb:Man ;
+   fhkb:isSiblingOf  mdhn:Abbas_Mirza, mdhn:Aliqoli_Mirza_Etezado_ol_Saltaneh, mdhn:Abbas_Mirza;
+   rdfs:label "Aliqoli Mirza Etezado-ol-Saltaneh"@en, "عليقلی ميرزا اعتضادالسلطنه"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6406070" .   
+
+mdhn:Mohammad_Taqi_Mirza a fhkb:Man ;
+   rdfs:label "Mohammad Taqi Mirza"@en, "محمد تقی ميرزا"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6402103" .  
+
+mdhn:Hasan_Ali_Mirza a fhkb:Man ;
+   rdfs:label "Hasan Ali Mirza"@en, "حسن علی ميرزا"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5959334" . 
+
+mdhn:Husayn_Ali_Mirza a fhkb:Man ;
+   rdfs:label "Husayn Ali Mirza"@en, "حسين علی ميرزا"@fa ; 
+   fhkb:isSiblingOf  mdhn:Hasan_Ali_Mirza_Shudja_al_Sultana;     
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5741385" .
+
+mdhn:Badr_Jahan_Khanom a fhkb:Woman ;
+   rdfs:label "Badr Jahan Khanom"@en, "بدرجهان خانم"@fa ; 
+   fhkb:isMotherOf mdhn:Husayn_Ali_Mirza,mdhn:Hasan_Ali_Mirza_Shudja_al_Sultana;
+   fhkb:isSpouseOf mdhn:Fath_Ali_Shah_Qajar;       
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q28713585" .     
+
+mdhn:Mohammad_Vali_Mirza a fhkb:Man ;
+   rdfs:label "Mohammad Vali Mirza"@en, "محمد ولی ميرزا"@fa ;   
+   fhkb:hasSon mdhn:Mehdi_Qoli_Mirza_Qajar;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5921612" .   
+
+mdhn:Mehdi_Qoli_Mirza_Qajar a fhkb:Man ;
+   rdfs:label "Mehdi-Qoli Mirza Qajar"@en, "محمد قلی ميرزا قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q56356746" .    
+
+mdhn:Taj_ol_Dowleh a fhkb:Woman ;
+   fhkb:isMotherOf mdhn:Soltan_Ahmad_Mirza_Azod_od_Dowleh,mdhn:Morassa_Khanom;
+   fhkb:isSpouseOf mdhn:Fath_Ali_Shah_Qajar;                            
+   rdfs:label "Taj ol-Dowleh"@en, "تاج الدوله"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5955760" .  
+
+mdhn:Morassa_Khanom a fhkb:Woman ;                           
+   rdfs:label "Morassa Khanom"@en, "مرصع خانم"@fa ; 
+   fhkb:isSisterOf  mdhn:Soltan_Ahmad_Mirza_Azod_od_Dowleh;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q56365194" .  
+
+mdhn:Soleyman_Mirza_Qajar a fhkb:Man ;
+   rdfs:label "Soleyman Mirza Qajar"@en, "سليمان ميرزا قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q43374203" .      
+
+mdhn:Parviz_Mirza a fhkb:Man ;
+   rdfs:label "Parviz Mirza"@en, "پرويز ميرزا"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q56365242" .    
+
+mdhn:Saifullah_Mirza a fhkb:Man ;
+   rdfs:label "Parviz Mirza"@en, "سيف الله ميرزا"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5938046" .    
+
+mdhn:Fakhr_i_Jahan_Khanum a fhkb:Woman ;                          
+   rdfs:label "Fakhr-i Jahan Khanum"@en, "فخرجهان خانم"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5801372" .  
+
+mdhn:Bahman_Mirza_Baha_al_Dowlah a fhkb:Man ;
+   rdfs:label "Bahman Mirza Baha al-Dowlah"@en, "بهمن میرزا بهاءالدوله"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5950804" .  
+
+mdhn:Keykavous_Mirza a fhkb:Man ;
+   rdfs:label "Bahman Mirza Baha al-Dowlah"@en, "کيکاووس ميرزا"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q43374226" .     
+
+mdhn:Fathollah_Mirza_Shoa_al_Saltaneh a fhkb:Man ;
+   rdfs:label "Fathollah Mirza Shoa al-Saltaneh"@en, "فتح‌الله میرزا شعاع‌السلطنه"@fa ;  
+   fhkb:hasDaughter mdhn:Shokooh_al_Saltanah; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q10843525" . 
+
+mdhn:Hasan_Ali_Mirza_Shudja_al_Sultana a fhkb:Man ;
+   rdfs:label "Hasan Ali Mirza Shudja al-Sultana"@en, "حسنعلی میرزا شجاع‌السلطنه"@fa ;  
+   fhkb:isSiblingOf  mdhn:Husayn_Ali_Mirza;       
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q11925265" .  
+
+mdhn:Ali_Naqi_Mirza a fhkb:Man ;
+   rdfs:label "Ali-Naqi Mirza"@en, "علی‌نقی میرزا"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5930084" .  
+
+mdhn:Ernst_Herzfeld a fhkb:Man ;
+   rdfs:label "Ernst Herzfeld"@en, "ارنست هرزفلد"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q62933" .   
+
+mdhn:Eric_Schroeder a fhkb:Man ;
+   rdfs:label "Eric Schroeder"@en, "اريک شرودر"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q62933" .  
+
+mdhn:Jabir_al_Kaabi a fhkb:Man ;
+   rdfs:label "Jabir al-Kaabi"@en, "جابر کعبی"@fa ;  
+   fhkb:hasSon mdhn:Khazal_Ibn_Jabir; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q385962" .
+mdhn:Khazal_Ibn_Jabir a fhkb:Man ;
+   rdfs:label "Khazal Ibn Jabir"@en, "شيخ خزعل"@fa ; 
+   fhkb:hasSon mdhn:Abdulhamid_bin_Khazal,mdhn:Abdullah_Bin_Khazal;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3771698" .
+
+
+mdhn:Abdulhamid_bin_Khazal a fhkb:Man ;
+   rdfs:label "Abdulhamid bin Khaz'al"@en, "عبدالحميد خزعل"@fa ;   
+   mdhn:agentialWikiData "" .  
+mdhn:Abdullah_Bin_Khazal a fhkb:Man ;
+   rdfs:label "Abdullah Bin Khaz'al"@en, "عبدالله خزعل"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q29616949" .     
+
+mdhn:Mirza_Hosein_Khan_Sepahsalar a fhkb:Man ;
+   rdfs:label "Mirza Hosein Khan Sepahsalar"@en, "ميرزا حسين خان سپهسالار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q8215953" . 
+
+mdhn:Abdollah_Mirza_Qajar a fhkb:Man ;
+   rdfs:label "Abdollah Mirza Qajar"@en, "عبدالله ميرزا قاجار"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5946683"  .  
+
+mdhn:Aqa_Reza_Akasbashi a fhkb:Man ;
+   rdfs:label "Aqa Reza Akasbashi"@en, "اقا رضا عکاسباشی"@fa ;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5723240"  .      
+
+
+mdhn:Moradali_Khan_Bahvand a fhkb:Man ;
+   rdfs:label "Moradali Khan Bahvand"@en, "مراد علی خان بهاوند"@fa ;
+   fhkb:hasSon  mdhn:Abbas_Ali_Khan, mdhn:Savadkouhi; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q107483128" . 
+mdhn:Abbas_Ali_Khan a fhkb:Man ;
+   rdfs:label "Abbas Ali Khan"@en, "عباس علی خان"@fa ;
+   fhkb:hasSon  mdhn:Reza_Shah_Pahlavi; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q27037065" . 
+
+mdhn:Savadkouhi a fhkb:Man ;
+   rdfs:label "Savadkouhi"@en, "سوادکوهی"@fa ;
+   fhkb:hasDaughter mdhn:Mariam_Savadkukhi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q108933097" . 
+
+mdhn:Mariam_Savadkukhi a fhkb:Woman ;
+   rdfs:label "Mariam Savadkukhi"@en, "مريم سوادکوهی"@fa ;
+   fhkb:isSpouseOf mdhn:Reza_Shah_Pahlavi;
+   fhkb:isMotherOf mdhn:Hamdamsaltaneh_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5838557" . 
+
+mdhn:Turan_Amirsoleimani a fhkb:Woman ;
+   rdfs:label "Turan Amirsoleimani"@en, "توران اميرسليمانی"@fa ;
+   fhkb:isSpouseOf mdhn:Reza_Shah_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6415357" .   
+
+mdhn:Esmat_Dowlatshahi a fhkb:Woman ;
+   rdfs:label "Esmat Dowlatshahi"@en, "عصمت دولتشاهی"@fa ;
+   fhkb:isSpouseOf mdhn:Reza_Shah_Pahlavi;
+   fhkb:isMotherOf mdhn:Abdul_Reza_Pahlavi, mdhn:Fatemeh_Pahlavi, mdhn:Hamid_Reza_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5950446" . 
+
+mdhn:Gholam_Ali_Mirza_Dowlatshahi  a fhkb:Man ;
+   rdfs:label "Gholam Ali Mirza Dowlatshahi Mojalal Dowleh"@en, "غلامعلی ميرزا دولتشاهی مجلل الدوله"@fa ;
+   fhkb:hasDaughter mdhn:Esmat_Dowlatshahi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q65199498" .        
+
+mdhn:Noush_Afarin a fhkb:Woman ;
+   rdfs:label "Noush-Afarin"@en, "نوش آفرين"@fa ;
+   fhkb:isSpouseOf mdhn:Abbas_Ali_Khan;
+   fhkb:isMotherOf mdhn:Reza_Shah_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q55228925" .     
+
+mdhn:Tadj_ol_Molouk_of_Iran a fhkb:Woman ;
+   rdfs:label "Tadj ol-Molouk of Iran"@en, "تاج الملوک ايران"@fa ;
+   fhkb:isSpouseOf mdhn:Reza_Shah_Pahlavi;
+   fhkb:isMotherOf mdhn:Mohammad_Reza_Shah_Pahlavi, mdhn:Ashraf_Pahlavi, mdhn:Shams_Pahlavi, mdhn:Prince_Ali_Reza_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2339098" . 
+
+mdhn:Teymur_Khan_Ayromlou a fhkb:Man ;
+   rdfs:label "Teymūr Khan Ayromlou"@en, "تيمورخان آيرملو"@fa ;
+   fhkb:hasDaughter mdhn:Tadj_ol_Molouk_of_Iran;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q7708588" .          
+mdhn:Reza_Shah_Pahlavi a fhkb:Man ;
+   rdfs:label "Reza Shah"@en, "رضا شاه پهلوی"@fa ;
+   fhkb:hasSon  mdhn:Mohammad_Reza_Shah_Pahlavi, mdhn:Prince_Ali_Reza_Pahlavi, mdhn:Abdul_Reza_Pahlavi, mdhn:Hamid_Reza_Pahlavi, mdhn:Ahmad_Reza_Pahlavi;
+   fhkb:hasDaughter mdhn:Shams_Pahlavi, mdhn:Ashraf_Pahlavi, mdhn:Fatemeh_Pahlavi, mdhn:Hamdamsaltaneh_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q182921" . 
+mdhn:Mohammad_Reza_Shah_Pahlavi a fhkb:Man ;
+   rdfs:label "Mohammad Rezā Shāh Pahlavī"@en, "محمد رضا شاه پهلوی"@fa ; 
+   fhkb:hasSon  mdhn:Reza_Pahlavi, mdhn:Ali_Reza_Pahlavi; 
+   fhkb:hasDaughter mdhn:Shahnaz_Pahlavi, mdhn:Farahnaz_Pahlavi, mdhn:Leila_Pahlavi;  
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q128245" .   
+
+mdhn:Abdul_Reza_Pahlavi a fhkb:Man ;
+   rdfs:label "Abdul Reza Pahlavi"@en, "عبدالرضا پهلوی"@fa ;
+   fhkb:hasSon  mdhn:Kamyar_Pahlavi; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q639392" .
+
+mdhn:Kamyar_Pahlavi a fhkb:Man ;
+   rdfs:label "Kamyar Pahlavi"@en, "کاميار پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q109170741" .   
+
+mdhn:Hamid_Reza_Pahlavi a fhkb:Man ;
+   rdfs:label "Hamid Reza Pahlavi"@en, "حميدرضا پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6413754" .  
+
+mdhn:Fatemeh_Pahlavi a fhkb:Woman ;
+   rdfs:label "Fatemeh Pahlavi"@en, "فاطمه پهلوی"@fa ;
+   fhkb:isSpouseOf mdhn:Muhammad_Amir_Khatami;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5437886" .   
+
+mdhn:Muhammad_Amir_Khatami a fhkb:Man ;
+   rdfs:label "Muhammad Amir Khatami"@en, "محمد اميرخاتمی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5958272" .
+
+mdhn:Hamdamsaltaneh_Pahlavi a fhkb:Woman ;
+   rdfs:label "Hamdamsaltaneh Pahlavi"@en, "همدم‌السلطنه پهلوی"@fa ;
+   fhkb:isSpouseOf mdhn:Hadi_Atabay;
+   fhkb:isMotherOf mdhn:Cyrus_Atabay;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5644369" .  
+
+mdhn:Hadi_Atabay a fhkb:Man ;
+   rdfs:label "Hadi Atabay"@en, "هادی آتابای"@fa ;
+   fhkb:hasSon mdhn:Cyrus_Atabay;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5941654" .    
+
+mdhn:Cyrus_Atabay a fhkb:Man ;
+   rdfs:label "Cyrus Atabay"@en, "سيروس آتابای"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5941654" . 
+
+mdhn:Ahmad_Reza_Pahlavi a fhkb:Man ;
+   rdfs:label "Ahmad Reza Pahlavi"@en, "احمدرضا پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5939638" .   
+
+mdhn:Ashraf_Pahlavi a fhkb:Woman ;
+   rdfs:label "Ashraf Pahlavi"@en, "اشرف پهلوی"@fa ;
+   fhkb:isSpouseOf mdhn:Ali_Qavam, mdhn:Ahmad_Shafiq;
+   fhkb:isMotherOf mdhn:Shahriar_Shafiq, mdhn:Azadeh_Shafiq, mdhn:Shahram_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2419984" .  
+
+mdhn:Ali_Qavam a fhkb:Man ;
+   rdfs:label "Ali Qavam"@en, "علی قوام"@fa ;
+   fhkb:hasSon mdhn:Shahram_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q76350669" .
+
+mdhn:Shahram_Pahlavi a fhkb:Man ;
+   rdfs:label "Shahram Pahlavi"@en, "شهرام پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q76350670" .   
+
+mdhn:Ahmad_Shafiq a fhkb:Man ;
+   rdfs:label "Ahmad Shafiq"@en, "احمد شفيق"@fa ;
+   fhkb:hasSon mdhn:Shahriar_Shafiq;
+   fhkb:hasDaughter mdhn:Azadeh_Shafiq;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q76350671" . 
+
+mdhn:Shahriar_Shafiq a fhkb:Man ;
+   rdfs:label "Shahriar Shafiq"@en, "شهريار شفيق"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2613996" .
+
+mdhn:Azadeh_Shafiq a fhkb:Woman ;
+   rdfs:label "Azadeh Shafiq"@en, "آزاده شفيق"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5868452" .           
+
+mdhn:Ibrahim_Qavam a fhkb:Man ;
+   rdfs:label "Ibrahim Qavam"@en, "ابراهيم قوام"@fa ;
+   fhkb:hasSon mdhn:Ali_Qavam;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q56365548" .  
+
+mdhn:Habibullah_Khan_Qavam_ul_Molk a fhkb:Man ;
+   rdfs:label "Habibullah Khan Qavam ul-Molk"@en, "حبيب الله خان قوام‌الملک"@fa ;
+   fhkb:hasSon mdhn:Ibrahim_Qavam;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q131328487" .
+
+mdhn:Mohammad_Reza_Khan_Qavam_ul_Molk a fhkb:Man ;
+   rdfs:label "Mohammad Reza Khan Qavam ul-Molk"@en, "محمدرضا خان قوام‌الملک"@fa ;
+   fhkb:hasSon mdhn:Habibullah_Khan_Qavam_ul_Molk;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q131328404" . 
+
+mdhn:Shams_Pahlavi a fhkb:Woman ;
+   rdfs:label "Shams Pahlavi"@en, "شمس پهلوی"@fa ;
+   fhkb:isSpouseOf mdhn:Feridoun_Jam;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q643262" .  
+
+mdhn:Feridoun_Jam a fhkb:Man ;
+   rdfs:label "Feridoun Jam"@en, "فريدون جم"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4482966" .
+
+
+mdhn:Gholam_Reza_Pahlavi a fhkb:Man ;
+   rdfs:label "Gholam Reza Pahlavi"@en, "غلامرضا پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5940835" . 
+
+
+mdhn:Prince_Ali_Reza_Pahlavi a fhkb:Man ;
+   rdfs:label "Prince Ali Reza Pahlavi"@en, "عليرضا پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q539877" .  
+
+mdhn:Princess_Fawzia_Fuad_of_Egypt a fhkb:Woman ;
+   rdfs:label "Princess Fawzia Fuad of Egypt"@en, "فوزيه فواد"@fa ;
+   fhkb:isSpouseOf mdhn:Mohammad_Reza_Shah_Pahlavi, mdhn:Ismail_Chirine;
+   fhkb:isMotherOf mdhn:Shahnaz_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q238539" . 
+
+mdhn:Ismail_Chirine a fhkb:Man ;
+   rdfs:label "Ismail Chirine"@en, "اسماعيل شيرين"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4118655" .  
+
+mdhn:Shahnaz_Pahlavi a fhkb:Woman ;
+   rdfs:label "Shahnaz Pahlavi"@en, "شهناز پهلوی"@fa ;
+   fhkb:isSpouseOf mdhn:Ardeshir_Zahedi, mdhn:Khosrow_Jahanbani;
+   fhkb:isMotherOf mdhn:Mahnaz_Zahedi, mdhn:Keykhosrow_Jahanbani;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q256878" .  
+
+mdhn:Ardeshir_Zahedi a fhkb:Man ;
+   rdfs:label "Ardeshir Zahedi"@en, "اردشير زاهدی"@fa ;
+   fhkb:hasDaughter mdhn:Mahnaz_Zahedi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2860731" .    
+
+mdhn:Fazlollah_Zahedi a fhkb:Man ;
+   rdfs:label "Fazlollah Zahedi"@en, "فضل‌الله زاهدی"@fa ;
+   fhkb:hasSon mdhn:Ardeshir_Zahedi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1396878" .  
+
+mdhn:Mirza_Nasrullah_Khan a fhkb:Man ;
+   rdfs:label "Mirza Nasrullah Khan"@en, "ميرزا نصرالله خان"@fa ;
+   fhkb:hasSon mdhn:Hossein_Pirnia, mdhn:Hassan_Pirnia;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q959888" . 
+mdhn:Hossein_Pirnia a fhkb:Man ;
+   rdfs:label "Hossein Pirnia"@en, "حسين پيرنيا"@fa ;
+   fhkb:hasSon mdhn:Fazlollah_Zahedi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1630525" . 
+
+mdhn:Mahnaz_Zahedi a fhkb:Woman ;
+   rdfs:label "Mahnaz Zahedi"@en, "مهناز زاهدی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q111906166" .    
+
+mdhn:Hassan_Pirnia a fhkb:Man ;
+   rdfs:label "Hassan Pirnia"@en, "حسن پيرنيا"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1588597" . 
+
+mdhn:Khosrow_Jahanbani a fhkb:Man ;
+   rdfs:label "Khosrow Jahanbani"@en, "خسرو جهانبانی"@fa ;
+   fhkb:hasSon mdhn:Keykhosrow_Jahanbani;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6402560" . 
+
+mdhn:Nader_Jahanbani a fhkb:Man ;
+   rdfs:label "Nader Jahanbani"@en, "نادر جهانبانی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2058631" . 
+
+mdhn:Amanullah_Jahanbani a fhkb:Man ;
+   rdfs:label "Amanullah Jahanbani"@en, "امان‌الله جهانبانی"@fa ;
+   fhkb:hasSon mdhn:Khosrow_Jahanbani, mdhn:Nader_Jahanbani;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4739975" . 
+
+mdhn:Keykhosrow_Jahanbani a fhkb:Man ;
+   rdfs:label "Keykhosrow Jahanbani"@en, "کيخسرو جهانبانی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q111906185" . 
+
+mdhn:Soraya_Esfandiari_Bakhtiari a fhkb:Woman ;
+   rdfs:label "Soraya Esfandiari-Bakhtiari"@en, "ثريا اسفندياری بختياری"@fa ;
+   fhkb:isSpouseOf mdhn:Mohammad_Reza_Shah_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q225993" . 
+
+mdhn:Khalil_Esfandiari_Bakhtiari a fhkb:Man ;
+   rdfs:label "Khalil Esfandiary Bakhtiary"@en, "خليل اسفندياری بختياری"@fa ;
+   fhkb:hasDaughter mdhn:Soraya_Esfandiari_Bakhtiari;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1452594" .  
+
+mdhn:Eva_Karl a fhkb:Woman ;
+   rdfs:label "Eva Karl"@en, "اوا کارل"@fa ;
+   fhkb:isSpouseOf mdhn:Khalil_Esfandiari_Bakhtiari;
+   fhkb:isMotherOf mdhn:Soraya_Esfandiari_Bakhtiari;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q136004407" . 
+
+mdhn:Farah_Pahlavi a fhkb:Woman ;
+   rdfs:label "Farah Pahlavi"@en, "فرح پهلوی"@fa ;
+   fhkb:isSpouseOf mdhn:Mohammad_Reza_Shah_Pahlavi;
+   fhkb:isMotherOf mdhn:Reza_Pahlavi, mdhn:Farahnaz_Pahlavi, mdhn:Ali_Reza_Pahlavi, mdhn:Leila_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q164111" . 
+
+mdhn:Sohrab_Diba a fhkb:Man ;
+   rdfs:label "Sohrab Diba"@en, "سهراب ديبا"@fa ;
+   fhkb:hasDaughter mdhn:Farah_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q61064616" .  
+
+mdhn:Farideh_Ghotbi a fhkb:Woman ;
+   rdfs:label "Farideh Ghotbi"@en, "فريده قطبی"@fa ;
+   fhkb:isSpouseOf mdhn:Sohrab_Diba;
+   fhkb:isMotherOf mdhn:Farah_Pahlavi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6405209" .   
+
+mdhn:Reza_Pahlavi a fhkb:Man ;
+   rdfs:label "Reza Pahlavi"@en, "رضا پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q334871" . 
+
+mdhn:Farahnaz_Pahlavi a fhkb:Woman ;
+   rdfs:label "Farahnaz Pahlavi"@en, "فرحناز پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q922206" . 
+
+mdhn:Ali_Reza_Pahlavi a fhkb:Man ;
+   rdfs:label "Ali Reza Pahlavi"@en, "عليرضا پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1070829" .  
+
+mdhn:Leila_Pahlavi a fhkb:Woman ;
+   rdfs:label "Leila Pahlavi"@en, "ليلا پهلوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1136913" .
+
+mdhn:Robert_Byron a fhkb:Man ;
+   rdfs:label "Robert Byron"@en, "رابرت بايرون"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q761983" .  
+
+mdhn:Mirza_Moosa_Naghashbashi a fhkb:Man ;
+   rdfs:label "Mirza Moosa Naghashbashi"@en, "ميرزا موسی نقاشباشی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q137939538" .  
+
+mdhn:Sir_Harford_Jones a fhkb:Man ;
+   rdfs:label "Sir Harford Jones"@en, "سر هارفورد جونز"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1585304" .   
+
+mdhn:James_Justinian_Morier a fhkb:Man ;
+   rdfs:label "James Justinian Morier"@en, "جیمز جستینیان موریر   "@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1680654" . 
+
+mdhn:John_Melish a fhkb:Man ;
+   rdfs:label "John Melish"@en, "جان ملیش"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q13482828" . 
+
+   
+mdhn:James_Rennell a fhkb:Man ;
+   rdfs:label "James Rennell"@en, "جیمز رنل"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q965945" .                                                                                                                        
+
+ mdhn:Najaf_Quli_Khan_Donboli a fhkb:Man ;
+   rdfs:label "Najaf Quli Khan Donboli"@en, "نجفقلی خان  دونبولی"@fa ;
+   fhkb:hasSon mdhn:Abd_al_Razzaq_Beg_Donboli;
+   mdhn:agentialWikiData "" .                                                                                                                        
+                                           
+ mdhn:Abd_al_Razzaq_Beg_Donboli a fhkb:Man ;
+   rdfs:label "Abd al-Razzaq Beg Donboli"@en, "عبدالرازق بيگ دونبولی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4896174" .        
+
+ mdhn:Mirza_Aqa_Khan_Nuri a fhkb:Man ;
+   rdfs:label "Mirza Aqa Khan Nuri"@en, "ميرزا اقا خان نوري"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q8216006" .   
+
+ mdhn:Mirza_Kazem_Khan_Nizam_al_Molk a fhkb:Man ;
+   rdfs:label "Mirza Kazem Khan Nizam al-Molk"@en, "ميرزا کاظم خان نظام‌الملک"@fa ;
+   fhkb:hasSon mdhn:Mirza_Abd_al_Wahhab_Nizam_al_Molk;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q28713513" .          
+
+ mdhn:Nim_Taj_Khanom a fhkb:Woman ;
+   rdfs:label "Nim Taj Khanom"@en, "نیم تاج خانم"@fa ;
+   fhkb:isSpouseOf mdhn:Mirza_Aqa_Khan_Nuri;
+   fhkb:isMotherOf mdhn:Mirza_Kazem_Khan_Nizam_al_Molk;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q28713518" .  
+
+ mdhn:Mirza_Nabi_Qazvini a fhkb:Man ;
+   rdfs:label "Mirza Nabi Qazvini"@en, "ميرزا نبي قزويني"@fa ;
+   fhkb:hasDaughter mdhn:Nim_Taj_Khanom;
+   fhkb:hasSon mdhn:Mirza_Hosein_Khan_Sepahsalar;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5937479" .          
+
+ mdhn:Mah_Taban_Khanum a fhkb:Woman ;
+   rdfs:label "Mah Taban Khanum"@en, "مه تابان خانم"@fa ;
+   fhkb:isSpouseOf mdhn:Mirza_Hosein_Khan_Sepahsalar;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q28713518" .  
+
+ mdhn:Charles_Augustus_Murray a fhkb:Man ;
+   rdfs:label "Charles Augustus Murray"@en, "چارلز آگوستوس موری"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1063616" .
+
+mdhn:Farrokh_Khan_Amin_ol_Dowleh a fhkb:Man ;
+   rdfs:label "Farrokh Khan Ghaffari Amin ol-Dowleh"@en, "فرخ خان امين‌الدوله"@fa;
+   fhkb:hasSon mdhn:Mohammad_Ebrahim_Khan_Ghaffari;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1249837" .   
+
+mdhn:Mohammad_Ebrahim_Khan_Ghaffari a fhkb:Man ;
+   rdfs:label "Mohammad-Ebrahim Khan Ghaffari"@en, "محمد ابراهيم خان غفاری"@fa;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q16052425" .    
+
+mdhn:Mirza_Abd_al_Wahhab_Nizam_al_Molk a fhkb:Man ;
+   rdfs:label "Mirza Abd al-Wahhab Nizam al-Molk"@en, "ميرزا عبد الوهاب نظام‌الملک"@fa ;
+   fhkb:hasSon mdhn:Mirza_Yusuf_Khan_Afkham_al_Molk;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q28713514" .    
+
+mdhn:Mirza_Yusuf_Khan_Afkham_al_Molk a fhkb:Man ;
+   rdfs:label "Mirza Yusuf Khan Afkham al-Molk"@en, "ميرزا يوسف خان افخم‌الملک"@fa ;
+   fhkb:hasSon mdhn:Hossein_Khajenuri;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q125875350" .    
+
+ mdhn:Hossein_Khajenuri a fhkb:Man ;
+   rdfs:label "Hossein Khajenuri"@en, "حسین خواجه نوری"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q125875388" .    
+     
+ mdhn:Mirza_Abolhassan_Khan_Ghaffari a fhkb:Man ;
+   rdfs:label "Mirza Abolhassan Khan Ghaffari"@en, "ميرزا ابولحسن خان غفاری صنيع الملک"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4055189" .    
+         
+ mdhn:Clarence_William_Sorensen a fhkb:Man ;
+   rdfs:label "Clarence W. Sorensen"@en, "کلارنس ویلیام سورنسن"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q109405367" . 
+
+ mdhn:Eugene_Vernon_Harris a fhkb:Man ;
+   rdfs:label "Eugene Vernon Harris"@en, "اوژن ورنون هاریس"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q27709528" .  
+
+ mdhn:Harrison_Forman a fhkb:Man ;
+   rdfs:label "Harrison Forman"@en, "هاریسون فورمن"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q19878275" .  
+
+ mdhn:Frederick_Gardner_Clapp a fhkb:Man ;
+   rdfs:label "Frederick Gardner Clapp"@en, "فردریک گاردنر کلاپ"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q109405368" .           
+
+ mdhn:Abbas_Amanat a fhkb:Man ;
+   rdfs:label "Abbas Amanat"@en, "عباس امانت"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q24883743" .           
+
+mdhn:Ervand_Abrahamian a fhkb:Man ;
+   rdfs:label "Ervand Abrahamian"@en, "اروان ابراهیمیان"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5396010" .           
+  
+mdhn:Peter_Avery a fhkb:Man ;
+   rdfs:label "Peter Avery"@en, "پیتر اوری"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5562783" .           
+
+mdhn:Stephen_Arpee a fhkb:Man ;
+   rdfs:label "Stephen Arpee"@en, "استفن آرپی"@fa ;
+   mdhn:agentialWikiData "" .  
+
+mdhn:Alexandre_Jacovleff a fhkb:Man ;
+   rdfs:label "Alexandre Jacovleff"@en, "الکساندر ژاکوولف"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q593879" . 
+
+mdhn:Eugenio_Galdieri a fhkb:Man ;
+   rdfs:label "Eugenio Galdieri"@en, "ئوژنیو گالدیری"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5942397" . 
+
+mdhn:Albert_Gabriel a fhkb:Man ;
+   rdfs:label "Albert Gabriel"@en, "آلبرت گابریل"@fa ;
+   mdhn:agentialWikiData "" .        
+
+mdhn:Robert_Byron a fhkb:Man ;
+   rdfs:label "Robert Byron"@en, "رابرت بایرون"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q761983" .       
+
+mdhn:Jean_de_Thevenot a fhkb:Man ;
+   rdfs:label "Jean de Thevenot"@en, "ژان  ته وه نو"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1284987" .
+
+mdhn:Jean_Chardin a fhkb:Man ;
+   rdfs:label "Jean Chardin"@en, "ژان شاردن"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q714834" .   
+
+mdhn:Shah_Mahmud_Nishapuri a fhkb:Man ;
+   rdfs:label "Shah Mahmud Nishapuri"@en, "شاه محمود نیشابوری"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5944332" .   
+
+mdhn:Fakhri_Of_Bursa a fhkb:Man ;
+   rdfs:label "Fakhri of Bursa"@en, "فخری بورسا"@fa ;
+   mdhn:agentialWikiData "" .  
+
+mdhn:Henry_Viollet a fhkb:Man ;
+   rdfs:label "Henry Viollet"@en, "هنری ویولت"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5853538" .  
+
+mdhn:Harry_de_Windt a fhkb:Man ;
+   rdfs:label "Harry de Windt"@en, "هری دو ویندت"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3783537" .                                       
+
+mdhn:Edward_Alexander_Powell a fhkb:Man ;
+   rdfs:label "Edward Alexander Powell"@en, "ادوارد الکساندر پاول"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1291529" .                                       
+   
+mdhn:Thomas_Herbert a fhkb:Man ;
+   rdfs:label "Thomas Herbert"@en, "توماس هربرت"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q1283501" . 
+
+mdhn:George_Nathaniel_Curzon a fhkb:Man ;
+   rdfs:label "George Nathaniel Curzon"@en, "جورج ناتانیل کورزون"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q271878" .
+
+mdhn:George_Nathaniel_Curzon a fhkb:Man ;
+   rdfs:label "George Nathaniel Curzon"@en, "جورج ناتانیل کورزون"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q271878" .
+
+mdhn:Edward_Granville_Browne a fhkb:Man ;
+   rdfs:label "Edward Granville Browne"@en, "ادوارد گرانویل براون"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q982047" .
+
+mdhn:Edwin_Lord_Weeks a fhkb:Man ;
+   rdfs:label "Edwin Lord Weeks"@en, "ادوین لرد ویکس"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3735411" .
+
+mdhn:Sayyid_Abdullah_Yadi_Quly a fhkb:Man ;
+   rdfs:label "Sayyid Abdullah Yadi Quly"@en, "سید عبدالله یدی قلی"@fa ;
+   mdhn:agentialWikiData "" .
+
+mdhn:AbdulRahman_Helmi a fhkb:Man ;
+   rdfs:label "Abdul Rahman Helmi"@en, "عبدالرحمن حلمی"@fa ;
+   mdhn:agentialWikiData "" .  
+
+mdhn:Amir_Hossein_Khan_Shoja_al_Dowleh a fhkb:Man ;
+   rdfs:label "Amir Hossein Khan Shoja al-Dowleh"@en, "امیر حسین خان شجاع‌الدوله"@fa ;
+   fhkb:hasBrother mdhn:Amir_Goone_Khan;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q20110298" . 
+
+mdhn:Amir_Goone_Khan a fhkb:Man ;
+   rdfs:label "Amir Goone Khan"@en, "امیر گونه خان"@fa ;
+   mdhn:agentialWikiData "" .       
+   
+mdhn:Malcolm_Napier a fhkb:Man ;
+   rdfs:label "Malcolm Napier"@en, "مالکولم ناپیر"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q75315978" . 
+
+mdhn:Claude_Lelouch a fhkb:Man ;
+   rdfs:label "Claude Lelouch"@en, "کلود للوش"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q295093" .  
+
+mdhn:Albert_Lamorisse a fhkb:Man ;
+   rdfs:label "Albert Lamorisse"@en, "آلبرت لاموریس"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q727562" . 
+
+mdhn:Watson_Kintner a fhkb:Man ;
+   rdfs:label "Watson Kintner"@en, "واتسون کینتر"@fa ;
+   mdhn:agentialWikiData "" . 
+
+mdhn:Amir_Sahi_Sabzavari a fhkb:Man ;
+   rdfs:label "Amir Shahi Sabzavari"@en, "امیر شاهی سبزواری"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6417819" . 
+
+mdhn:Nur_ad_Dīn_Abd_ar_Rahman_Jami a fhkb:Man ;
+   rdfs:label "Nur ad-Dīn Abd ar-Rahman Jami"@en, "نورالدین عبد الرحمن جامی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q312458" .    
+
+mdhn:Nizami_Ganjavi a fhkb:Man ;
+   rdfs:label "Nizami Ganjavi"@en, "نظامی گنجوی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q234908" . 
+
+     
+mdhn:Abul_Qasim_Firdawsi a fhkb:Man ;
+   rdfs:label "Abul-Qasim Firdawsi"@en, "ابولقاسم فردوسی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q43459" .
+
+mdhn:Elizabeth_II_Alexandra_Mary_Windsor a fhkb:Woman ;
+   rdfs:label "Elizabeth II Alexandra Mary Windsor"@en, "ملکه اليزابت دوم آلکساندرا ماری ويندزر"@fa ;
+   fhkb:isSpouseOf mdhn:Prince_Philip_Duke_of_Edinburgh;  
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q9682" .
+
+mdhn:Prince_Philip_Duke_of_Edinburgh    a fhkb:Man ;
+   rdfs:label "Prince Philip, Duke of Edinburgh"@en, "پرنس فیلیپ، دوک ادينبورگ"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q80976" . 
+      
+mdhn:George_V_Frederick_Ernest_Albert    a fhkb:Man ;
+   rdfs:label "King George V"@en, "پادشاه جورج پنجم"@fa ;
+   fhkb:hasSon mdhn:King_George_VI;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q269412" . 
+
+mdhn:King_George_VI a fhkb:Man ;
+   rdfs:label "King George VI"@en, "پادشاه جورج ششم"@fa ;
+   fhkb:hasDaughter mdhn:Elizabeth_II_Alexandra_Mary_Windsor;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q280856" .      
+
+mdhn:The_Queen_Mother  a fhkb:Woman ;
+   rdfs:label "The Queen Mother"@en, "ملکه مادر"@fa ;
+   fhkb:isSpouseOf mdhn:King_George_VI;  
+   fhkb:isMotherOf mdhn:Elizabeth_II_Alexandra_Mary_Windsor;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q10633" .
+
+mdhn:Qasem_Anvar a fhkb:Man ;
+   rdfs:label "Qasem-e Anvar"@en, "قاسم انوار"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2561764" .
+
+
+
+mdhn:Shams_al_Din_Moḥammad_Hafiz_e_Shirazi a fhkb:Man ;
+   rdfs:label "Shams-al-Din Moḥammad Hafiz-e Shirazi"@en, "شمس‌الدین محمد حافظ شیرازی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6240" . 
+
+mdhn:Alī_al_Katib_Sultani a fhkb:Man ;
+   rdfs:label "Alī al-Katib Sultani"@en, "علی کاتب سلطانی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q131692695" . 
+
+mdhn:Assar_Tabrizi  a fhkb:Man ;
+   rdfs:label "Assar Tabrizi"@en, "عصار تبریزی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q612075" . 
+
+mdhn:Saadi_Shirazi  a fhkb:Man ;
+   rdfs:label "Saadi Shirazi"@en, "سعدی شیرازی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q170302" .   
+
+mdhn:Samuel_Martin_Jordan  a fhkb:Man ;
+   rdfs:label "Samuel Martin Jordan"@en, "سموئل مارتین جوردن"@fa ;
+   mdhn:agentialWikiData "" .       
+
+mdhn:Samuel_Martin_Jordan  a fhkb:Man ;
+   rdfs:label "Samuel Martin Jordan"@en, "سموئل مارتین جوردن"@fa ;
+   mdhn:agentialWikiData "" . 
+
+mdhn:Mary_Park_Jordan  a fhkb:Woman ;
+   rdfs:label "Mary Park Jordan"@en, "مری پارک جوردن"@fa ;
+   fhkb:isSpouseOf mdhn:Samuel_Martin_Jordan;
+   mdhn:agentialWikiData "" .   
+
+mdhn:Maxime_Siroux  a fhkb:Man ;
+   rdfs:label "Maxime Siroux"@en, "ماکسیم سیرو"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5707977" .
+      
+mdhn:Percy_Molesworth_Sykes  a fhkb:Man ;
+   rdfs:label "Percy Molesworth Sykes"@en, "پرسی مولزورث سایکس"@fa ;
+   fhkb:hasDaughter mdhn:Ella_Sykes;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q2599879" .
+
+mdhn:Ella_Sykes  a fhkb:Woman ;
+   rdfs:label "Ella Sykes"@en, "الا سایکس"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q18922205" .     
+
+mdhn:Henry_d_Allemagne  a fhkb:Man ;
+   rdfs:label "Henry d Allemagne"@en, "هنری دالمانی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3132567" .
+
+mdhn:Abdullah_Zuhdi_Effendi  a fhkb:Man ;
+   rdfs:label "Abdullah Zuhdi Effendi"@en, "عبدالله زهدی افندی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q12223443" . 
+
+mdhn:Ismail_Zuhdi_Efendi  a fhkb:Man ;
+   rdfs:label "Ismail Zuhdi Efendi"@en, "اسماعیل زهدی افندی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q8080215" . 
+
+mdhn:Mahmud_Celaleddin_Efendi  a fhkb:Man ;
+   rdfs:label "Mahmud Celaleddin Efendi"@en, "محمود جلال الدين افندی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6734468" .
+
+mdhn:Muhammad_Tawfiq_Efendi  a fhkb:Man ;
+   rdfs:label "Muhammad Tawfiq Efendi"@en, "محمد توفيق افندی"@fa ;
+   mdhn:agentialWikiData "" .
+
+mdhn:Sayyid_Othman_al_Rushdi  a fhkb:Man ;
+   rdfs:label "Sayyid Othmān al-Rushdī"@en, "سید عثمان الرشدی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q12223443" .
+
+mdhn:Muhammad_Esmaeil_Shirazi  a fhkb:Man ;
+   rdfs:label "Muhammad Esmaeil Shirazi"@en, "محمد اسماعيل شیرازی"@fa ;
+   fhkb:hasSon mdhn:Vesal_Shirazi;
+   mdhn:agentialWikiData "" . 
+   
+mdhn:Vesal_Shirazi  a fhkb:Man ;
+   rdfs:label "Vesal Shirazi"@en, "محمدشفیع وصال شیرازی"@fa ;
+   fhkb:hasSon mdhn:Viqar_Shirazi, mdhn:Mahmoud_Wisal_Shirazi, mdhn:Abul_Qasim_Farhang, mdhn:Mohammad_Esmail_e_Vesal_Shirazi;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5960972" .
+
+mdhn:Viqar_Shirazi  a fhkb:Man ;
+   rdfs:label "Viqar Shirazi"@en, "وقار شیرازی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5720713" . 
+
+mdhn:Mahmoud_Wisal_Shirazi  a fhkb:Man ;
+   rdfs:label "Mahmoud Wisal Shirazi"@en, "محمود وصال شیرازی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5949728" .
+
+mdhn:Mohammad_Esmail_e_Vesal_Shirazi  a fhkb:Man ;
+   rdfs:label "Mohammad Esmail-e Vesal Shirazi"@en, "محمد اسماعيل وصال شیرازی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5704632" .
+
+mdhn:Abul_Qasim_Farhang  a fhkb:Man ;
+   rdfs:label "Abul-Qasim Farhang"@en, "ابوالقاسم فرهنگ"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5941808" .      
+
+mdhn:Usmaan_bin_Derwis_Muhammad_Aga_al_Arz_Rumi  a fhkb:Man ;
+   rdfs:label "Usmaan bin Derwiş Muhammad Aga al-Arz Rumi"@en, "عثمان بن درویش آقا الارض رومی"@fa ;
+   mdhn:agentialWikiData "" .           
+
+      
+       
+
+mdhn:Sayyed_Muhammad_al_Rashid_Shalchi_Zada  a fhkb:Man ;
+   rdfs:label "Sayyed Muhammad al Rashid Shalchi Zada"@en, "سید محمد الرشید شالچی زاده"@fa ;
+   mdhn:agentialWikiData "" .
+
+mdhn:Hassan_Al_Hosni  a fhkb:Man ;
+   rdfs:label "Hassan Al Hosni"@en, "حسن الحني"@fa ;
+   mdhn:agentialWikiData "" .
+
+         
+  
+
+mdhn:Aqa_Mirak  a fhkb:Man ;
+   rdfs:label "Aqa Mirak"@en, "آقا میرک"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4056503" .
+   
+
+mdhn:Muhammad_Rasim  a fhkb:Man ;
+   rdfs:label "Muhammad Rasim"@en, "محمد راسم"@fa ;
+   mdhn:agentialWikiData "" . 
+
+mdhn:Sayyid_Muḥammad_al_Nuurī  a fhkb:Man ;
+   rdfs:label "Sayyid Muhammad al-Nuurī"@en, "سید محمد النوری"@fa ;
+   mdhn:agentialWikiData "" .
+
+mdhn:Darwish_Ali  a fhkb:Man ;
+   rdfs:label "Darwish Ali"@en, "درویش علی"@fa ;
+   mdhn:agentialWikiData "" .
+
+mdhn:Muhammad_Munis_Zadah  a fhkb:Man ;
+   rdfs:label "Muhammad Munis Zadah"@en, "محمد مونس زاده"@fa ;
+   mdhn:agentialWikiData "" . 
+
+mdhn:Sulaymaan_Hikmati  a fhkb:Man ;
+   rdfs:label "Sulaymaan Hikmati"@en, "سلیمان حکمتی"@fa ;
+   mdhn:agentialWikiData "" . 
+
+mdhn:Muhammad_Qasim_Tabrizi  a fhkb:Man ;
+   rdfs:label "Muhammad Qasim Tabrizi"@en, "محمد قاسم تبریزی"@fa ;
+   mdhn:agentialWikiData "" . 
+       
+mdhn:Muhammad_AL_Shahri  a fhkb:Man ;
+   rdfs:label "Muhammad AL-Shahri"@en, "محمد الشهري"@fa ;
+   mdhn:agentialWikiData "" .      
+
+mdhn:Ahmad_Khalil  a fhkb:Man ;
+   rdfs:label "Ahmad Khalil"@en, "احمد خلیل"@fa ;
+   mdhn:agentialWikiData "" .   
+
+mdhn:Muhammad_Salih  a fhkb:Man ;
+   rdfs:label "Muhammad Salih"@en, "محمد صالح"@fa ;
+   mdhn:agentialWikiData "" .
+
+mdhn:Muhammad_Sadegh_Mossavar  a fhkb:Man ;
+   rdfs:label "Muhammad Sadegh Mossavar"@en, "محمد صادق مصور"@fa ;
+   mdhn:agentialWikiData "" .  
+
+mdhn:H_Khan_Monif  a fhkb:Man ;
+   rdfs:label "H Khan Monif"@en, "خان منیف"@fa ;
+   mdhn:agentialWikiData "" .      
+          
+
+mdhn:Sheikh_Hamdullah  a fhkb:Man ;
+   rdfs:label "Sheikh Hamdullah"@en, "شیخ حمدالله"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3561135" .
+   
+   
+
+    
+mdhn:Kirkor_Minassian  a fhkb:Man ;
+   rdfs:label "Kirkor Minassian"@en, "کرکور میناسیان"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q78060100" .
+
+mdhn:Ali_Khan_Vali  a fhkb:Man ;
+   rdfs:label "Ali Khan Vali"@en, "علی خان والی"@fa ;
+   fhkb:hasSon mdhn:Ghassem_Khan_Vali_Sardar_Homayoun;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4724956" .   
+
+mdhn:Ghassem_Khan_Vali_Sardar_Homayoun  a fhkb:Man ;
+   rdfs:label "Ghassem Khan Vali Sardar Homayoun"@en, "قاسم خان والی سردار همایون"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q12223443" .  
+
+mdhn:Haydar_Ali  a fhkb:Man ;
+   rdfs:label "Haydar Ali"@en, "حيدر علی"@fa ;
+   fhkb:hasSon mdhn:Muzaffar_Ali;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4305948" .   
+
+mdhn:Muzaffar_Ali  a fhkb:Man ;
+   rdfs:label "Muzaffar Ali"@en, "مظفر علی"@fa ;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4305948" .                
+    
+
+  
+       
+

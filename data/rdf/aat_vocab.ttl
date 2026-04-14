@@ -1,0 +1,2230 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix mdhn: <http://example.com/mdhn/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix so: <http://schema.org/> .
+
+
+mdhn:aat300027268 a mdhn:ResourceType ;
+        rdfs:label "administrative reports"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Official or formal records outlining administrative details, or events sucha as functions, proceedings, or investigations."@en;
+        mdhn:hasAATBroader mdhn:aat300027267 .
+
+mdhn:aat300027294 a mdhn:ResourceType ;
+        rdfs:label "official reports"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Official documents that collect facts about a particular subject or event, and often draw conclusions based on these facts."@en;
+        mdhn:hasAATBroader mdhn:aat300027267 . 
+
+mdhn:aat300027294 a mdhn:ResourceType ;
+        rdfs:label "communiques"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Official announcements."@en;
+        mdhn:hasAATBroader mdhn:aat300027294 . 
+
+mdhn:aat300027297 a mdhn:ResourceType ;
+        rdfs:label "plans (reports)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Organized and often detailed proposals that lay out strategies and schemes of action for something to be done."@en;
+        mdhn:hasAATBroader mdhn:aat300027267 . 
+
+mdhn:aat300027316 a mdhn:ResourceType ;
+        rdfs:label "proceedings (reports)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Records of meetings, conferences, learned societies, or other organizations, usually published, and frequently accompanied by abstracts or reports of papers presented."@en;
+        mdhn:hasAATBroader mdhn:aat300027267 .   
+
+mdhn:aat300027323 a mdhn:ResourceType ;
+        rdfs:label "technical reports"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Reports giving details and results of a specific investigation of a scientific or technical problem."@en;
+        mdhn:hasAATBroader mdhn:aat300027267 .                                        
+
+mdhn:aat300027267 a mdhn:ResourceType ;
+        rdfs:label "Reports, Journals and Documents"@en, "'اسناد، گزارشها و ژورنالها'"@fa ;
+        rdfs:comment "schema:ReportsAndJournals"@en;
+        mdhn:hasAATBroader mdhn:aat300137955 .        
+
+mdhn:aat300026606 a mdhn:ResourceType ;
+        rdfs:label "Book Catalogs"@en, "فهرست نسخه ها و کتابها"@fa ;
+        rdfs:comment "schema:BookCatalogs"@en .  
+mdhn:aat300189604 a mdhn:ResourceType ;
+        rdfs:label "Manuscript Folio"@en, "برگی از يک نسخه دستنويس"@fa ;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "schema:ManuscriptFolio"@en;
+        mdhn:hasAATBroader mdhn:aat300115833 .
+mdhn:aat300115833 a mdhn:ResourceType ;
+        rdfs:label "leaves (gathered matter)"@en, "يک صفحه از کتاب"@fa ;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "A leaf is a single sheet of paper or parchment, recto and verso, making two pages of a book; the basic bibliographical unit of a book."@en;
+        mdhn:hasAATBroader mdhn:aat300168471 . 
+
+mdhn:aat300195125 a mdhn:ResourceType ;
+        rdfs:label "blank leaves"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Unprinted leaves in books, often placed at each end of a book by the printer or the binder."@en;
+        mdhn:hasAATBroader mdhn:aat300115833 .          
+
+mdhn:aat300168471 a mdhn:ResourceType ;
+        rdfs:label "gathered matter components"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Components that result when sheets, as of paper, parchment, or other material, are folded to form leaves and pages, which then are usually gathered or bound together."@en;
+        mdhn:hasAATBroader mdhn:aat300201262 . 
+
+mdhn:aat300201262 a mdhn:ResourceType ;
+        rdfs:label "information form components"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Parts or components of information forms"@en;
+        mdhn:hasAATBroader mdhn:aat300241584 .
+
+mdhn:aat300241584 a mdhn:ResourceType ;
+        rdfs:label "<components by specific context>"@en;
+        mdhn:isGuideTerm "true"^^xsd:boolean .  
+
+mdhn:aat300215389 a mdhn:ResourceType ;
+        rdfs:label "Nwespapers and Magazines"@en, "نشريات دوره‌ای"@fa ;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        mdhn:hasAATBroader mdhn:aat300026657 ;
+        rdfs:comment "schema:Periodical"@en .   
+
+mdhn:aat300026657 a mdhn:ResourceType ;
+        rdfs:label "periodicals"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Publications issued at regular intervals, but not daily, containing articles on various subjects by different authors for the general reader."@en;
+        mdhn:hasAATBroader mdhn:aat300026642 . 
+
+mdhn:aat300026642 a mdhn:ResourceType ;
+        rdfs:label "serials (publications)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Publications in any medium issued in successive parts bearing numerical or chronological designations and intended to be continued indefinitely, such as periodicals, newspapers, annuals (reports, yearbooks, etc.), journals, memoires, proceedings, transactions, etc., of societies and numbered monographic series."@en;
+        mdhn:hasAATBroader mdhn:aat300111999 .
+
+mdhn:aat300111999 a mdhn:ResourceType ;
+        rdfs:label "publications (documents)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Documents distributed to the public by sale or other transfer of ownership, or by rental, lease, or lending."@en;
+        mdhn:hasAATBroader mdhn:aat300220520 . 
+
+
+
+mdhn:aat300026031 a mdhn:ResourceType ;
+        rdfs:label "document genres"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Refers to the various types or classifications of documents, which are typically physical or digital representations of a body of information that is designed with the capacity to communicate"@en.                                                                                                     
+
+mdhn:aat300220520 a mdhn:ResourceType ;
+        rdfs:label "<documents by conditions of production>"@en;
+        mdhn:isGuideTerm "true"^^xsd:boolean ;
+        rdfs:comment "Collocates descriptors that emphasize the way in which a document was formulated, prepared, or produced."@en;
+        mdhn:hasAATBroader mdhn:aat300026031 . 
+
+mdhn:aat300137954 a mdhn:ResourceType ;
+        rdfs:label "<documents by form>"@en;
+        mdhn:isGuideTerm "true"^^xsd:boolean ;
+        rdfs:comment "Collocates descriptors for documents that emphasize some particular manner in which the textual or visual content of the document has been arranged."@en;
+        mdhn:hasAATBroader mdhn:aat300026031 .  
+
+mdhn:aat300137955 a mdhn:ResourceType ;
+        rdfs:label "<documents by function>"@en;
+        mdhn:isGuideTerm "true"^^xsd:boolean ;
+        rdfs:comment "Collocates descriptors for documents that emphasize a specific purpose for which the document was created."@en;
+        mdhn:hasAATBroader mdhn:aat300026031 . 
+
+mdhn:aat300026685 a mdhn:ResourceType ;
+        rdfs:label "records (documents)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Recorded information, often standardized in format and content and treated as a unit. Records include such compilations of data regardless of medium, that are created, received, and maintained by a project, agency, institution, organization, or individual in pursuance of legal obligations, in the transaction of business, for the storage of research and knowledge, or for other purposes."@en;
+        mdhn:hasAATBroader mdhn:aat300137955 .
+
+mdhn:aat300026461 a mdhn:ResourceType ;
+    rdfs:label "christening books"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027969 .
+
+mdhn:aat300027146 a mdhn:ResourceType ;
+    rdfs:label "merchandise inventories"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300141693 .
+
+mdhn:aat300027352 a mdhn:ResourceType ;
+    rdfs:label "ships' papers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300027765 a mdhn:ResourceType ;
+    rdfs:label "<records by provenance>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300026685 .
+
+mdhn:aat300027772 a mdhn:ResourceType ;
+    rdfs:label "corporation records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300027777 a mdhn:ResourceType ;
+    rdfs:label "government records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300027787 a mdhn:ResourceType ;
+    rdfs:label "<government records by function>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027777 .
+
+mdhn:aat300027790 a mdhn:ResourceType ;
+    rdfs:label "<executive records by provenance>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300172756 .
+
+mdhn:aat300027791 a mdhn:ResourceType ;
+    rdfs:label "judicial executive records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027790 .
+
+mdhn:aat300027793 a mdhn:ResourceType ;
+    rdfs:label "presidential papers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027790 .
+
+mdhn:aat300027795 a mdhn:ResourceType ;
+    rdfs:label "<executive records by function>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300172756 .
+
+mdhn:aat300027804 a mdhn:ResourceType ;
+    rdfs:label "customs records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027806 a mdhn:ResourceType ;
+    rdfs:label "executive orders"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027808 a mdhn:ResourceType ;
+    rdfs:label "immigration records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027819 a mdhn:ResourceType ;
+    rdfs:label "letters of marque"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027820 a mdhn:ResourceType ;
+    rdfs:label "letters patent"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027821 a mdhn:ResourceType ;
+    rdfs:label "lettres de cachet"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027822 a mdhn:ResourceType ;
+    rdfs:label "military records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027830 a mdhn:ResourceType ;
+    rdfs:label "naturalization records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027831 a mdhn:ResourceType ;
+    rdfs:label "pardons"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027832 a mdhn:ResourceType ;
+    rdfs:label "patents"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027842 a mdhn:ResourceType ;
+    rdfs:label "regulations (executive records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027795 .
+
+mdhn:aat300027850 a mdhn:ResourceType ;
+    rdfs:label "judicial records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027787 .
+
+mdhn:aat300027856 a mdhn:ResourceType ;
+    rdfs:label "<judicial records by form or function>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027850 .
+
+mdhn:aat300027857 a mdhn:ResourceType ;
+    rdfs:label "decisions (judicial records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027856 .
+
+mdhn:aat300027859 a mdhn:ResourceType ;
+    rdfs:label "subpoenas"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027856 .
+
+mdhn:aat300027860 a mdhn:ResourceType ;
+    rdfs:label "summonses"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027856 .
+
+mdhn:aat300027864 a mdhn:ResourceType ;
+    rdfs:label "writs"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027856 .
+
+mdhn:aat300027865 a mdhn:ResourceType ;
+    rdfs:label "<judicial records by provenance>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027850 .
+
+mdhn:aat300027866 a mdhn:ResourceType ;
+    rdfs:label "civil court records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027865 .
+
+mdhn:aat300027883 a mdhn:ResourceType ;
+    rdfs:label "criminal court records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027865 .
+
+mdhn:aat300027885 a mdhn:ResourceType ;
+    rdfs:label "legislative records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027787 .
+
+mdhn:aat300027887 a mdhn:ResourceType ;
+    rdfs:label "<legislative records by form or function>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027885 .
+
+mdhn:aat300027888 a mdhn:ResourceType ;
+    rdfs:label "bills (legislative records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027887 .
+
+mdhn:aat300027889 a mdhn:ResourceType ;
+    rdfs:label "legislative acts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027887 .
+
+mdhn:aat300027904 a mdhn:ResourceType ;
+    rdfs:label "<legislative records by provenance>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027885 .
+
+mdhn:aat300027905 a mdhn:ResourceType ;
+    rdfs:label "congressional records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027904 .
+
+mdhn:aat300027915 a mdhn:ResourceType ;
+    rdfs:label "parliamentary papers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027904 .
+
+mdhn:aat300027924 a mdhn:ResourceType ;
+    rdfs:label "<government records by provenance>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027777 .
+
+mdhn:aat300027928 a mdhn:ResourceType ;
+    rdfs:label "county government records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027924 .
+
+mdhn:aat300027931 a mdhn:ResourceType ;
+    rdfs:label "municipal government records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027924 .
+
+mdhn:aat300027937 a mdhn:ResourceType ;
+    rdfs:label "intergovernmental records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027924 .
+
+mdhn:aat300027942 a mdhn:ResourceType ;
+    rdfs:label "state government records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027924 .
+
+mdhn:aat300027945 a mdhn:ResourceType ;
+    rdfs:label "national government records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027924 .
+
+mdhn:aat300027948 a mdhn:ResourceType ;
+    rdfs:label "federal government records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027945 .
+
+mdhn:aat300027957 a mdhn:ResourceType ;
+    rdfs:label "hospital records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300027959 a mdhn:ResourceType ;
+    rdfs:label "manorial records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300027963 a mdhn:ResourceType ;
+    rdfs:label "museum records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300027967 a mdhn:ResourceType ;
+    rdfs:label "church records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300027969 a mdhn:ResourceType ;
+    rdfs:label "<church records by form or function>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027967 .
+
+mdhn:aat300027970 a mdhn:ResourceType ;
+    rdfs:label "baptismal certificates"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027969 .
+
+mdhn:aat300027972 a mdhn:ResourceType ;
+    rdfs:label "church bulletins"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027969 .
+
+mdhn:aat300027976 a mdhn:ResourceType ;
+    rdfs:label "baptismal registers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027969 .
+
+mdhn:aat300027978 a mdhn:ResourceType ;
+    rdfs:label "burial registers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027969 .
+
+mdhn:aat300027980 a mdhn:ResourceType ;
+    rdfs:label "funeral registers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027969 .
+
+mdhn:aat300027984 a mdhn:ResourceType ;
+    rdfs:label "<church records by provenance>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027967 .
+
+mdhn:aat300027987 a mdhn:ResourceType ;
+    rdfs:label "churchwardens' accounts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027984 .
+
+mdhn:aat300027992 a mdhn:ResourceType ;
+    rdfs:label "diocesan records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027984 .
+
+mdhn:aat300027994 a mdhn:ResourceType ;
+    rdfs:label "parochial records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027984 .
+
+mdhn:aat300027996 a mdhn:ResourceType ;
+    rdfs:label "parish inventories"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027994 .
+
+mdhn:aat300028004 a mdhn:ResourceType ;
+    rdfs:label "school records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300028009 a mdhn:ResourceType ;
+    rdfs:label "curricula"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028004 .
+
+mdhn:aat300028011 a mdhn:ResourceType ;
+    rdfs:label "diplomas"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028004 .
+
+mdhn:aat300028012 a mdhn:ResourceType ;
+    rdfs:label "faculty papers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028004 .
+
+mdhn:aat300028014 a mdhn:ResourceType ;
+    rdfs:label "grade books"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028004 .
+
+mdhn:aat300028015 a mdhn:ResourceType ;
+    rdfs:label "report cards"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028004 .
+
+mdhn:aat300028026 a mdhn:ResourceType ;
+    rdfs:label "syllabi"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028004 .
+
+mdhn:aat300028028 a mdhn:ResourceType ;
+    rdfs:label "theses"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028004 .
+
+mdhn:aat300028029 a mdhn:ResourceType ;
+    rdfs:label "dissertations"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028028 .
+
+mdhn:aat300028037 a mdhn:ResourceType ;
+    rdfs:label "personal papers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300028040 a mdhn:ResourceType ;
+    rdfs:label "family papers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028037 .
+
+mdhn:aat300028042 a mdhn:ResourceType ;
+    rdfs:label "professional papers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300048720 a mdhn:ResourceType ;
+    rdfs:label "exhibition records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027963 .
+
+mdhn:aat300048722 a mdhn:ResourceType ;
+    rdfs:label "exhibit scripts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300048720 .
+
+mdhn:aat300077723 a mdhn:ResourceType ;
+    rdfs:label "masters theses"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028028 .
+
+mdhn:aat300113285 a mdhn:ResourceType ;
+    rdfs:label "estate records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300136842 a mdhn:ResourceType ;
+    rdfs:label "official documents"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300136907 a mdhn:ResourceType ;
+    rdfs:label "Bible records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028040 .
+
+mdhn:aat300141693 a mdhn:ResourceType ;
+    rdfs:label "business records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300152022 a mdhn:ResourceType ;
+    rdfs:label "papal briefs"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027969 .
+
+mdhn:aat300152044 a mdhn:ResourceType ;
+    rdfs:label "bulls (papal records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027969 .
+
+mdhn:aat300164785 a mdhn:ResourceType ;
+    rdfs:label "notarial documents"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300136842 .
+
+mdhn:aat300165644 a mdhn:ResourceType ;
+    rdfs:label "territorial records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027924 .
+
+mdhn:aat300172756 a mdhn:ResourceType ;
+    rdfs:label "executive records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027787 .
+
+mdhn:aat300205940 a mdhn:ResourceType ;
+    rdfs:label "rewards of merit"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028004 .
+
+mdhn:aat300256158 a mdhn:ResourceType ;
+    rdfs:label "certificates of registry (ships' papers)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027352 .
+
+mdhn:aat300262614 a mdhn:ResourceType ;
+    rdfs:label "crew lists"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027352 .
+
+mdhn:aat300262615 a mdhn:ResourceType ;
+    rdfs:label "Mediterranean passports"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027352 .
+
+mdhn:aat300262808 a mdhn:ResourceType ;
+    rdfs:label "enrollments (ships' papers)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027352 .
+
+mdhn:aat300263224 a mdhn:ResourceType ;
+    rdfs:label "portage bills"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027352 .
+
+mdhn:aat300263287 a mdhn:ResourceType ;
+    rdfs:label "sea letters"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027352 .
+
+mdhn:aat300312067 a mdhn:ResourceType ;
+    rdfs:label "artist files"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028042 .
+
+mdhn:aat300312068 a mdhn:ResourceType ;
+    rdfs:label "architect's files"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028042 .
+
+mdhn:aat300312069 a mdhn:ResourceType ;
+    rdfs:label "retail inventories"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027146 .
+
+mdhn:aat300312070 a mdhn:ResourceType ;
+    rdfs:label "warehouse lists"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027146 .
+
+mdhn:aat300312071 a mdhn:ResourceType ;
+    rdfs:label "public records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027777 .
+
+mdhn:aat300312072 a mdhn:ResourceType ;
+    rdfs:label "court rolls"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027856 .
+
+mdhn:aat300312073 a mdhn:ResourceType ;
+    rdfs:label "vestry records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027984 .
+
+mdhn:aat300312074 a mdhn:ResourceType ;
+    rdfs:label "wall labels"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300048722 .
+
+mdhn:aat300312076 a mdhn:ResourceType ;
+    rdfs:label "doctoral dissertations"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028029 .
+
+mdhn:aat300312077 a mdhn:ResourceType ;
+    rdfs:label "term papers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028028 .
+
+mdhn:aat300391118 a mdhn:ResourceType ;
+    rdfs:label "communion registers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027969 .
+
+mdhn:aat300417749 a mdhn:ResourceType ;
+    rdfs:label "academic dissertations"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300028029 .
+
+mdhn:aat300423215 a mdhn:ResourceType ;
+    rdfs:label "citizenship certificates"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300438423 .
+
+mdhn:aat300424217 a mdhn:ResourceType ;
+    rdfs:label "customs declarations"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300438423 .
+
+mdhn:aat300427526 a mdhn:ResourceType ;
+    rdfs:label "military discharges"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300438423 .
+
+mdhn:aat300427682 a mdhn:ResourceType ;
+    rdfs:label "judgment"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300438423 .
+
+mdhn:aat300430850 a mdhn:ResourceType ;
+    rdfs:label "probate"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300438423 .
+
+mdhn:aat300431840 a mdhn:ResourceType ;
+    rdfs:label "service records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027787 .
+
+mdhn:aat300434150 a mdhn:ResourceType ;
+    rdfs:label "surrender documents"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300438423 .
+
+mdhn:aat300434414 a mdhn:ResourceType ;
+    rdfs:label "tax rolls"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300438423 .
+
+mdhn:aat300438423 a mdhn:ResourceType ;
+    rdfs:label "<temporary alphabetical list: government records>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027777 .
+
+mdhn:aat300455838 a mdhn:ResourceType ;
+    rdfs:label "synagogue records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .
+
+mdhn:aat300455839 a mdhn:ResourceType ;
+    rdfs:label "mosque records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027765 .          
+
+mdhn:aat300027424 a mdhn:ResourceType ;
+        rdfs:label "<records by form or function>"@en;
+        mdhn:isGuideTerm "true"^^xsd:boolean ;
+        mdhn:hasAATBroader mdhn:aat300026685 .
+
+mdhn:aat300027590 a mdhn:ResourceType ;
+        rdfs:label "legal documents"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "General term for documents having legal relevance."@en;
+        mdhn:hasAATBroader mdhn:aat300027424 .  
+
+mdhn:aat300027384 a mdhn:ResourceType ;
+    rdfs:label "traffic tickets"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027536 a mdhn:ResourceType ;
+    rdfs:label "bid bonds"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027603 .
+
+mdhn:aat300027594 a mdhn:ResourceType ;
+    rdfs:label "affidavits"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027597 a mdhn:ResourceType ;
+    rdfs:label "articles of incorporation"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027603 a mdhn:ResourceType ;
+    rdfs:label "bonds (legal records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027604 a mdhn:ResourceType ;
+    rdfs:label "bail bonds"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027603 .
+
+mdhn:aat300027606 a mdhn:ResourceType ;
+    rdfs:label "labor and material bonds"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027603 .
+
+mdhn:aat300027610 a mdhn:ResourceType ;
+    rdfs:label "payment bonds"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027603 .
+
+mdhn:aat300027612 a mdhn:ResourceType ;
+    rdfs:label "performance bonds"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027603 .
+
+mdhn:aat300027614 a mdhn:ResourceType ;
+    rdfs:label "subcontractor bonds"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027612 .
+
+mdhn:aat300027616 a mdhn:ResourceType ;
+    rdfs:label "surety bonds"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027603 .
+
+mdhn:aat300027619 a mdhn:ResourceType ;
+    rdfs:label "certificates of incorporation"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027621 a mdhn:ResourceType ;
+    rdfs:label "charters"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027628 a mdhn:ResourceType ;
+    rdfs:label "agreements"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027630 a mdhn:ResourceType ;
+    rdfs:label "collective labor agreements"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027628 .
+
+mdhn:aat300027640 a mdhn:ResourceType ;
+    rdfs:label "partnership agreements"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027628 .
+
+mdhn:aat300027649 a mdhn:ResourceType ;
+    rdfs:label "contracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027628 .
+
+mdhn:aat300027650 a mdhn:ResourceType ;
+    rdfs:label "<contracts by form or function>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027649 .
+
+mdhn:aat300027651 a mdhn:ResourceType ;
+    rdfs:label "divided contracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027650 .
+
+mdhn:aat300027653 a mdhn:ResourceType ;
+    rdfs:label "separate contracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027650 .
+
+mdhn:aat300027655 a mdhn:ResourceType ;
+    rdfs:label "single contracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027650 .
+
+mdhn:aat300027657 a mdhn:ResourceType ;
+    rdfs:label "subcontracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027650 .
+
+mdhn:aat300027661 a mdhn:ResourceType ;
+    rdfs:label "<contracts by party>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027649 .
+
+mdhn:aat300027662 a mdhn:ResourceType ;
+    rdfs:label "architect-consultant contracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027661 .
+
+mdhn:aat300027664 a mdhn:ResourceType ;
+    rdfs:label "government contracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027661 .
+
+mdhn:aat300027668 a mdhn:ResourceType ;
+    rdfs:label "<contracts by manner of payment>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027649 .
+
+mdhn:aat300027673 a mdhn:ResourceType ;
+    rdfs:label "cost plus fee agreements"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027668 .
+
+mdhn:aat300027675 a mdhn:ResourceType ;
+    rdfs:label "cost reimbursement contracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027668 .
+
+mdhn:aat300027677 a mdhn:ResourceType ;
+    rdfs:label "fixed-price contracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027668 .
+
+mdhn:aat300027749 a mdhn:ResourceType ;
+    rdfs:label "submittals"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027751 a mdhn:ResourceType ;
+    rdfs:label "escrows"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027752 a mdhn:ResourceType ;
+    rdfs:label "franchises"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027753 a mdhn:ResourceType ;
+    rdfs:label "indentures"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027754 a mdhn:ResourceType ;
+    rdfs:label "indictments (legal documents)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027755 a mdhn:ResourceType ;
+    rdfs:label "leases"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027650 .
+
+mdhn:aat300027761 a mdhn:ResourceType ;
+    rdfs:label "powers of attorney"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027762 a mdhn:ResourceType ;
+    rdfs:label "syngraphai"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027650 .
+
+mdhn:aat300027763 a mdhn:ResourceType ;
+    rdfs:label "warranties"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300055567 .
+
+mdhn:aat300027764 a mdhn:ResourceType ;
+    rdfs:label "wills"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300163664 .
+
+mdhn:aat300027954 a mdhn:ResourceType ;
+    rdfs:label "international agreements"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027628 .
+
+mdhn:aat300027956 a mdhn:ResourceType ;
+    rdfs:label "treaties"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027954 .
+
+mdhn:aat300055567 a mdhn:ResourceType ;
+    rdfs:label "guarantees"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027628 .
+
+mdhn:aat300109737 a mdhn:ResourceType ;
+    rdfs:label "turnkey contracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027650 .
+
+mdhn:aat300136911 a mdhn:ResourceType ;
+    rdfs:label "articles of apprenticeship"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027753 .
+
+mdhn:aat300163664 a mdhn:ResourceType ;
+    rdfs:label "legal instruments"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027590 .
+
+mdhn:aat300182873 a mdhn:ResourceType ;
+    rdfs:label "ketubahs"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027661 .
+
+mdhn:aat300263268 a mdhn:ResourceType ;
+    rdfs:label "charter parties"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027621  .              
+
+mdhn:aat300048709 a mdhn:ResourceType ;
+        rdfs:label "accession records"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Records documenting additions to a collection, whether acquired by transfer under a legally based procedure, or by deposit, purchase, gift, or bequest."@en;
+        mdhn:hasAATBroader mdhn:aat300027424 . 
+
+mdhn:aat300027425 a mdhn:ResourceType ;
+        rdfs:label "administrative records"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Records that relate to budget, personnel, supply, and similar facilitative operations within an organization."@en;
+        mdhn:hasAATBroader mdhn:aat300027424 . 
+
+mdhn:aat300027426 a mdhn:ResourceType ;
+        rdfs:label "agendas (administrative records)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Documents, often in list form, stating things to be done, as items of business or discussions to be brought up at a meeting; includes programs consisting of such itemsRecords that relate to budget, personnel, supply, and similar facilitative operations within an organization."@en;
+        mdhn:hasAATBroader mdhn:aat300027425 . 
+
+mdhn:aat300027427 a mdhn:ResourceType ;
+    rdfs:label "amendments (administrative records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300027428 a mdhn:ResourceType ;
+        rdfs:label "ballots"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Sheets of paper, cards, or other devices used to cast a vote or announce a slate of candidates."@en;
+        mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300312107 a mdhn:ResourceType ;
+        rdfs:label "bills of morality"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "A periodically published official return of the deaths (later, also of the births) in a certain district."@en;
+        mdhn:hasAATBroader mdhn:aat300027425 . 
+
+mdhn:aat300379260 a mdhn:ResourceType ;
+        rdfs:label "black books (general lists)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Books recording lists of any of various types, including expenditures, financial administration, laws, or names and contact information; the term is derived from the books originally having been typically bound in simple black binding. Examples include ledgers relating to finance or administration; codes of rules, such as those relating to maritime law; the names of people liable to censure or punishment; and address books recording names and contact details."@en;
+        mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300027433 a mdhn:ResourceType ;
+    rdfs:label "bylaws (administrative records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300027437 a mdhn:ResourceType ;
+    rdfs:label "constitutions"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300027440 a mdhn:ResourceType ;
+    rdfs:label "minutes (administrative records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300027441 a mdhn:ResourceType ;
+    rdfs:label "personnel records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300027443 a mdhn:ResourceType ;
+    rdfs:label "attendance records"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027441 .
+
+mdhn:aat300027447 a mdhn:ResourceType ;
+    rdfs:label "job applications"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027441 .
+
+mdhn:aat300027451 a mdhn:ResourceType ;
+    rdfs:label "résumés (personnel records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027441 .
+
+mdhn:aat300027457 a mdhn:ResourceType ;
+    rdfs:label "resolutions (administrative records)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300027462 a mdhn:ResourceType ;
+    rdfs:label "work-flow documents"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300027463 a mdhn:ResourceType ;
+    rdfs:label "progress reports"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027462 .
+
+mdhn:aat300027467 a mdhn:ResourceType ;
+    rdfs:label "progress schedules"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027462 .
+
+mdhn:aat300027471 a mdhn:ResourceType ;
+    rdfs:label "project calendars"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027462 .
+
+mdhn:aat300044839 a mdhn:ResourceType ;
+    rdfs:label "election returns"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300135375 a mdhn:ResourceType ;
+    rdfs:label "minute books"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300312107 a mdhn:ResourceType ;
+    rdfs:label "bills of mortality"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300379260 a mdhn:ResourceType ;
+    rdfs:label "black books (general lists)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300428739 a mdhn:ResourceType ;
+    rdfs:label "packing slips"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300431221 a mdhn:ResourceType ;
+    rdfs:label "record books"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .
+
+mdhn:aat300433311 a mdhn:ResourceType ;
+    rdfs:label "work orders"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027425 .                                                                          
+
+mdhn:aat300249172 a mdhn:ResourceType ;
+        rdfs:label "documentaries"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Written, oral, sound, or photographic recordings, or presentations in other media that explain or re-create actual events, eras, life stories, or other factual information in a manner purporting to be objective and accurate."@en;
+        mdhn:hasAATBroader mdhn:aat300137955 . 
+
+mdhn:aat300375156 a mdhn:ResourceType ;
+        rdfs:label "documentary film"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Film genre that presents fact and real situations and people rather than fiction. They typically feature the people, places, and events who are the subjects of the film, rather than actors or sets. Early examples were influenced by television news and used portable cameras."@en;
+        mdhn:hasAATBroader mdhn:aat300249172 .          
+
+               
+
+mdhn:aat300435711 a mdhn:ResourceType ;
+        rdfs:label "<temporary alphabetical list: document genres>"@en;
+        mdhn:isGuideTerm "true"^^xsd:boolean ;
+        rdfs:comment "document genres, information forms (objects), ... Visual and Verbal Communication (hierarchy name)"@en;
+        mdhn:hasAATBroader mdhn:aat300026031 . 
+
+
+mdhn:aat300421680 a mdhn:ResourceType ;
+        rdfs:label "achievement symbols"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Objects that convey social recognition of achievements by individuals or groups of people"@en;
+        mdhn:hasAATBroader mdhn:aat300435711 . 
+
+mdhn:aat300420457 a mdhn:ResourceType ;
+        rdfs:label "attendance certificates"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Documents that verify that an individual's presence at an event, training session, or course. These do not verify the recipient's mastery of a subject or specific skills, but only their presence and participation in an activity."@en;
+        mdhn:hasAATBroader mdhn:aat300435711 . 
+mdhn:aat300420497 a mdhn:ResourceType ;
+        rdfs:label "autograph cards"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Cards, often intended for trading that feature the authentic, hand-signed signature of a notable figure, which is often added to the card during its production by the manufacturer. These may also be signed after the production of the card by the figure noted on the card."@en;
+        mdhn:hasAATBroader mdhn:aat300435711 . 
+mdhn:aat300421302 a mdhn:ResourceType ;
+        rdfs:label "business permits"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        mdhn:hasAATBroader mdhn:aat300435711 .  
+
+mdhn:aat300423556 a mdhn:ResourceType ;
+        rdfs:label "document covers"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        mdhn:hasAATBroader mdhn:aat300435711 .     
+
+mdhn:aat300423557 a mdhn:ResourceType ;
+        rdfs:label "document files"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        mdhn:hasAATBroader mdhn:aat300435711 .   
+
+mdhn:aat300028052 a mdhn:ResourceType ;
+        rdfs:label "cartographic materials"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Any materials representing, in whole or part, the earth or any celestial body at any scale."@en;
+        mdhn:hasAATBroader mdhn:aat300163674 . 
+
+mdhn:aat300163674 a mdhn:ResourceType ;
+        rdfs:label "graphic document genres"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Documents that contain graphics."@en;
+        mdhn:hasAATBroader mdhn:aat300137954 .
+
+mdhn:aat300026848 a mdhn:ResourceType ;
+        rdfs:label "charts (graphic documents)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "A tabular or graphic representation of a fluctuating or dependent variable, such as magnitude, temperature, cost, etc."@en;
+        mdhn:hasAATBroader mdhn:aat300163674 . 
+
+mdhn:aat300417769 a mdhn:ResourceType ;
+        rdfs:label "illustrated works (documents)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        mdhn:hasAATBroader mdhn:aat300137954 .
+
+mdhn:aat300312062 a mdhn:ResourceType ;
+        rdfs:label "polyglots"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Books containing versions of the same text in several languages."@en;
+        mdhn:hasAATBroader mdhn:aat300137954 .
+
+mdhn:aat300009700 a mdhn:ResourceType ;
+        rdfs:label "motifs"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Distinct or separable design elements, usually decorative, whether occurring singly as individual shapes. Distinguished from \"patterns (design elements),\" which are ornamental designs composed of repeated or combined motifs."@en;
+        mdhn:hasAATBroader mdhn:aat300009699 .
+
+mdhn:aat300009699 a mdhn:ResourceType ;
+        rdfs:label "design elements (attributes)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Fundamental ideas and components or parts that are observable in a visual design or work of art, such as lines, points, movement, forms, spaces, colors, textures, and patterns, among others."@en;
+        mdhn:hasAATBroader mdhn:aat300123558 .
+
+mdhn:aat300123558 a mdhn:ResourceType ;
+        rdfs:label "Design Elements (hierarchy name)"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "The Design Elements hierarchy contains terms for conventionalized and recurring shapes and arrangements of forms used in the design of many types of object and their ornament, that may be expressed regardless of their materials (e.g., \"rosettes,\" \"Celtic crosses\"). Relation to other hierarchies: Terms for certain attributes related to shape or position are in the Attributes and Properties hierarchy (e.g., \"convex,\" \"concentric\"). Terms for three-dimensional ornamental components or elements that exist only in a given material are found in the Components hierarchy"@en.                                                       
+
+                                                                                                               
+mdhn:aat300191091 a mdhn:ResourceType ;
+        rdfs:label "<visual works by material or technique>"@en;
+        mdhn:isGuideTerm "true"^^xsd:boolean ;
+        mdhn:hasAATBroader mdhn:aat300191086 .  
+
+mdhn:aat300266679 a mdhn:ResourceType ;
+        rdfs:label "electronic documents"@en;
+        mdhn:isGuideTerm "false"^^xsd:boolean ;
+        rdfs:comment "Information electronically recorded that requires a computer or other electronic device for display, interpretion, and processing."@en;
+        mdhn:hasAATBroader mdhn:aat300137954 .   
+
+mdhn:aat300028094 a mdhn:ResourceType ;
+        rdfs:label "Map"@en, "نقشه"@fa ;
+        rdfs:comment "schema:Map"@en ;
+        mdhn:hasAATBroader mdhn:aat300028052, mdhn:aat300026848 .     
+
+mdhn:aat300046300 a mdhn:ResourceType ;
+        rdfs:label "Single Photograph"@en, "قطعه عکس"@fa ;
+        rdfs:comment "schema:Photograph"@en ;
+        mdhn:hasAATBroader mdhn:aat300191091 . 
+
+mdhn:aat300027200 a mdhn:ResourceType ;
+        rdfs:label "Photograph Album"@en, "آلبوم عکس"@fa ;
+        rdfs:comment "schema:Collection"@en .
+
+mdhn:aat300435424 a mdhn:ResourceType ;
+        rdfs:label "MP4 Video"@en, "ويديو"@fa ;
+        rdfs:comment "schema:VideoObject"@en .    
+mdhn:aat300010094 a mdhn:ResourceType ;
+        rdfs:label "Scrolls"@en, "طومار"@fa ;
+        rdfs:comment "schema:Scroll"@en ;
+        mdhn:hasAATBroader mdhn:aat300009700 .  
+
+# see 300041341 copper engravings (visual works)
+mdhn:aat300041273 a mdhn:ResourceType ;
+        rdfs:label "Engrave Print"@en, "حکاکی چاپ شده"@fa ;
+        rdfs:comment "schema:CreativeWork"@en .           
+
+mdhn:aat300266747 a mdhn:ResourceType ;
+        rdfs:label "Audio Book"@en, "کتاب صوتی(گويا)"@fa ;
+        rdfs:comment "schema:AudioBook"@en ;
+        mdhn:hasAATBroader mdhn:aat300266679 .                                                             
+
+mdhn:aat300265483 a mdhn:ResourceType ;
+        rdfs:label "Illuminated Manuscript"@en, "نسخ دستنويس مصور"@fa ;
+        rdfs:comment "schema:IlluminatedManuscript"@en ;
+        mdhn:hasAATBroader mdhn:aat300028569 .  
+
+mdhn:aat300028569 a mdhn:ResourceType ;
+        rdfs:label "Manuscript"@en, "نسخ دستنويس"@fa ;
+        rdfs:comment "schema:Manuscript"@en;
+        mdhn:hasAATBroader mdhn:aat300220520 .   
+         
+
+mdhn:aat300417741 a mdhn:ResourceType;
+        rdfs:label "Painted leather bindings"@en, "جلد کتاب يا مرقع"@fa ;
+        rdfs:comment "schema:CoverArt"@en . 
+
+
+mdhn:aat300191086 a mdhn:ResourceType;
+        rdfs:label "Visual Works"@en, "آثار تجسمی"@fa ;
+        rdfs:comment "schema:VisualWorks"@en .
+
+mdhn:aat300079783 a mdhn:ResourceType;
+        rdfs:label "Conceptual Drawings"@en, "نگارگری يا طراحی"@fa ;
+        rdfs:comment "schema:Drawing"@en .
+
+mdhn:aat001100001 a mdhn:ResourceType;
+        rdfs:label "Qajar Style Drawings"@en, "نگارگری سبک قاجار"@fa ;
+        rdfs:comment "schema:QajarStyleDrawings"@en .            
+mdhn:aat300034104 a mdhn:ResourceType;
+        rdfs:label "Architectural Plans"@en, "پلان معماری"@fa ;
+        rdfs:comment "schema:ArchitecturalPlans"@en .
+
+mdhn:aat300128366 a mdhn:ResourceType;
+        rdfs:label "Color Slide"@en, "اسلايد رنگی"@fa ;
+        rdfs:comment "schema:ColorSlide"@en .            
+
+mdhn:aat300015045 a mdhn:ResourceType;
+        rdfs:label "Watercolor (paint)"@en, "آبرنگ"@fa ;
+        rdfs:comment "schema:Watercolor Paint"@en .                          
+
+mdhn:aat300266660 a mdhn:ResourceType;
+        rdfs:label "Calligraphy"@en, "قطعه خوشنويسی"@fa ;
+        rdfs:comment "schema:Calligraphy"@en .
+
+mdhn:aat30010001 a mdhn:ScriptStyleType ;
+    rdfs:label "Permission (Calligraphy Style)"@en, "اجازت نامه"@fa ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:isInExtendedScope "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300266660 .         
+
+mdhn:aat300200824 a mdhn:ScriptStyleType ;
+    rdfs:label "scripts (writing)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean .
+
+mdhn:aat300201815 a mdhn:ScriptStyleType ;
+    rdfs:label "<scripts by form>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300200824 .
+
+mdhn:aat300208615 a mdhn:ScriptStyleType ;
+    rdfs:label "Arabic scripts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300201815 .
+
+mdhn:aat300194434 a mdhn:ScriptStyleType ;
+    rdfs:label "Kufic"@en , "کوفی"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+    
+
+mdhn:aat300195195 a mdhn:ScriptStyleType ;
+    rdfs:label "naskhī"@en , "نسخ"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+
+mdhn:aat300195198 a mdhn:ScriptStyleType ;
+    rdfs:label "thuluth"@en , "ثلث"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+
+mdhn:aat300265530 a mdhn:ScriptStyleType ;
+    rdfs:label "taʻlīq"@en , "تعليق"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+mdhn:aat300265532 a mdhn:ScriptStyleType ;
+    rdfs:label "nastaʻliq"@en , "نستعليق"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+mdhn:aat300265534 a mdhn:ScriptStyleType ;
+    rdfs:label "muḥaqqaq"@en , "محقق"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+mdhn:aat300265535 a mdhn:ScriptStyleType ;
+    rdfs:label "tawqī'"@en , "توقيع"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+mdhn:aat300265536 a mdhn:ScriptStyleType ;
+    rdfs:label "rīḥān"@en , "ريحان"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+mdhn:aat300265537 a mdhn:ScriptStyleType ;
+    rdfs:label "dīwānī"@en , "ديوانی"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+mdhn:aat300265538 a mdhn:ScriptStyleType ;
+    rdfs:label "maghribī (script form)"@en , "مغربی"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+mdhn:aat300265539 a mdhn:ScriptStyleType ;
+    rdfs:label "shikasteh"@en , "شکسته نستعليق"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+mdhn:aat300265540 a mdhn:ScriptStyleType ;
+    rdfs:label "riqāʻ"@en , "رقاع"@fa;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300208615 .
+
+mdhn:aat300137960 a mdhn:AATSubject ;
+    rdfs:label "<information artifacts by physical form>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean.
+    
+mdhn:aat300028051 a mdhn:AATSubject ;
+    rdfs:label "books"@en ;
+    owl:sameAs "schema:Book"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300137960 .  
+
+# Engravings ---------------------
+mdhn:aat300178544 a mdhn:AATSubject ;
+    rdfs:label "<prints by process: transfer method>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean .
+mdhn:aat300041338 a mdhn:AATSubject ;
+    rdfs:label "intaglio prints"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300178544 .
+mdhn:aat300041340 a mdhn:AATSubject ;
+    rdfs:label "engravings (prints)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041338 .
+mdhn:aat300041352 a mdhn:AATSubject ;
+    rdfs:label "line engravings (prints)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041340 .
+
+mdhn:aat300041356 a mdhn:AATSubject ;
+    rdfs:label "mezzotints (prints)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041340 .
+
+mdhn:aat300041362 a mdhn:AATSubject ;
+    rdfs:label "niello prints"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041340 .
+
+mdhn:aat300041363 a mdhn:AATSubject ;
+    rdfs:label "steel engravings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041340 .
+
+mdhn:aat300041364 a mdhn:AATSubject ;
+    rdfs:label "stipple engravings (prints)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041340 .
+
+mdhn:aat300389774 a mdhn:AATSubject ;
+    rdfs:label "siderographs (engravings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041340 .
+
+mdhn:aat300411442 a mdhn:AATSubject ;
+    rdfs:label "punched engravings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041340 .
+
+mdhn:aat300264654 a mdhn:AATSubject ;
+    rdfs:label "sand-grain mezzotints (prints)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041356 .
+
+mdhn:aat300264657 a mdhn:AATSubject ;
+    rdfs:label "carborundum mezzotints (prints)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300041356 .  
+
+# Panoramas ---------------------
+mdhn:aat300015537 a mdhn:AATSubject ;
+    rdfs:label "panoramas"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300191088 . 
+
+mdhn:aat300191088 a mdhn:AATSubject ;
+    rdfs:label "<visual works by form of image>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300191087 .  
+
+mdhn:aat300191087 a mdhn:AATSubject ;
+    rdfs:label "<visual works by form>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300191086 . 
+mdhn:aat300191086 a mdhn:AATSubject ;
+    rdfs:label "visual works (works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean .  
+
+# Panorama Photography as a Technique ---------------------                        
+ 
+mdhn:aat300387602 a mdhn:AATSubject ;
+    rdfs:label "panoramic photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300138790 . 
+
+mdhn:aat300138790 a mdhn:AATSubject ;
+    rdfs:label "picture-taking techniques"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300134334 .  
+
+mdhn:aat300134334 a mdhn:AATSubject ;
+    rdfs:label "photographic techniques"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300149146 . 
+
+mdhn:aat300054225 a mdhn:AATSubject ;
+    rdfs:label "photography (process)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300134334 . 
+
+mdhn:aat300054227 a mdhn:ResourceType ;
+    rdfs:label "cinematography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300054228 a mdhn:ResourceType ;
+    rdfs:label "military photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300054229 a mdhn:ResourceType ;
+    rdfs:label "journalistic photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300054230 a mdhn:ResourceType ;
+    rdfs:label "travel photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300134506 a mdhn:ResourceType ;
+    rdfs:label "astronomical photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300134547 a mdhn:ResourceType ;
+    rdfs:label "documentary photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300134570 a mdhn:ResourceType ;
+    rdfs:label "psychic photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300134607 a mdhn:ResourceType ;
+    rdfs:label "spirit photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300135798 a mdhn:ResourceType ;
+    rdfs:label "fashion photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300138239 a mdhn:ResourceType ;
+    rdfs:label "nature photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300138800 a mdhn:ResourceType ;
+    rdfs:label "scientific photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300138804 a mdhn:ResourceType ;
+    rdfs:label "industrial photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300140969 a mdhn:ResourceType ;
+    rdfs:label "commercial portraiture"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300157838 a mdhn:ResourceType ;
+    rdfs:label "war photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300229951 a mdhn:ResourceType ;
+    rdfs:label "stop-motion photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054227 .
+
+mdhn:aat300256464 a mdhn:ResourceType ;
+    rdfs:label "forensic photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300263896 a mdhn:ResourceType ;
+    rdfs:label "videography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300386099 a mdhn:ResourceType ;
+    rdfs:label "social documentary photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300134547 .
+
+mdhn:aat300386812 a mdhn:ResourceType ;
+    rdfs:label "digital photography (digital camera)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .
+
+mdhn:aat300451604 a mdhn:ResourceType ;
+    rdfs:label "portrait photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054225 .        
+
+mdhn:aat300149146 a mdhn:AATSubject ;
+    rdfs:label "<photography and photographic processes and techniques>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean . 
+
+
+
+mdhn:aat300015637 a mdhn:AATSubject ;
+    rdfs:label "portraits"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300391003 .
+
+mdhn:aat300391003 a mdhn:AATSubject ;
+    rdfs:label "figure works"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300191098 .    
+
+mdhn:aat300191098 a mdhn:AATSubject ;
+    rdfs:label "<visual works by subject type>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300191086 .   
+
+     
+
+mdhn:aat300053159 a mdhn:AATSubject ;
+    rdfs:label "<image-making processes and techniques>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean .
+mdhn:aat300149146 a mdhn:AATSubject ;
+    rdfs:label "<photography and photographic processes and techniques>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300053159 .
+mdhn:aat300134334 a mdhn:AATSubject ;
+    rdfs:label "photographic techniques"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300149146 .
+mdhn:aat300138790 a mdhn:AATSubject ;
+    rdfs:label "picture-taking techniques"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300134334 .
+mdhn:aat300138798 a mdhn:AATSubject ;
+    rdfs:label "<picture-taking techniques by location or context>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300138790 .
+mdhn:aat300053443 a mdhn:AATSubject ;
+    rdfs:label "aerial photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300138798 .
+
+mdhn:aat300380544 a mdhn:AATSubject ;
+    rdfs:label "orthophotography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300053443 .
+
+mdhn:aat300386033 a mdhn:AATSubject ;
+    rdfs:label "balloon photography"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300053443 .
+
+
+mdhn:aat300027087 a mdhn:AATSubject ;
+    rdfs:label "journals"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300137954 .  
+
+mdhn:aat300027112 a mdhn:AATSubject ;
+    rdfs:label "diaries"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300027087 .
+
+mdhn:aat300241584 a mdhn:AATSubject ;
+    rdfs:label "<components by specific context>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean .    
+
+mdhn:aat300072553 a mdhn:AATSubject ;
+    rdfs:label "built work divisions"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300241584 .      
+
+mdhn:aat300003615 a mdhn:AATSubject ;
+    rdfs:label "towers (building divisions)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300072553 .        
+
+mdhn:aat300451356 a mdhn:AATSubject ;
+    rdfs:label "ventilation towers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300003615 .  
+
+mdhn:aat300248183 a mdhn:AATSubject ;
+    rdfs:label "wind catchers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300451356 .
+
+
+mdhn:aat300033618 a mdhn:AATSubject ;
+    rdfs:label "paintings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300191091 .       
+
+mdhn:aat300033701 a mdhn:AATSubject ;
+    rdfs:label "<paintings by material or technique>canvas paintings"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033618 . 
+
+mdhn:aat300033690 a mdhn:ResourceType ;
+    rdfs:label "oil sketches"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033799 .
+
+mdhn:aat300033706 a mdhn:ResourceType ;
+    rdfs:label "finger paintings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300033799 a mdhn:ResourceType ;
+    rdfs:label "oil paintings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300078925 a mdhn:ResourceType ;
+    rdfs:label "watercolors (paintings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300078928 a mdhn:ResourceType ;
+    rdfs:label "gouaches (paintings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300078925 .
+
+mdhn:aat300177433 a mdhn:ResourceType ;
+    rdfs:label "frescoes (paintings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300181918 a mdhn:ResourceType ;
+    rdfs:label "acrylic paintings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300181922 a mdhn:ResourceType ;
+    rdfs:label "encaustic paintings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300249221 a mdhn:ResourceType ;
+    rdfs:label "theorems (paintings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300264815 a mdhn:ResourceType ;
+    rdfs:label "bark paintings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300311289 a mdhn:ResourceType ;
+    rdfs:label "sargas (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300387661 a mdhn:ResourceType ;
+    rdfs:label "fluorescent paintings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300389785 a mdhn:ResourceType ;
+    rdfs:label "tempera paintings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300404216 a mdhn:ResourceType ;
+    rdfs:label "aquarelles (paintings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300078925 .
+
+mdhn:aat300404637 a mdhn:ResourceType ;
+    rdfs:label "ink wash paintings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300404675 a mdhn:ResourceType ;
+    rdfs:label "ink resist paintings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300404909 a mdhn:ResourceType ;
+    rdfs:label "casein paintings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300410255 a mdhn:ResourceType ;
+    rdfs:label "Tüchleins (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300410350 a mdhn:ResourceType ;
+    rdfs:label "canvas paintings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300420005 a mdhn:ResourceType ;
+    rdfs:label "hide paintings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .
+
+mdhn:aat300420006 a mdhn:ResourceType ;
+    rdfs:label "hide painters"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033701 .          
+
+
+
+mdhn:aat300033973 a mdhn:ResourceType ;
+    rdfs:label "drawings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300191091 .   
+
+mdhn:aat300034698 a mdhn:ResourceType ;
+    rdfs:label "<drawings by material or technique>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300033973 .   
+
+mdhn:aat300034707 a mdhn:ResourceType ;
+    rdfs:label "doodles"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300034727 a mdhn:ResourceType ;
+    rdfs:label "renderings (drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300034736 a mdhn:ResourceType ;
+    rdfs:label "tracings (drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300075467 a mdhn:ResourceType ;
+    rdfs:label "thumbnail sketches"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300076598 a mdhn:ResourceType ;
+    rdfs:label "computer drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300076600 a mdhn:ResourceType ;
+    rdfs:label "plots (computer drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300076598 .
+
+mdhn:aat300100184 a mdhn:ResourceType ;
+    rdfs:label "blot drawings (drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300100186 a mdhn:ResourceType ;
+    rdfs:label "freehand drawings (drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300100190 a mdhn:ResourceType ;
+    rdfs:label "gesture drawings (drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300100194 a mdhn:ResourceType ;
+    rdfs:label "line drawings (drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300100197 a mdhn:ResourceType ;
+    rdfs:label "contour drawings (drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300100194 .
+
+mdhn:aat300100201 a mdhn:ResourceType ;
+    rdfs:label "blind contour drawings (contour drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300100197 .
+
+mdhn:aat300100203 a mdhn:ResourceType ;
+    rdfs:label "cross-contour drawings (line drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300100194 .
+
+mdhn:aat300100207 a mdhn:ResourceType ;
+    rdfs:label "outline drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300100194 .
+
+mdhn:aat300100209 a mdhn:ResourceType ;
+    rdfs:label "mechanical drawings (tool-aided drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300100217 a mdhn:ResourceType ;
+    rdfs:label "three-tone drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300100222 a mdhn:ResourceType ;
+    rdfs:label "tone drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300182745 a mdhn:ResourceType ;
+    rdfs:label "cadavres exquis"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300215301 a mdhn:ResourceType ;
+    rdfs:label "wireframe drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300076598 .
+
+mdhn:aat300263383 a mdhn:ResourceType ;
+    rdfs:label "sandpaper paintings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300263511 a mdhn:ResourceType ;
+    rdfs:label "animation cels"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300263512 a mdhn:ResourceType ;
+    rdfs:label "animated cartoons"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300263513 a mdhn:ResourceType ;
+    rdfs:label "animation drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300263514 a mdhn:ResourceType ;
+    rdfs:label "limited edition cels"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300263511 .
+
+mdhn:aat300263515 a mdhn:ResourceType ;
+    rdfs:label "serigraph cels"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300263511 .
+
+mdhn:aat300263516 a mdhn:ResourceType ;
+    rdfs:label "courvoisiers (animation cels)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300263511 .
+
+mdhn:aat300263760 a mdhn:ResourceType ;
+    rdfs:label "strikings (drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300264868 a mdhn:ResourceType ;
+    rdfs:label "nitrate cels"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300263511 .
+
+mdhn:aat300265072 a mdhn:ResourceType ;
+    rdfs:label "blotted line drawings (drawings)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300265265 a mdhn:ResourceType ;
+    rdfs:label "cel set-ups"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300263511 .
+
+mdhn:aat300265273 a mdhn:ResourceType ;
+    rdfs:label "production cels"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300263511 .
+
+mdhn:aat300265519 a mdhn:ResourceType ;
+    rdfs:label "ledger drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300266092 a mdhn:ResourceType ;
+    rdfs:label "typestracts"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300266198 a mdhn:ResourceType ;
+    rdfs:label "Bézier curves"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300076598 .
+
+mdhn:aat300266219 a mdhn:ResourceType ;
+    rdfs:label "pen and wash drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300379919 a mdhn:ResourceType ;
+    rdfs:label "calligraphic drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300380567 a mdhn:ResourceType ;
+    rdfs:label "silverpoint drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300404635 .
+
+mdhn:aat300389868 a mdhn:ResourceType ;
+    rdfs:label "chiaroscuro drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300390908 a mdhn:ResourceType ;
+    rdfs:label "charcoal drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300395514 a mdhn:ResourceType ;
+    rdfs:label "chalk drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300404008 a mdhn:ResourceType ;
+    rdfs:label "oil transfer drawings (visual works)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300404635 a mdhn:ResourceType ;
+    rdfs:label "metalpoint drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300404676 a mdhn:ResourceType ;
+    rdfs:label "pen and ink drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300410334 a mdhn:ResourceType ;
+    rdfs:label "pencil drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .
+
+mdhn:aat300438620 a mdhn:ResourceType ;
+    rdfs:label "wall drawings"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300034698 .   
+
+mdhn:aat300054238 a mdhn:ResourceType ;
+    rdfs:label "conservation (discipline)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054573 .
+
+mdhn:aat300229399 a mdhn:ResourceType ;
+    rdfs:label "preventive conservation"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054238 .
+
+mdhn:aat300379371 a mdhn:ResourceType ;
+    rdfs:label "architectural conservation"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054238 .
+
+mdhn:aat300379523 a mdhn:ResourceType ;
+    rdfs:label "archaeological conservation"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054238 .
+
+mdhn:aat300379590 a mdhn:ResourceType ;
+    rdfs:label "ethnographic conservation"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054238 .
+
+mdhn:aat300387441 a mdhn:ResourceType ;
+    rdfs:label "sustainable conservation"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300054238 .         
+   
+#========================================
+mdhn:aat300197200 a mdhn:ResourceType ;
+    rdfs:label "<containers by function or context>"@en ;
+    mdhn:isGuideTerm "true"^^xsd:boolean .
+
+mdhn:aat300038879 a mdhn:ResourceType ;
+    rdfs:label "Bible boxes"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300194529 a mdhn:ResourceType ;
+    rdfs:label "ballot boxes"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300420661 .
+
+mdhn:aat300197578 a mdhn:ResourceType ;
+    rdfs:label "document containers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197200 .
+
+mdhn:aat300197601 a mdhn:ResourceType ;
+    rdfs:label "envelopes"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300197602 a mdhn:ResourceType ;
+    rdfs:label "folders (containers)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300198929 a mdhn:ResourceType ;
+    rdfs:label "portfolios (containers)"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300200341 a mdhn:ResourceType ;
+    rdfs:label "slipcases"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300215531 a mdhn:ResourceType ;
+    rdfs:label "file boxes"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300215608 a mdhn:ResourceType ;
+    rdfs:label "scrinia"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300247936 a mdhn:ResourceType ;
+    rdfs:label "record covers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300429821 .
+
+mdhn:aat300252990 a mdhn:ResourceType ;
+    rdfs:label "loose-leaf binders"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300252997 a mdhn:ResourceType ;
+    rdfs:label "ring binders"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300252990 .
+
+mdhn:aat300253008 a mdhn:ResourceType ;
+    rdfs:label "post binders"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300252990 .
+
+mdhn:aat300261924 a mdhn:ResourceType ;
+    rdfs:label "jewel cases"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300261961 a mdhn:ResourceType ;
+    rdfs:label "Union cases"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300266823 a mdhn:ResourceType ;
+    rdfs:label "picture sleeves"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300247936 .
+
+mdhn:aat300379901 a mdhn:ResourceType ;
+    rdfs:label "letter racks"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300391034 a mdhn:ResourceType ;
+    rdfs:label "map cases"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300420473 a mdhn:ResourceType ;
+    rdfs:label "audio recording albums"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300420474 .
+
+mdhn:aat300420474 a mdhn:ResourceType ;
+    rdfs:label "audio recording cases"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300420487 a mdhn:ResourceType ;
+    rdfs:label "audiotape albums"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300420473 .
+
+mdhn:aat300420488 a mdhn:ResourceType ;
+    rdfs:label "audiotape cases"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300420474 .
+
+mdhn:aat300420658 a mdhn:ResourceType ;
+    rdfs:label "ballot bags"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300420661 .
+
+mdhn:aat300420661 a mdhn:ResourceType ;
+    rdfs:label "ballot containers"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300423287 a mdhn:ResourceType ;
+    rdfs:label "clip binders"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300252990 .
+
+mdhn:aat300423554 a mdhn:ResourceType ;
+    rdfs:label "document cases"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300423559 a mdhn:ResourceType ;
+    rdfs:label "document tubes"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300423554 .
+
+mdhn:aat300427711 a mdhn:ResourceType ;
+    rdfs:label "jury wheels"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300429814 a mdhn:ResourceType ;
+    rdfs:label "record cases"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300420474 .
+
+mdhn:aat300429821 a mdhn:ResourceType ;
+    rdfs:label "record sleeves"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+mdhn:aat300431220 a mdhn:ResourceType ;
+    rdfs:label "record albums"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300420473 .
+
+mdhn:aat300432172 a mdhn:ResourceType ;
+    rdfs:label "shipping envelopes"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197601 .
+
+mdhn:aat300435277 a mdhn:ResourceType ;
+    rdfs:label "expanding files"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197602 .
+
+mdhn:aat300435315 a mdhn:ResourceType ;
+    rdfs:label "flat file folders"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197602 .
+
+mdhn:aat300440770 a mdhn:ResourceType ;
+    rdfs:label "sutra boxes"@en ;
+    mdhn:isGuideTerm "false"^^xsd:boolean ;
+    mdhn:hasAATBroader mdhn:aat300197578 .
+
+
+    
+
+
+             
+
+   
