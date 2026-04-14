@@ -1,8 +1,8 @@
 @prefix cvoc: <https://github.com/mehrandhn/ghani-persian-kg/term/> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix fhkb: <http://example.org/fhkb#> .
+@prefix fhkb: <https://github.com/mehrandhn/genealogy.owl#>  .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix mdhn: <https://github.com/mehrandhn/ghani-persian-kg/vocab#> .
+@prefix mdhn: <https://github.com/mehrandhn/ghani-persian-kg/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix person: <https://github.com/mehrandhn/ghani-persian-kg/person/> .
 @prefix place: <https://github.com/mehrandhn/ghani-persian-kg/place/> .
@@ -11,10 +11,9 @@
 @prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix so: <https://schema.org/> .
-@prefix stardog: <tag:stardog:api:> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix : <http://api.stardog.com/> .
+@prefix : <https://github.com/mehrandhn/ghani-persian-kg/> .
 @prefix doc: <https://github.com/mehrandhn/ghani-persian-kg/document/> .
 
 <https://github.com/mehrandhn/ghani-persian-kg/vocab#> a owl:Ontology ;
@@ -24,14 +23,13 @@
     rdfs:comment "Minimal, extensible ontology for the Ghassem Ghani Collection (MS 235) at Yale. Personalities, places and terms are local controlled vocabularies."@en ;
     rdfs:label "MDHN Ghani Persian Cultural Heritage Ontology"@en .
 
-mdhn:Document a rdfs:Class ;
+mdhn:DigitalResource a rdfs:Class ;
     rdfs:comment "A transcribed document from the Ghassem Ghani Collection"@en ;
-    rdfs:label "Ghani Document"@en ;
-    rdfs:subClassOf schema:CreativeWork .
+    rdfs:label "Digital Resource"@en .
 
 mdhn:Personality a rdfs:Class ;
     rdfs:comment "Local scoped controlled vocabulary for persons mentioned in Ghani documents. Can be reconciled with Wikidata later."@en ;
-    rdfs:label "Personality (local controlled vocabulary)"@en ;
+    rdfs:label "Personality"@en ;
     rdfs:subClassOf fhkb:Person .
 
 mdhn:Stamp a rdfs:Class ;
@@ -41,83 +39,163 @@ mdhn:Stamp a rdfs:Class ;
 
 mdhn:Place a rdfs:Class ;
     rdfs:comment "Local scoped controlled vocabulary for places. Can be reconciled with TGN later."@en ;
-    rdfs:label "Place (local controlled vocabulary)"@en ;
-    rdfs:subClassOf schema:Place .
+    rdfs:label "Place"@en ;
+    rdfs:subClassOf mdhn:GettyTGN .
 
 mdhn:TechnicalTerm a rdfs:Class ;
     rdfs:comment "Local scoped controlled vocabulary for technical/juridical terms. Can be reconciled with AAT later."@en ;
-    rdfs:label "Technical Term (local controlled vocabulary)"@en ;
+    rdfs:label "Technical Term"@en ;
     rdfs:subClassOf skos:Concept .
 
+mdhn:Category a rdfs:Class ;
+    rdfs:comment "Reflects the category of the document"@en ;
+    rdfs:label "Category"@en .
+
+mdhn:SubjectSource a owl:Class ;
+    rdfs:comment "Root class of all Subject Sources" ;
+    rdfs:label "SubjectSource" .
+
+mdhn:AATTerm a owl:Class ;
+    rdfs:comment "Root Class for all AAT inherited concepts" ;
+    rdfs:label "AATTerm";
+     rdfs:subClassOf  mdhn:SubjectSource  .
+
+mdhn:GettyTGN a owl:Class ;
+    rdfs:comment "Getty TGN Class for Geographic Places" ;
+    rdfs:label "GettyTGN" . 
+
+mdhn:hasTGNPlace a owl:ObjectProperty ;
+    rdfs:comment "TGN entry associate the resource to Getty TGN" ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "hasTGNPlace" ;
+    rdfs:range mdhn:GettyTGN .
+
+mdhn:usedTGN a owl:ObjectProperty ;
+    rdfs:comment "Indicates Resources that used this specified TGN" ;
+    rdfs:domain mdhn:GettyTGN ;
+    rdfs:label "usedTGN" ;
+    rdfs:range mdhn:DigitalResource ;
+    owl:inverseOf mdhn:hasTGNPlace .
+
+mdhn:gettyTGNURI a owl:DatatypeProperty ;
+    rdfs:comment "The TGN URI is used in Getty AAT" ;
+    rdfs:domain mdhn:GettyTGN ;
+    rdfs:label "gettyTGNURI" ;
+    rdfs:range xsd:string .
+
+mdhn:hasTGNNarrower a owl:ObjectProperty ;
+    rdfs:comment "Indicates broader concept of specified TGN" ;
+    rdfs:label "hasTGNNarrower" ;
+    owl:inverseOf mdhn:hasTGNBroader ;
+    so:domainIncludes mdhn:GettyTGN ;
+    so:rangeIncludes mdhn:GettyTGN .
+
+mdhn:hasTGNBroader a owl:ObjectProperty ;
+    rdfs:comment "Associate a TGN concept to its broader concept" ;
+    rdfs:label "hasTGNBroader" ;
+    rdfs:domain mdhn:GettyTGN ;
+    rdfs:range mdhn:GettyTGN .        
+
+mdhn:ResourceType a owl:Class ;
+    rdfs:comment "Classes choosed as a AAT subset and it is used as First Level Classification of all resources." ;
+    rdfs:label "Resource Type" ;
+    rdfs:subClassOf mdhn:AATTerm . 
+
+mdhn:ofType a owl:ObjectProperty ;
+    rdfs:comment "Associates a DigitalResource with its resource type." ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "Of Type" ;
+    rdfs:range mdhn:ResourceType .
+
+mdhn:hasTypeInstance a owl:ObjectProperty ;
+    rdfs:comment "Associates Resource Type to instances." ;
+    rdfs:domain mdhn:ResourceType ;
+    rdfs:label "has Type Instance" ;
+    rdfs:range mdhn:DigitalResource ;
+    owl:inverseOf mdhn:ofType .                   
+
 mdhn:documentId a owl:DatatypeProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "Ghani ID (e.g. GI 49, G III A 45)"@en ;
     rdfs:range xsd:string .
 
 mdhn:category a owl:DatatypeProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "G-series category (GI, GII, GIX, etc.)"@en ;
     rdfs:range xsd:string .
 
 mdhn:description a owl:DatatypeProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "English description from Yale table"@en ;
     rdfs:range xsd:string .
 
 mdhn:transcription a owl:DatatypeProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "Full Persian transcription"@fa ;
     rdfs:range xsd:string .
 
+mdhn:belongsToCategory a owl:ObjectProperty ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "Belongs to category"@en ;
+    rdfs:range mdhn:Category .
+
+mdhn:containsDocument a owl:ObjectProperty ;
+    rdfs:domain mdhn:Category ;
+    rdfs:label "Contains document"@en ;
+    rdfs:range mdhn:DigitalResource ;
+    owl:inverseOf mdhn:belongsToCategory .   
+
+
 mdhn:mentionsPersonality a owl:ObjectProperty ;
     rdfs:label "mentionsPersonality"@en;                         
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "Mentions personality"@en ;
     rdfs:range mdhn:Personality .
 
 mdhn:PersonMentionedIn a owl:ObjectProperty;
                  rdfs:label "PersonMentionedIn"@en;
                  rdfs:domain mdhn:Personality;
-                 rdfs:range mdhn:Document;
+                 rdfs:range mdhn:DigitalResource;
                  owl:inverseOf mdhn:mentionsPersonality.
 
 mdhn:mentionsPlace a owl:ObjectProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "Mentions place"@en ;
     rdfs:range mdhn:Place .
 
 mdhn:PlaceMentionedIn a owl:ObjectProperty;
                  rdfs:label "PlaceMentionedIn"@en;
                  rdfs:domain mdhn:Place;
-                 rdfs:range mdhn:Document;
+                 rdfs:range mdhn:DigitalResource;
                  owl:inverseOf mdhn:mentionsPlace.
 
 mdhn:hasTechnicalTerm a owl:ObjectProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "Has technical term"@en ;
     rdfs:range mdhn:TechnicalTerm .
 
 mdhn:termUsedIn a owl:ObjectProperty;
                  rdfs:label "termUsedIn"@en;
                  rdfs:domain mdhn:TechnicalTerm;
-                 rdfs:range mdhn:Document;
+                 rdfs:range mdhn:DigitalResource;
                  owl:inverseOf mdhn:hasTechnicalTerm.
 
 mdhn:hasStamp a owl:ObjectProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "Has stamp"@en ;
     rdfs:range mdhn:Stamp .
 
 mdhn:appearInDocument a owl:ObjectProperty;
                  rdfs:label "appearInDocument"@en;
                  rdfs:domain mdhn:Stamp;
-                 rdfs:range mdhn:Document;
+                 rdfs:range mdhn:DigitalResource;
                  owl:inverseOf mdhn:hasStamp.
 
 mdhn:hasRepresents a owl:ObjectProperty ;
     rdfs:domain mdhn:Stamp ;
     rdfs:label "hasRepresents"@en ;
     rdfs:range mdhn:Personality .
+
 mdhn:ownerOf a owl:ObjectProperty;
                  rdfs:label "ownerOf"@en;
                  rdfs:domain mdhn:Personality;
@@ -125,30 +203,46 @@ mdhn:ownerOf a owl:ObjectProperty;
                  owl:inverseOf mdhn:hasRepresents.
 
 mdhn:chronology a owl:ObjectProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "Temporal interval (often AH/AD range)"@en ;
     rdfs:range time:ProperInterval .
 
 mdhn:originalYaleURL a owl:ObjectProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "Original Yale detail page URL"@en ;
-    rdfs:range rdfs:Resource .
+    rdfs:range xsd:anyURI  .
 
 mdhn:pdfURL a owl:ObjectProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "Local or Internet Archive PDF URL"@en ;
-    rdfs:range rdfs:Resource .
+    rdfs:range xsd:anyURI .
 
 mdhn:pdfSha256 a owl:DatatypeProperty ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "SHA-256 hash of the transcription PDF"@en ;
     rdfs:range xsd:string .
 
+mdhn:physicalContainer a owl:DatatypeProperty ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "Physical container"@en ;
+    rdfs:range xsd:string .  
+
+mdhn:transcriptionPDF a owl:DatatypeProperty ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "transcriptionPDF"@en ;
+    rdfs:range xsd:string . 
+
+mdhn:additionalNote a owl:DatatypeProperty ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "Additional note"@en ;
+    rdfs:range xsd:string .            
+  
+
 mdhn:iiifManifest a owl:ObjectProperty ;
     rdfs:comment "Placeholder for the IIIF manifest that will be uploaded to Internet Archive later. Use the same item ID as the IA record."@en ;
-    rdfs:domain mdhn:Document ;
+    rdfs:domain mdhn:DigitalResource ;
     rdfs:label "IIIF Manifest URL"@en ;
-    rdfs:range rdfs:Resource .
+    rdfs:range xsd:anyURI . 
 
 mdhn:reconciledWikidata a owl:ObjectProperty ;
     rdfs:domain mdhn:Personality , mdhn:Place , mdhn:TechnicalTerm ;
@@ -163,7 +257,7 @@ mdhn:reconciledAAT a owl:ObjectProperty ;
     rdfs:domain mdhn:TechnicalTerm ;
     rdfs:label "Reconciled with Getty AAT (optional)"@en .
 
-doc:GI_049 a mdhn:Document ;
+doc:GI_049 a mdhn:DigitalResource ;
     mdhn:category "GI" ;
     mdhn:chronology [
         a time:ProperInterval ;
