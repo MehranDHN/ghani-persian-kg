@@ -17,3 +17,6 @@
 @prefix doc: <https://github.com/mehrandhn/ghani-persian-kg/document/> .
 @prefix tgn: <http://vocab.getty.edu/tgn/> .
 @prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix stamp:   <https://github.com/mehrandhn/ghani-persian-kg/stamp/> .
+@prefix logo:   <https://github.com/mehrandhn/ghani-persian-kg/logo/> .
+@prefix lethead:   <https://github.com/mehrandhn/ghani-persian-kg/letterhead/> .

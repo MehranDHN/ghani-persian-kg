@@ -1,5 +1,5 @@
 @prefix : <https://github.com/mehrandhn/ghani-persian-kg/> .
-@prefix mdhn: <https://github.com/mehrandhn/ghani-persian-kg/> .
+@prefix mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>  .
 @prefix wd: <https://www.wikidata.org/wiki/> .
 @prefix fhkb: <https://github.com/mehrandhn/genealogy.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
