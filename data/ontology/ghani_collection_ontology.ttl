@@ -4,6 +4,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix mdhn: <https://github.com/mehrandhn/ghani-persian-kg/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix stamp:   <https://github.com/mehrandhn/ghani-persian-kg/stamp/> .
+@prefix logo:   <https://github.com/mehrandhn/ghani-persian-kg/logo/> .
+@prefix lethead:   <https://github.com/mehrandhn/ghani-persian-kg/letterhead/> .
 @prefix person: <https://github.com/mehrandhn/ghani-persian-kg/person/> .
 @prefix place: <https://github.com/mehrandhn/ghani-persian-kg/place/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -37,6 +40,14 @@ mdhn:Stamp a rdfs:Class ;
     rdfs:label "Stamp "@en ;
     rdfs:subClassOf schema:CreativeWork .
 
+mdhn:Logo a rdfs:Class ;
+    rdfs:comment "Logo in documents"@en ;
+    rdfs:label "Logo "@en . 
+
+mdhn:Letterhead a rdfs:Class ;
+    rdfs:comment "Letterhead in documents"@en ;
+    rdfs:label "Letterhead"@en .     
+
 mdhn:Place a rdfs:Class ;
     rdfs:comment "Local scoped controlled vocabulary for places. Can be reconciled with TGN later."@en ;
     rdfs:label "Place"@en ;
@@ -59,6 +70,11 @@ mdhn:AATTerm a owl:Class ;
     rdfs:comment "Root Class for all AAT inherited concepts" ;
     rdfs:label "AATTerm";
      rdfs:subClassOf  mdhn:SubjectSource  .
+
+mdhn:AATSubject a owl:Class ;
+    rdfs:comment "Classes choosed as AAT subset for Subjects and it is used to associate AATs as Topical headings to the photographs" ;
+    rdfs:label "AATSubject" ;
+    rdfs:subClassOf mdhn:AATTerm .     
 
 mdhn:GettyTGN a owl:Class ;
     rdfs:comment "Getty TGN Class for Geographic Places" ;
@@ -149,8 +165,12 @@ mdhn:containsDocument a owl:ObjectProperty ;
 mdhn:mentionsPersonality a owl:ObjectProperty ;
     rdfs:label "mentionsPersonality"@en;                         
     rdfs:domain mdhn:DigitalResource ;
-    rdfs:label "Mentions personality"@en ;
     rdfs:range mdhn:Personality .
+
+mdhn:collectionDonator a owl:ObjectProperty ;
+    rdfs:label "collectionDonator"@en;                         
+    rdfs:domain mdhn:Category ;
+    rdfs:range mdhn:Personality .    
 
 mdhn:PersonMentionedIn a owl:ObjectProperty;
                  rdfs:label "PersonMentionedIn"@en;
@@ -185,8 +205,8 @@ mdhn:hasStamp a owl:ObjectProperty ;
     rdfs:label "Has stamp"@en ;
     rdfs:range mdhn:Stamp .
 
-mdhn:appearInDocument a owl:ObjectProperty;
-                 rdfs:label "appearInDocument"@en;
+mdhn:stampInDocument a owl:ObjectProperty;
+                 rdfs:label "stampInDocument"@en;
                  rdfs:domain mdhn:Stamp;
                  rdfs:range mdhn:DigitalResource;
                  owl:inverseOf mdhn:hasStamp.
@@ -195,6 +215,48 @@ mdhn:hasRepresents a owl:ObjectProperty ;
     rdfs:domain mdhn:Stamp ;
     rdfs:label "hasRepresents"@en ;
     rdfs:range mdhn:Personality .
+
+mdhn:hasLogo a owl:ObjectProperty ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "Has Logo"@en ;
+    rdfs:range mdhn:Logo .
+
+mdhn:hasLetterhead a owl:ObjectProperty ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "hasLetterhead"@en ;
+    rdfs:range mdhn:Letterhead .
+
+mdhn:letterheadInDocument a owl:ObjectProperty;
+                 rdfs:label "letterheadInDocument"@en;
+                 rdfs:domain mdhn:StLetterheadamp;
+                 rdfs:range mdhn:DigitalResource;
+                 owl:inverseOf mdhn:hasLetterhead.
+
+mdhn:letterheadOwner a owl:ObjectProperty ;
+    rdfs:domain mdhn:Letterhead ;
+    rdfs:label "letterheadOwner"@en ;
+    rdfs:range mdhn:Personality .    
+
+mdhn:croppedStamp a owl:ObjectProperty ;
+    rdfs:domain mdhn:Stamp ;
+    rdfs:label "Cropped Stamp"@en ;
+    rdfs:range xsd:anyURI .  
+
+mdhn:croppedLogo a owl:ObjectProperty ;
+    rdfs:domain mdhn:Logo ;
+    rdfs:label "Cropped Logo"@en ;
+    rdfs:range xsd:anyURI . 
+
+mdhn:croppedLetterhead a owl:ObjectProperty ;
+    rdfs:domain mdhn:Leterhead ;
+    rdfs:label "Cropped Leterhead"@en ;
+    rdfs:range xsd:anyURI .            
+
+mdhn:logoInDocument a owl:ObjectProperty;
+                 rdfs:label "logoInDocument"@en;
+                 rdfs:domain mdhn:Logo;
+                 rdfs:range mdhn:DigitalResource;
+                 owl:inverseOf mdhn:hasLogo.    
 
 mdhn:ownerOf a owl:ObjectProperty;
                  rdfs:label "ownerOf"@en;
@@ -232,10 +294,15 @@ mdhn:transcriptionPDF a owl:DatatypeProperty ;
     rdfs:label "transcriptionPDF"@en ;
     rdfs:range xsd:string . 
 
-mdhn:additionalNote a owl:DatatypeProperty ;
+mdhn:headerNote a owl:DatatypeProperty ;
     rdfs:domain mdhn:DigitalResource ;
-    rdfs:label "Additional note"@en ;
-    rdfs:range xsd:string .            
+    rdfs:label "Header note"@en ;
+    rdfs:range xsd:string .  
+
+mdhn:footerNote a owl:DatatypeProperty ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "Footer note"@en ;
+    rdfs:range xsd:string .               
   
 
 mdhn:iiifManifest a owl:ObjectProperty ;
