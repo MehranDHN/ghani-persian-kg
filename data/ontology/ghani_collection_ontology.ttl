@@ -161,6 +161,11 @@ mdhn:containsDocument a owl:ObjectProperty ;
     rdfs:range mdhn:DigitalResource ;
     owl:inverseOf mdhn:belongsToCategory .   
 
+mdhn:exactlySamePerson a owl:ObjectProperty ;
+    rdfs:comment "Links two collection";
+    rdfs:domain mdhn:Personality ;
+    rdfs:label "exactlySamePerson" ;
+    rdfs:range fhkb:Person . 
 
 mdhn:mentionsPersonality a owl:ObjectProperty ;
     rdfs:label "mentionsPersonality"@en;                         
@@ -228,9 +233,15 @@ mdhn:hasLetterhead a owl:ObjectProperty ;
 
 mdhn:letterheadInDocument a owl:ObjectProperty;
                  rdfs:label "letterheadInDocument"@en;
-                 rdfs:domain mdhn:StLetterheadamp;
+                 rdfs:domain mdhn:Letterhead;
                  rdfs:range mdhn:DigitalResource;
                  owl:inverseOf mdhn:hasLetterhead.
+                 
+mdhn:hasAATBroader a owl:ObjectProperty ;
+    rdfs:comment "Associate an AAT concept to its broader concept" ;
+    rdfs:label "hasAATBroader" ;
+    rdfs:domain mdhn:AATTerm ;
+    rdfs:range mdhn:AATTerm .
 
 mdhn:letterheadOwner a owl:ObjectProperty ;
     rdfs:domain mdhn:Letterhead ;
