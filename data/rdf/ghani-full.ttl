@@ -2571,10 +2571,16 @@ gi_105.pdf
 doc:GI_106 a mdhn:DigitalResource ;
     mdhn:belongsToCategory mdhn:GI_Various_Correspondences ;
     mdhn:chronology [ a time:ProperInterval ;
-            time:hasBeginning "1308"^^xsd:gYear ;
-            time:hasEnd "1893"^^xsd:gYear ] ;
+            time:hasBeginning "1893"^^xsd:gYear ;
+            time:hasEnd "1893"^^xsd:gYear;
+            time:hasAHBeginning "1308"^^xsd:gYear ;
+            time:hasAHEnd "1308"^^xsd:gYear ] ;
     mdhn:description "Pirzadeh to the Shah: Requesting monetary help"@en ;
     mdhn:documentId "GI 106" ;
+    mdhn:ofType mdhn:aat300252927, mdhn:aat300026879;
+    mdhn:physicalContainer "Box 1";
+    rdfs:comment "Pirzadeh to the Shah: Requesting monetary help"@en;
+    mdhn:transcriptionPDF "gi_106.pdf";
     mdhn:hasTechnicalTerm cvoc:capital,
         cvoc:children,
         cvoc:dar_al_khelafeh,
@@ -2605,28 +2611,21 @@ doc:GI_106 a mdhn:DigitalResource ;
         place:khanqah,
         place:tehran,
         place:tomb ;
+    mdhn:headerNote """درآمد:  نامه ی محمد علی پیرزاده به ناصرالدین شاه: تقاضای کمک مالی برای تکمیل ساخت خانه و خانقاه اش – حوالی ۱۳۰۸-۱۳۱۰
+پیرزاده به شاه تقاضای کمک مالی
+ """@fa;
+    mdhn:footerNote """پانوشت: پرسش حال دل سوخته کن بهر خدا / نیست از شاه عجب گر بنوازد درویش – شاه بیدار بخت را هر شب / ما نگهبان افسر و کلهیم –  دعای گوشه نشینان بلا بگرداند/ چرا بگوشه چشمی بما نمی‌نگری: هر سه از غزل های حافظ است.
+پیرزاده: حاج محمد علی نائینی (۱۲۵۱-۱۳۲۱): عارف مشهور دورۀ قاجار. نیاکان او همه اهل طریقت بودند. وی فرزند آقا محمد اسمعیل بود که  در سال ۱۲۷۲ قمری، پس از درگذشت پدر، به تهران آمد و بعد از مدتی مشغول به سیاحت در ممالک خارجه گردید. در ادامۀ آن از مصر و شامات و بیت‌المقدس نیز دیدن کرد. سفرهای وی بین سال های ۱۲۷۵ و ۱۳۰۶ بود. در سال ۱۳۰۶ قمری که از اروپا بازگشت، سفرنامه خود را نوشت. در ایامی که در اسلامبول اقامت داشت به حاج میرزا صفاء ارادت می‌ورزید و از طرف او به حاج پیرزاده ملقب گردید و به وسیله حاج میرزا صفا با حاجی میرزا حسین خان سپهسالار خیلی مربوط شد و در سفرهای آذربایجان و خراسان همراه وی بود. حاجی پیرزاده در بازگشت از این سفرها در تهران مستقر شد و در همین شهر ازدواج نمود. پیرزاده خطی خوش داشت و شعر می سرود و به جهت حُسن سلوک مورد توجه ناصرالدین شاه و مظفرالدین شاه و بسیاری از بود.
+"""@fa;
     mdhn:originalYaleURL <https://ghani.macmillan.yale.edu/gi-106> ;
     mdhn:pdfSha256 "8cf1f21dc7f26e8d4aa118ade3482617e0c957e8953b2c0f05d08f83da6c0e02" ;
     mdhn:pdfURL <https://ghani.macmillan.yale.edu/sites/default/files/ms_0235_s01_b001_f0004_d0106.pdf> ;
-    mdhn:transcription """GI 106
-GI 106
-Ghani Location:
-Box 1
-Pirzadeh to the Shah: Requesting monetary help
-GI 106
-درآمد:  نامه ی محمد علی پیرزاده به ناصرالدین شاه: تقاضای کمک مالی برای تکمیل ساخت خانه و خانقاه اش – حوالی ۱۳۰۸-۱۳۱۰
-پیرزاده به شاه تقاضای کمک مالی
-هو
+    mdhn:transcription """هو
 پرسش حال دل سوخته کن بهر خدا / نیست از شاه عجب گر بنوازد درویش
 عرضه داشتِ فقیرانه درویشانه به حضور حق منظور مبارک انور سرکار اعلیحضرت اقدس ملوکانه ارواح العالمین فداه سال‌های سال است سفراً و حضراً برّاً و بحراً در اماکن متبرّکه و در هرجا بوده‌ام با زبان پاک و دل پاک درویشانه و بی ریا مسامحه و غفلت دعاگوئی ذات ملکوتی صفات اقدس همایونی نشده و دعاگوئی ذات مبارک پادشاهی را مثل طاعت و عبادت بر خود واجب می‌داند.
 شاه بیدار بخت را هر شب / ما نگهبان افسر و کلهیم.  برای آنکه
 دعای گوشه نشینان بلا بگرداند/ چرا بگوشه چشمی بما نمی‌نگری.
 بعد از مسافرتها و توقف طهران صاحب عیال و اولاد متعدد شده‌ام و تا بحال صاحب خانه و منزل نشده دو سال قبل مرحوم مشیرالدوله در جنب مقبره مرحوم مبرور حاجی میرزا صفا رحمه‌الله علیه برای حقیر بنای منزل و خانقاهی نمودند که محل سکنای عیال و فقرای دعاگو باشد قدری مخارج و اهتمام در ساختن خانقاه نمودند ولی خیلی ناتمام و بی در و بن مانده است و نمی‌شود با عیال در آن صحرا توقف نمود. حالا بقدر پانصد تومان لازم است که خانقاه تمام شود هرگاه مرحمت و توجه اعلیحضرت اقدس ملوکانه شامل حال این فقیر دعاگوی مخصوص باشد وجهی مرحمت شود که خانقاه به انجام برسد و هرگاه فرمایش ملوکانه شود که جناب مستطاب اجل اشرف امجد صدر اعظم دام اقباله العالی از محل محبت ماهی پنجاه تومان مقرری برای مخارج و صرف فقرا و دعاگویان خانقاه برقرار بفرمایند که در این آخر عمر خانه بدوش و بی قبا و بی منزل بسر نرود که با حضور قلب مشغول دعاگوئی ذات ملکوتی صفات اعلیحضرت اقدس شهریاری گردد. یا علی مدد دعاگوی مخصوص  پیرزاد
-پانوشت: پرسش حال دل سوخته کن بهر خدا / نیست از شاه عجب گر بنوازد درویش – شاه بیدار بخت را هر شب / ما نگهبان افسر و کلهیم –  دعای گوشه نشینان بلا بگرداند/ چرا بگوشه چشمی بما نمی‌نگری: هر سه از غزل های حافظ است.
-پیرزاده: حاج محمد علی نائینی (۱۲۵۱-۱۳۲۱): عارف مشهور دورۀ قاجار. نیاکان او همه اهل طریقت بودند. وی فرزند آقا محمد اسمعیل بود که  در سال ۱۲۷۲ قمری، پس از درگذشت پدر، به تهران آمد و بعد از مدتی مشغول به سیاحت در ممالک خارجه گردید. در ادامۀ آن از مصر و شامات و بیت‌المقدس نیز دیدن کرد. سفرهای وی بین سال های ۱۲۷۵ و ۱۳۰۶ بود. در سال ۱۳۰۶ قمری که از اروپا بازگشت، سفرنامه خود را نوشت. در ایامی که در اسلامبول اقامت داشت به حاج میرزا صفاء ارادت می‌ورزید و از طرف او به حاج پیرزاده ملقب گردید و به وسیله حاج میرزا صفا با حاجی میرزا حسین خان سپهسالار خیلی مربوط شد و در سفرهای آذربایجان و خراسان همراه وی بود. حاجی پیرزاده در بازگشت از این سفرها در تهران مستقر شد و در همین شهر ازدواج نمود. پیرزاده خطی خوش داشت و شعر می سرود و به جهت حُسن سلوک مورد توجه ناصرالدین شاه و مظفرالدین شاه و بسیاری از بود.
-PDF Transcription:
-gi_106.pdf
-gi_106.pdf
 """@fa .
 
 doc:GI_107 a mdhn:DigitalResource ;
@@ -4165,7 +4164,17 @@ doc:GI_137 a mdhn:DigitalResource ;
     mdhn:belongsToCategory mdhn:GI_Various_Correspondences ;
     mdhn:description "Mostowfi al-Mamalek: unkind behavior towards Ehtesab al-Molk"@en ;
     mdhn:documentId "GI 137" ;
+    mdhn:physicalContainer "Box 1";
+    mdhn:ofType mdhn:aat300026879, mdhn:aat300197601, mdhn:aat300252927;
+    mdhn:canvasCount 2;
+    rdfs:comment "Mostowfi al-Mamalek: unkind behavior towards Ehtesab al-Molk"@en;
     mdhn:hasTechnicalTerm cvoc:crown_prince ;
+    mdhn:headerNote "درآمد:  نامه ی مستوفی الممالک:‌ کم لطفی به احتساب الملک، بی احترامی های شعاع السلطنه"@fa;
+    mdhn:footerNote """پانوشت:‌ احتساب الملک: تقی خان: رییس تشریفات سلطنتی احمد شاه و سپس مدتی وزیر مختار ایران در سویس بود.
+شعاع السلطنه:‌ منظور ملک منصور میرزا شعاع السلطنه است.
+مستوفی الممالک:‌ میرزا حسن (۱۲۵۴-۱۳۱۱).
+با توجه به تاریخ های حیات اشخاص نامبرده، نامه باید دوران احمد شاه و ولیعهدی محمد حسن میرزا – برادر احمد شاه – نوشته شده باشد.
+ """@fa;
     mdhn:iiifManifest <https://archive.org/details/MS235_GI_137/manifest.json> ;
     mdhn:mentionsPersonality person:ahmad_shah,
         person:crown_prince,
@@ -4178,24 +4187,11 @@ doc:GI_137 a mdhn:DigitalResource ;
         person:taqi_khan,
         person:valiahd ;
     mdhn:originalYaleURL <https://ghani.macmillan.yale.edu/gi-137> ;
+    mdhn:transcriptionPDF "gi_137.pdf";
     mdhn:pdfSha256 "969f096f470e5f99ce160350cebb059db8683c59b89036074f1ff9d105899747" ;
     mdhn:pdfURL <https://ghani.macmillan.yale.edu/sites/default/files/ms_0235_s01_b001_f0005_d0137.pdf> ;
-    mdhn:transcription """GI 137
-GI 137
-Ghani Location:
-Box 1
-Mostowfi al-Mamalek: unkind behavior towards Ehtesab al-Molk
-GI 137
-درآمد:  نامه ی مستوفی الممالک:‌ کم لطفی به احتساب الملک، بی احترامی های شعاع السلطنه
-از مستوفی الممالک
+    mdhn:transcription """از مستوفی الممالک
 قربان وجود شریفت شوم  راجع به آقای احتساب الملک که شنیده‌ام چندیست بندگان والاحضرت اقدس نسبت به ایشان قدری کم مرحمت شده‌اند دیروز خیال داشتم عرایضی به ولایت عهد روحی فداه عرض کنم ولی خلاف انتظار حضرت والا شعاع السلطنه را از ادب دور دیده به مجردی که فرمایشات والاحضرت تمام شد بیرون آمدم و این است که حال از حضرتعالی تمنی می‌کنم که در موقع مقتضی از طرف بنده عرض کنید قربان اشخاصی که پرورش یافته دربار و خلوت اجداد تاجدارتان خصوصا ناصرالدین شاه خلد آشیان بوده‌اند طبعا و قلبا دربار دوست و شاه‌پرست می‌باشند زیرا که آن مرحوم قسمی مراقب حال نوکرهایشان و علاج هر درد آنها بودند که ممکن نیست آن مراحم و بزرگواریها از نظر آنها محو و حب به خاندان سلطنت عظمی از قلب آنها خارج شود تا چه رسد که خدا نخواسته خائن شوند. نسبت به احتساب الملک و این طبقه از چاکران قطعا اگر عرضی شده باشد از روی اشتباه و یا غرض بوده و امیدوارم صدق عرایضم یک روز مکشوف شود. دیگر بسته به اراده مبارک است. امضاء
-پانوشت:‌ احتساب الملک: تقی خان: رییس تشریفات سلطنتی احمد شاه و سپس مدتی وزیر مختار ایران در سویس بود.
-شعاع السلطنه:‌ منظور ملک منصور میرزا شعاع السلطنه است.
-مستوفی الممالک:‌ میرزا حسن (۱۲۵۴-۱۳۱۱).
-با توجه به تاریخ های حیات اشخاص نامبرده، نامه باید دوران احمد شاه و ولیعهدی محمد حسن میرزا – برادر احمد شاه – نوشته شده باشد.
-PDF Transcription:
-gi_137.pdf
-gi_137.pdf
 """@fa .
 
 doc:GI_138 a mdhn:DigitalResource ;
@@ -23162,6 +23158,7 @@ person:ghamam a mdhn:Personality ;
 
 person:ghani_dr a mdhn:Personality ;
     owl:sameAs person:ghassem_qasem_ghani;
+    mdhn:exactlySamePerson  mdhn:Qāsim_Ghanī;
     rdfs:label "Ghani (Dr.)"@en, "دکتر غنی"@fa .
 
 person:gharaf_saheb a mdhn:Personality ;
@@ -27819,6 +27816,8 @@ person:tamson_saheb a mdhn:Personality ;
     rdfs:label "Tamson Saheb" .
 
 person:taqi_khan a mdhn:Personality ;
+    owl:sameAs person:amir_kabir, person:mirza_tagi ;
+    mdhn:exactlySamePerson  mdhn:Amir_Kabir;    
     rdfs:label "Taqi Khan" .
 
 person:thomson_saheb a mdhn:Personality ;
@@ -28547,6 +28546,7 @@ person:farhad_mirza a mdhn:Personality ;
 
 person:ghassem_qasem_ghani a mdhn:Personality ;
     owl:sameAs person:dr_ghani;
+    mdhn:exactlySamePerson  mdhn:Qāsim_Ghanī;
     rdfs:label "Ghassem Qasem Ghani"@en, "قاسم غنی"@fa .
 
 place:tehran a mdhn:Place ;
@@ -28556,6 +28556,8 @@ cvoc:troop a mdhn:TechnicalTerm ;
     skos:prefLabel "troop" .
 
 person:nasir_al_dowleh a mdhn:Personality ;
+    owl:sameAs person:naser_al_din_shah;
+    mdhn:exactlySamePerson  mdhn:Naser_al_Din_Shah_Qajar;
     rdfs:label "Nasir al-Dowleh" .
 
 person:abd_al_vahhab_khan_shirazi a mdhn:Personality ;
@@ -28592,9 +28594,13 @@ cvoc:health a mdhn:TechnicalTerm ;
     skos:prefLabel "health" .
 
 person:amir_kabir a mdhn:Personality ;
+    owl:sameAs person:taqi_khan , person:mirza_taqi ;
+    mdhn:exactlySamePerson  mdhn:Amir_Kabir;
     rdfs:label "Amir Kabir" .
 
 person:naser_al_din_shah a mdhn:Personality ;
+    owl:sameAs person:nasir_al_dowleh;
+    mdhn:exactlySamePerson  mdhn:Naser_al_Din_Shah_Qajar;
     rdfs:label "Naser al-Din Shah" .
 
 mdhn:GI_Various_Correspondences a mdhn:Category;

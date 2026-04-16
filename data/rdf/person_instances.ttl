@@ -90,6 +90,7 @@ mdhn:Ahmad_Beik a fhkb:Man ;
 mdhn:Darvish_Beik a fhkb:Man ;
    rdfs:label "Darvish Beik"@en, "درویش بیک"@fa;   
    mdhn:agentialWikiData "" . 
+
 mdhn:Mirza_Yoosef_Moshir_Divan a fhkb:Man ;
    rdfs:label "Mirza Yoosef Moshir Divan"@en, "میرزا یوسف مشیر دیوان"@fa;   
    mdhn:agentialWikiData "" .          
@@ -148,10 +149,7 @@ mdhn:Abu_Torab_Ghaffari a fhkb:Man ;
 mdhn:Mirza_Mohammad_Reza_Kalhor a fhkb:Man ;
    rdfs:label "Mirza Mohammad Reza Kalhor"@en, "میرزا محمد رضا کلهر"@fa;    
    mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q3606489" .            
-
-mdhn:AbdolHossein_Mirza_Farmanfarma  a fhkb:Man ;
-   rdfs:label "AbdolHossein Mirza Farmanfarma"@en, "عبدالحسين ميرزا فرمانفرما"@fa;    
-   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q308243" .   
+  
 
 mdhn:Amir_Nezam  a fhkb:Man ;
    rdfs:label "Amir Nezam"@en, "امير نظام"@fa;    
@@ -199,7 +197,19 @@ mdhn:Mirza_Ibrahim_Ghaffari a fhkb:Man ;
 mdhn:Mozaffar_ad_Din_Shah_Qajar a fhkb:Man ;
    rdfs:label "Mozaffar ad-Din Shah Qajar"@en, "مظفرالدين شاه قاجار"@fa ; 
    fhkb:hasSon mdhn:Mohammad_Ali_Shah_Qajar;  
+   fhkb:hasDaughter mdhn:Fatimah_Khanum_Izzat_al_Dawlah;
    mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q467021" .
+
+mdhn:Amir_Kabir a fhkb:Man;
+   rdfs:label "Amir Kabir"@en, "ميرزا تقی خان فراهانی امير کبير"@fa ; 
+   fhkb:hasDaughter mdhn:Taj_al_Mulouk_Khanoum_Umm_al_Khakan;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q472054" . 
+
+mdhn:Taj_al_Mulouk_Khanoum_Umm_al_Khakan  a fhkb:Women;
+   rdfs:label "Taj al-Mulouk Khanoum Umm al-Khakan"@en, "تاج الملوک خانم ام خاقان"@fa ;   
+   fhkb:isSpouseOf mdhn:Mozaffar_ad_Din_Shah_Qajar;
+   fhkb:isMotherOf mdhn:Fatimah_Khanum_Izzat_al_Dawlah; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5942401" . 
 
 mdhn:Mohammad_Ali_Shah_Qajar a fhkb:Man ;
    rdfs:label "Mohammad Ali Shah Qajar"@en, "محمد علی شاه قاجار"@fa ; 
@@ -262,10 +272,11 @@ mdhn:Akhtar_Ol_Dowleh a fhkb:Woman ;
    fhkb:isSpouseOf mdhn:Gholam_Ali_Khan_Aziz_Ol_Soltan;        
    mdhn:agentialWikiData "" . 
 
-
 mdhn:Ezzat_ed_Dowleh a fhkb:Woman ;
    rdfs:label "Ezzat ed-Dowleh"@en, "عزت الدوله"@fa ;  
-   fhkb:isSisterOf mdhn:Naser_al_Din_Shah_Qajar;   
+   fhkb:isSisterOf mdhn:Naser_al_Din_Shah_Qajar;  
+   fhkb:isSpouseOf mdhn:Amir_Kabir; 
+   fhkb:isMotherOf mdhn:Taj_al_Mulouk_Khanoum_Umm_al_Khakan;
    mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5944064" .   
 
 mdhn:Golin_Khanum a fhkb:Woman ;
@@ -579,6 +590,7 @@ mdhn:Abbas_Mirza a fhkb:Man ;
    fhkb:hasSon mdhn:Mohammad_Shah_Qajar, 
                mdhn:Bahram_Mirza, 
                mdhn:Qahraman_Mirza,
+               mdhn:Firuz_Mirza,
                mdhn:Khosrow_Mirza;             
    rdfs:label "Abbas Mirza"@en, "عباس ميرزا قاجار"@fa ;   
    mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q80226" .
@@ -1503,6 +1515,22 @@ mdhn:Muzaffar_Ali  a fhkb:Man ;
    mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q4305948" .                
     
 
-  
+  mdhn:Qāsim_Ghanī a fhkb:Man;
+    rdfs:label "Qasim Ghani"@en, "دکتر قاسم غنی"@fa;
+    mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5953296".
+
+mdhn:AbdolHossein_Mirza_Farmanfarma  a fhkb:Man ;
+   rdfs:label "AbdolHossein Mirza Farmanfarma"@en, "عبدالحسين ميرزا فرمانفرما"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q308243" .     
        
+mdhn:Firuz_Mirza  a fhkb:Man ;
+   rdfs:label "Firuz Mirza"@en, "فيروز ميرزا"@fa; 
+   fhkb:hasSon mdhn:AbdolHossein_Mirza_Farmanfarma;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5953847" .     
+    
+mdhn:Fatimah_Khanum_Izzat_al_Dawlah a fhkb:Women;
+   rdfs:label "Fatimah Khanum ʻIzzat al-Dawlah"@en, "فاطمه خانم عزت الدوله"@fa; 
+   fhkb:isSpouseOf mdhn:AbdolHossein_Mirza_Farmanfarma;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q133889625" .     
+    
 
