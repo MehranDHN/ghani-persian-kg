@@ -9,6 +9,8 @@
 @prefix lethead:   <https://github.com/mehrandhn/ghani-persian-kg/letterhead/> .
 @prefix person: <https://github.com/mehrandhn/ghani-persian-kg/person/> .
 @prefix place: <https://github.com/mehrandhn/ghani-persian-kg/place/> .
+@prefix sign:   <https://github.com/mehrandhn/ghani-persian-kg/signature/> .
+@prefix toghra:   <https://github.com/mehrandhn/ghani-persian-kg/toghra/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -32,8 +34,7 @@ mdhn:DigitalResource a rdfs:Class ;
 
 mdhn:Personality a rdfs:Class ;
     rdfs:comment "Local scoped controlled vocabulary for persons mentioned in Ghani documents. Can be reconciled with Wikidata later."@en ;
-    rdfs:label "Personality"@en ;
-    rdfs:subClassOf fhkb:Person .
+    rdfs:label "Personality"@en .
 
 mdhn:Stamp a rdfs:Class ;
     rdfs:comment "Stamp in documents"@en ;
@@ -46,7 +47,15 @@ mdhn:Logo a rdfs:Class ;
 
 mdhn:Letterhead a rdfs:Class ;
     rdfs:comment "Letterhead in documents"@en ;
-    rdfs:label "Letterhead"@en .     
+    rdfs:label "Letterhead"@en . 
+
+mdhn:Toghra a rdfs:Class ;
+    rdfs:comment "Toghra as a calligraphic signature"@en ;
+    rdfs:label "Toghra"@en .
+
+mdhn:Signature a rdfs:Class ;
+    rdfs:comment "Signature of a personality"@en ;
+    rdfs:label "Signature"@en .               
 
 mdhn:Place a rdfs:Class ;
     rdfs:comment "Local scoped controlled vocabulary for places. Can be reconciled with TGN later."@en ;
@@ -106,7 +115,7 @@ mdhn:hasTGNNarrower a owl:ObjectProperty ;
     so:domainIncludes mdhn:GettyTGN ;
     so:rangeIncludes mdhn:GettyTGN .
 
-mdhn:hasTGNBroader a owl:ObjectProperty ;
+mdhn:hasTGNBroader a owl:TransitiveProperty ;
     rdfs:comment "Associate a TGN concept to its broader concept" ;
     rdfs:label "hasTGNBroader" ;
     rdfs:domain mdhn:GettyTGN ;
@@ -159,13 +168,25 @@ mdhn:containsDocument a owl:ObjectProperty ;
     rdfs:domain mdhn:Category ;
     rdfs:label "Contains document"@en ;
     rdfs:range mdhn:DigitalResource ;
-    owl:inverseOf mdhn:belongsToCategory .   
+    owl:inverseOf mdhn:belongsToCategory .
+
+mdhn:identicalPerson a owl:SymmetricProperty ;
+    rdfs:comment "Links two person";
+    rdfs:domain mdhn:Personality ;
+    rdfs:label "identicalPerson" ;
+    rdfs:range fhkb:Personality .       
 
 mdhn:exactlySamePerson a owl:ObjectProperty ;
-    rdfs:comment "Links two collection";
+    rdfs:comment "Links two id of same person";
     rdfs:domain mdhn:Personality ;
     rdfs:label "exactlySamePerson" ;
-    rdfs:range fhkb:Person . 
+    rdfs:range fhkb:Person 
+    
+mdhn:exactlySamePlace a owl:ObjectProperty ;
+    rdfs:comment "Links two id of same place";
+    rdfs:domain mdhn:Person ;
+    rdfs:label "exactlySamePlace" ;
+    rdfs:range mdhn:GettyTGN .     . 
 
 mdhn:mentionsPersonality a owl:ObjectProperty ;
     rdfs:label "mentionsPersonality"@en;                         
@@ -216,6 +237,28 @@ mdhn:stampInDocument a owl:ObjectProperty;
                  rdfs:range mdhn:DigitalResource;
                  owl:inverseOf mdhn:hasStamp.
 
+mdhn:hasToghra a owl:ObjectProperty ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "Has Toghra"@en ;
+    rdfs:range mdhn:Toghra .
+
+mdhn:toghraInDocument a owl:ObjectProperty;
+                 rdfs:label "toghraInDocument"@en;
+                 rdfs:domain mdhn:Toghra;
+                 rdfs:range mdhn:DigitalResource;
+                 owl:inverseOf mdhn:hasToghra. 
+
+mdhn:hasSignature a owl:ObjectProperty ;
+    rdfs:domain mdhn:DigitalResource ;
+    rdfs:label "has Signature"@en ;
+    rdfs:range mdhn:Signature .
+
+mdhn:signatureInDocument a owl:ObjectProperty;
+                 rdfs:label "signatureInDocument"@en;
+                 rdfs:domain mdhn:Signature;
+                 rdfs:range mdhn:DigitalResource;
+                 owl:inverseOf mdhn:hasSignature.                                  
+
 mdhn:hasRepresents a owl:ObjectProperty ;
     rdfs:domain mdhn:Stamp ;
     rdfs:label "hasRepresents"@en ;
@@ -236,12 +279,19 @@ mdhn:letterheadInDocument a owl:ObjectProperty;
                  rdfs:domain mdhn:Letterhead;
                  rdfs:range mdhn:DigitalResource;
                  owl:inverseOf mdhn:hasLetterhead.
-                 
-mdhn:hasAATBroader a owl:ObjectProperty ;
+
+mdhn:hasAATBroader a owl:TransitiveProperty ;
     rdfs:comment "Associate an AAT concept to its broader concept" ;
     rdfs:label "hasAATBroader" ;
     rdfs:domain mdhn:AATTerm ;
     rdfs:range mdhn:AATTerm .
+
+mdhn:hasAATNarrower a owl:ObjectProperty ;
+    rdfs:comment "Indicates broader concept of specified AAT Term" ;
+    rdfs:label "hasAATNarrower" ;
+    owl:inverseOf mdhn:hasAATBroader ;
+    so:domainIncludes mdhn:AATTerm ;
+    so:rangeIncludes mdhn:AATTerm .    
 
 mdhn:letterheadOwner a owl:ObjectProperty ;
     rdfs:domain mdhn:Letterhead ;
@@ -258,6 +308,16 @@ mdhn:croppedLogo a owl:ObjectProperty ;
     rdfs:label "Cropped Logo"@en ;
     rdfs:range xsd:anyURI . 
 
+mdhn:croppedToghra a owl:ObjectProperty ;
+    rdfs:domain mdhn:Toghra ;
+    rdfs:label "Cropped Toghra"@en ;
+    rdfs:range xsd:anyURI .
+
+mdhn:croppedSignature a owl:ObjectProperty ;
+    rdfs:domain mdhn:Signature ;
+    rdfs:label "Cropped Signature"@en ;
+    rdfs:range xsd:anyURI .         
+
 mdhn:croppedLetterhead a owl:ObjectProperty ;
     rdfs:domain mdhn:Leterhead ;
     rdfs:label "Cropped Leterhead"@en ;
@@ -272,7 +332,9 @@ mdhn:logoInDocument a owl:ObjectProperty;
 mdhn:ownerOf a owl:ObjectProperty;
                  rdfs:label "ownerOf"@en;
                  rdfs:domain mdhn:Personality;
-                 rdfs:range mdhn:Stamp;
+                 rdfs:range [ a owl:Class ;
+                                owl:unionOf ( mdhn:Stamp mdhn:Toghra mdhn:Signature )
+                 ] ;;
                  owl:inverseOf mdhn:hasRepresents.
 
 mdhn:chronology a owl:ObjectProperty ;
