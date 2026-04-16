@@ -20,3 +20,5 @@
 @prefix stamp:   <https://github.com/mehrandhn/ghani-persian-kg/stamp/> .
 @prefix logo:   <https://github.com/mehrandhn/ghani-persian-kg/logo/> .
 @prefix lethead:   <https://github.com/mehrandhn/ghani-persian-kg/letterhead/> .
+@prefix sign:   <https://github.com/mehrandhn/ghani-persian-kg/signature/> .
+@prefix toghra:   <https://github.com/mehrandhn/ghani-persian-kg/toghra/> .

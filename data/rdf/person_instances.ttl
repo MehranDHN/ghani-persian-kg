@@ -1520,9 +1520,27 @@ mdhn:Muzaffar_Ali  a fhkb:Man ;
     mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q5953296".
 
 mdhn:AbdolHossein_Mirza_Farmanfarma  a fhkb:Man ;
-   rdfs:label "AbdolHossein Mirza Farmanfarma"@en, "عبدالحسين ميرزا فرمانفرما"@fa;    
-   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q308243" .     
-       
+   rdfs:label "AbdolHossein Mirza Farmanfarma"@en, "عبدالحسين ميرزا فرمانفرما"@fa;  
+   fhkb:hasSon mdhn:Firouz_Nosrat_ed_Dowleh_III;  
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q308243" .
+
+     
+
+mdhn:Firouz_Nosrat_ed_Dowleh_III  a fhkb:Man ;
+   rdfs:label "Firouz Nosrat-ed-Dowleh III"@en, "نصرت الدوله فیروزمیرزا"@fa; 
+   fhkb:hasSon mdhn:Mozaffar_Firouz;   
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q983416" . 
+
+mdhn:Mozaffar_Firouz  a fhkb:Man ;
+   rdfs:label "Mozaffar Firouz"@en, "مظفر فيروز"@fa;    
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q6586902" . 
+
+mdhn:Mahin_Firouz_Dowlatshahi  a fhkb:Woman ;
+   rdfs:label "Mahin Firouz-Dowlatshahi"@en, "مهين فيروز دولتشاهی"@fa;   
+   fhkb:isSpouseOf  mdhn:Mozaffar_Firouz;
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q18783517" .    
+  
+               
 mdhn:Firuz_Mirza  a fhkb:Man ;
    rdfs:label "Firuz Mirza"@en, "فيروز ميرزا"@fa; 
    fhkb:hasSon mdhn:AbdolHossein_Mirza_Farmanfarma;
@@ -1531,6 +1549,11 @@ mdhn:Firuz_Mirza  a fhkb:Man ;
 mdhn:Fatimah_Khanum_Izzat_al_Dawlah a fhkb:Women;
    rdfs:label "Fatimah Khanum ʻIzzat al-Dawlah"@en, "فاطمه خانم عزت الدوله"@fa; 
    fhkb:isSpouseOf mdhn:AbdolHossein_Mirza_Farmanfarma;
-   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q133889625" .     
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q133889625" .
+
+mdhn:Hassan_Modarres  a fhkb:Man ;
+   rdfs:label "Hassan Modarres"@en, "سيد حسن مدرس"@fa; 
+   mdhn:agentialWikiData "https://www.wikidata.org/wiki/Q589068" . 
+   
     
 
