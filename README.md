@@ -88,4 +88,221 @@ ghani-persian-kg/
 
 
 ```
-Made with ❤️ with the help of Grok and Claude AI Engine for Persian Digital Cultural Heritage
+
+## Example SPARQL Queries
+
+The complete graph is available as a single file:  
+[`data/rdf/ghani-full.ttl`](data/rdf/ghani-full.ttl) (16,350+ triples).
+
+You can load it into any SPARQL endpoint (Fuseki, Oxigraph, Stardog, or even online tools like [yasgui.org](https://yasgui.org)).
+
+**PREFIX declarations** (use these in every query):
+
+```sparql
+PREFIX mdhn:   <https://github.com/MehranDHN/ghani-persian-kg/vocab#>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX time:   <http://www.w3.org/2006/time#>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+```
+
+### 1. List the first 50 documents with their ID, category and description
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?category ?desc
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:belongsToCategory ?category ;
+       rdfs:comment ?desc .
+}
+LIMIT 50
+```
+
+### 2- Find a specific document by Ghani ID
+```sparql
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?description ?transcription ?yaleURL
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId "GI 49" ;
+       mdhn:description ?description ;
+       mdhn:transcription ?transcription ;
+       mdhn:originalYaleURL ?yaleURL .
+}
+```
+
+### 3- All documents mentioning a specific personality
+```sparql
+PREFIX person: <https://github.com/mehrandhn/ghani-persian-kg/person/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?description ?personLabel
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:mentionsPersonality ?person ;
+       mdhn:description ?description .
+  ?person rdfs:label ?personLabel .
+  FILTER(?person = person:mirza_aqasi)   # replace with any name
+}
+```
+
+### 4- Documents mentioning a specific place
+```sparql
+PREFIX place: <https://github.com/mehrandhn/ghani-persian-kg/place/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?placeLabel
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:mentionsPlace ?place .
+  ?place rdfs:label ?placeLabel .
+  FILTER(?place in (place:tabriz, place:rasht))
+}
+```
+
+### 5- Documents containing a specific technical term
+```sparql
+PREFIX cvoc: <https://github.com/mehrandhn/ghani-persian-kg/term/>
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?term
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:hasTechnicalTerm ?term .
+    FILTER(?term in (cvoc:land, cvoc:law))
+}
+```
+
+### 6- Counting Documents in a specific G-series category
+```sparql
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?cat (COUNT(*) AS ?count)
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:belongsToCategory ?cat  ;
+       mdhn:documentId ?id .
+}
+GROUP BY ?cat
+```
+
+### 7- Search inside Persian transcriptions (keyword search)
+```sparql
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?transcription
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:transcription ?transcription .
+  FILTER(CONTAINS(?transcription, "فدایت شوم"))
+}
+LIMIT 10
+```
+
+### 8- Count unique personalities, places, and terms
+```sparql
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT 
+  (COUNT(DISTINCT ?person) AS ?personalities)
+  (COUNT(DISTINCT ?place) AS ?places)
+  (COUNT(DISTINCT ?term) AS ?terms)
+WHERE {
+  ?person a mdhn:Personality .
+  ?place a mdhn:Place .
+  ?term a mdhn:TechnicalTerm .
+}
+```
+
+### 9- Documents with chronology in a specific year range
+```sparql
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?begin ?end
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:chronology ?interval .
+  ?interval time:hasBeginning ?begin ;
+            time:hasEnd ?end .
+  FILTER(YEAR(?begin) >= 1830 && YEAR(?end) <= 1860)
+}
+```
+
+### 10- Documents with chronology in a specific year(AH) range
+```sparql
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?begin ?end
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:chronology ?interval .
+  ?interval time:hasAHBeginning ?begin ;
+            time:hasAHEnd ?end .
+  FILTER(YEAR(?begin) >= 1240 && YEAR(?end) <= 1350)
+}
+```
+
+### 11- Get IIIF Manifest URL for every document
+```sparql
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?iiifManifest
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:iiifManifest ?iiifManifest .
+}
+LIMIT 50
+```
+
+### 12- Documents mentioning both a person and a place
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?personLabel ?placeLabel
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:mentionsPersonality ?person ;
+       mdhn:mentionsPlace ?place .
+  ?person rdfs:label ?personLabel .
+  ?place rdfs:label ?placeLabel .
+}
+LIMIT 20
+```
+
+### 13- Documents that have no chronology information
+```sparql
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?description
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:description ?description .
+  FILTER NOT EXISTS { ?doc mdhn:chronology ?any }
+}
+```
+
+### 14- Full metadata for one document (including all linked entities)
+```sparql
+PREFIX skos: <http://www.w3.org/2008/05/skos#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?id ?description ?transcription ?ps ?iiif
+WHERE {
+  ?doc a mdhn:DigitalResource ;
+       mdhn:documentId ?id ;
+       mdhn:description ?description ;
+       mdhn:transcription ?transcription ; 
+  OPTIONAL { ?doc mdhn:mentionsPlace ?pl ;  }
+  OPTIONAL { ?doc mdhn:mentionsPersonality ?ps }    
+  OPTIONAL { ?doc mdhn:hasTechnicalTerm ?tm  }
+  OPTIONAL { ?doc mdhn:iiifManifest ?iiif }
+}
+LIMIT 10   # change filter to specific ID if needed
+```
+
+Made with ❤️ with the help of Grok, Claude and NotebookLM AI Engine for Persian Digital Cultural Heritage
