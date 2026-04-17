@@ -318,4 +318,24 @@ WHERE {
 LIMIT 10   # change filter to specific ID if needed
 ```
 
+### 15- List all Documents that have valid Stamp as a standalone Object
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mdhn: <https://github.com/mehrandhn/ghani-persian-kg/>
+SELECT ?ghaniId ?description ?stampUri ?stampLabel ?physicalContainer
+WHERE {
+  ?doc a mdhn:DigitalResource ;                   
+       mdhn:documentId ?ghaniId ;
+       mdhn:description ?description ;
+       mdhn:hasStamp ?stampUri .            # ← This is the key predicate
+
+  OPTIONAL { ?stampUri rdfs:label ?stampLabel }
+  OPTIONAL { ?doc mdhn:physicalContainer ?physicalContainer }
+
+  # Optional: Show only stamps that are of type mdhn:Stamp
+  OPTIONAL { ?stampUri a mdhn:Stamp }
+}
+ORDER BY ?ghaniId
+```
+
 Made with ❤️ with the help of Grok, Claude and NotebookLM AI Engine for Persian Digital Cultural Heritage
