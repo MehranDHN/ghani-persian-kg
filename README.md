@@ -94,16 +94,29 @@ ghani-persian-kg/
 The complete graph is available as a single file:  
 [`data/rdf/ghani-full.ttl`](data/rdf/ghani-full.ttl) (16,350+ triples).
 
-You can load it into any SPARQL endpoint (Fuseki, Oxigraph, Stardog, or even online tools like [yasgui.org](https://yasgui.org)).
+You can load it into any SPARQL endpoint (ONTOTEXT GraphDB, Fuseki, Oxigraph, Stardog, or even online tools like [yasgui.org](https://yasgui.org)).
 
 **PREFIX declarations** (use these in every query):
 
 ```sparql
-PREFIX mdhn:   <https://github.com/MehranDHN/ghani-persian-kg/vocab#>
-PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX time:   <http://www.w3.org/2006/time#>
-PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+@prefix person: <https://github.com/mehrandhn/ghani-persian-kg/person/> .
+@prefix place: <https://github.com/mehrandhn/ghani-persian-kg/place/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix so: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <https://github.com/mehrandhn/ghani-persian-kg/> .
+@prefix doc: <https://github.com/mehrandhn/ghani-persian-kg/document/> .
+@prefix tgn: <http://vocab.getty.edu/tgn/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+@prefix stamp:   <https://github.com/mehrandhn/ghani-persian-kg/stamp/> .
+@prefix logo:   <https://github.com/mehrandhn/ghani-persian-kg/logo/> .
+@prefix lethead:   <https://github.com/mehrandhn/ghani-persian-kg/letterhead/> .
+@prefix sign:   <https://github.com/mehrandhn/ghani-persian-kg/signature/> .
+@prefix toghra:   <https://github.com/mehrandhn/ghani-persian-kg/toghra/> .
 ```
 
 ### 1. List the first 50 documents with their ID, category and description
